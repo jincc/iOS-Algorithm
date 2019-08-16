@@ -3,28 +3,28 @@
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
 |  1| [两数之和](https://leetcode-cn.com/problems/two-sum/) | [twoSum](./array/leetcode/easy/twoSum.h) | <font color=green>easy</font> | ✅ |
-|  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedlist/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> | ✅ |
-|  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> |  ⭐️| ✅ |
-|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font> |  ⭐️| ✅ |
-|  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  9| [回文数](https://leetcode-cn.com/problems/palindrome-number/) | [palindrome_number](./other/leetcode/easy/palindrome_number.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font> | ⭐️ | ✅  |
-|  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  27  | [移除元素](https://leetcode-cn.com/problems/remove-element/submissions/) | [removeElement](./array/leetcode/easy/removeElement.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  28| [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [strStr](./string/leetcode/easy/strStr.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  66  | [加一](https://leetcode-cn.com/problems/plus-one/) | [plusOne](./array/leetcode/easy/plusOne.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  70   | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| [climbStairs](./dp/leetcode/easy/climbStairs.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font> | ⭐️ | ✅  |
-|  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> |  ⭐️| ✅ |
+|  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedList/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> | ✅ |
+|  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> | ✅ |
+|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font> | ✅ |
+|  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> | ✅ |
+|  9| [回文数](https://leetcode-cn.com/problems/palindrome-number/) | [palindrome_number](./other/leetcode/easy/palindrome_number.h) | <font color=green>easy</font> | ✅ |
+|  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> | ✅ |
+|  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> | ✅ |
+|  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> | ✅ |
+|  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font>  | ✅  |
+|  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> | ✅ |
+|  27  | [移除元素](https://leetcode-cn.com/problems/remove-element/submissions/) | [removeElement](./array/leetcode/easy/removeElement.h)  | <font color=green>easy</font> | ✅ |
+|  28| [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [strStr](./string/leetcode/easy/strStr.h) | <font color=green>easy</font> | ✅ |
+|  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> | ✅ |
+|  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> | ✅ |
+|  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
+|  66  | [加一](https://leetcode-cn.com/problems/plus-one/) | [plusOne](./array/leetcode/easy/plusOne.h) | <font color=green>easy</font> | ✅ |
+|  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> | ✅ |
+|  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | <font color=green>easy</font> | ✅ |
+|  70   | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| [climbStairs](./dp/leetcode/easy/climbStairs.h) | <font color=green>easy</font> | ✅ |
+|  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font> | ✅  |
+|  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> | ✅ |
+|  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> | ✅ |
 
 
 # 数组
@@ -51,29 +51,29 @@
 
 ## leetcode
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
-| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  1| [两数之和](https://leetcode-cn.com/problems/two-sum/) | [twoSum](./array/leetcode/easy/twoSum.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  27  | [移除元素](https://leetcode-cn.com/problems/remove-element/submissions/) | [removeElement](./array/leetcode/easy/removeElement.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> |  ⭐️| ✅ |
-|  66  | [加一](https://leetcode-cn.com/problems/plus-one/) | [plusOne](./array/leetcode/easy/plusOne.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  118  | [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle) | [pascals_triangle](./array/leetcode/easy/pascals_triangle.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  119  | [杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [pascals_triangle_ii](./array/leetcode/easy/pascals_triangle_ii.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [best_time_to_buy_and_sell_stock](./array/leetcode/easy/best_time_to_buy_and_sell_stock.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  122 | [买卖股票的最佳时机ii](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [best_time_to_buy_and_sell_stock_ii](./array/leetcode/easy/best_time_to_buy_and_sell_stock_ii.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  167 | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [twoSum_ii](./array/leetcode/easy/twoSum_ii.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  169 | [求众数](https://leetcode-cn.com/problems/majority-element/) | [majorityElement](./array/leetcode/easy/majorityElement.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  189  | [旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate](./array/leetcode/easy/rotate.h) | <font color=green>easy</font>  |  ⭐️| ✅ |
-|  11  | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [maxArea](./array/leetcode/maxArea.h) | ✨✨ |  ⭐️| ✅ |
-|  283  | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [moveZeroes](./array/leetcode/moveZeroes.h) | ✨ |  ⭐️| ✅ |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
+| :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
+|  1| [两数之和](https://leetcode-cn.com/problems/two-sum/) | [twoSum](./array/leetcode/easy/twoSum.h) | <font color=green>easy</font> | ✅ |
+|  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> | ✅ |
+|  27  | [移除元素](https://leetcode-cn.com/problems/remove-element/submissions/) | [removeElement](./array/leetcode/easy/removeElement.h)  | <font color=green>easy</font> | ✅ |
+|  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> | ✅ |
+|  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> | ✅ |
+|  66  | [加一](https://leetcode-cn.com/problems/plus-one/) | [plusOne](./array/leetcode/easy/plusOne.h) | <font color=green>easy</font> | ✅ |
+|  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> | ✅ |
+|  118  | [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle) | [pascals_triangle](./array/leetcode/easy/pascals_triangle.h) | <font color=green>easy</font> | ✅ |
+|  119  | [杨辉三角2](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [pascals_triangle_ii](./array/leetcode/easy/pascals_triangle_ii.h) | <font color=green>easy</font> | ✅ |
+|  121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [best_time_to_buy_and_sell_stock](./array/leetcode/easy/best_time_to_buy_and_sell_stock.h) | <font color=green>easy</font> | ✅ |
+|  122 | [买卖股票的最佳时机ii](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [best_time_to_buy_and_sell_stock_ii](./array/leetcode/easy/best_time_to_buy_and_sell_stock_ii.h) | <font color=green>easy</font> | ✅ |
+|  167 | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [twoSum_ii](./array/leetcode/easy/twoSum_ii.h) | <font color=green>easy</font> | ✅ |
+|  169 | [求众数](https://leetcode-cn.com/problems/majority-element/) | [majorityElement](./array/leetcode/easy/majorityElement.h) | <font color=green>easy</font> | ✅ |
+|  189  | [旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate](./array/leetcode/easy/rotate.h) | <font color=green>easy</font>  | ✅ |
+|  11  | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [maxArea](./array/leetcode/maxArea.h) | ✨✨ | ✅ |
+|  283  | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [moveZeroes](./array/leetcode/moveZeroes.h) | ✨ | ✅ |
 
 
 ## 剑指Offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
-| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | &emsp;完成度&emsp;  |
+| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 |  --   | [ 剑指Offer（一）：二维数组中的查找](https://www.nowcoder.com/practice/abc3fe2ce8e146608e868a70efebf62e?tpId=13&tqId=11154&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [Find](./array/coding-interviews/Find.h) | ✨ | ⭐️ | ✅  |
 |  --   | [剑指Offer（六）：旋转数组的最小数字]( https://www.nowcoder.com/practice/9f3231a991af4f55b95579b44b7a01ba?tpId=13&tqId=11159&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [minNumberInRotateArray](./array/coding-interviews/minNumberInRotateArray.h) | ✨ | ⭐️ | ✅  |
 |  --   | [剑指Offer（十三）：调整数组顺序使奇数位于偶数前面]( https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=11166&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [reOrderArray](./array/coding-interviews/reOrderArray.h) | ✨ | ⭐️ | ✅  |
@@ -87,8 +87,8 @@
 # 链表
 ## leetcode
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
-| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;完成度&emsp;  |
+| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 |  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font> | ⭐️ | ✅  |
 |  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font> | ⭐️ | ✅  |
 |  141  | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle)| [hasCycle](./linkedList/leetcode/easy/hasCycle.h) | <font color=green>easy</font>	| ⭐️ | ✅  |
@@ -97,12 +97,12 @@
 |  206  | [	反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [reverseList](./linkedList/leetcode/reverseList.h) | ✨	| ⭐️ | ✅ |
 |  234  | [		回文链表](https://leetcode-cn.com/problems/palindrome-linked-list)| [isPalindrome](./linkedList/leetcode/isPalindrome.h) | ✨	| ⭐️ | ✅   |
 |  876  | [		链表的中间结点 ](https://leetcode-cn.com/problems/middle-of-the-linked-list)| [middleNode](./linkedList/leetcode/middleNode.h) | ✨	| ⭐️ | ✅ |
-|  19  | [		删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)| [removeNthFromEnd](./linkedList/leetcode/removeNthFromEnd.h) | ✨✨ |  ⭐️ [note:注意哨兵的使用]| ✅ |
-|  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedlist/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> |  ⭐️| ✅ |
+|  19  | [		删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)| [removeNthFromEnd](./linkedList/leetcode/removeNthFromEnd.h) | ✨✨  [note:注意哨兵的使用]| ✅ |
+|  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedList/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> | ✅ |
 
 ## 剑指Offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
-| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | &emsp;完成度&emsp;  |
+| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 |  --   | [ 剑指Offer（三）：从尾到头打印链表]( https://www.nowcoder.com/practice/d0267f7f55b3412ba93bd35cfa8e8035?tpId=13&tqId=11156&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [printListFromTailToHead](./linkedList/coding-interviews/printListFromTailToHead.h) | ✨ | ⭐️ | ✅  |
 |  --   | [  剑指Offer（十四）：链表中倒数第k个结点]( https://www.nowcoder.com/practice/529d3ae5a407492994ad2a246518148a?tpId=13&tqId=11167&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [FindKthToTail](./linkedList/coding-interviews/FindKthToTail.h) | ✨ | ⭐️ | ✅  |
 |  --   | [   剑指Offer（十五）：反转链表]( https://www.nowcoder.com/practice/75e878df47f24fdc9dc3e400ec6058ca?tpId=13&tqId=11168&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [ReverseList](./linkedList/coding-interviews/ReverseList.h) | ✨ | ⭐️ | ✅  |
@@ -113,30 +113,30 @@
  
 # 栈&队列
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  155   | [最小栈](https://leetcode-cn.com/problems/valid-parentheses)| [MinStack](./stack+queue/leetcode/easy/MinStack.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  32   | [最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)| [longestValidParentheses](./stack+queue/leetcode/longestValidParentheses.h) | ✨✨✨ |  ⭐️| ✅ |
+|  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> | ✅ |
+|  155   | [最小栈](https://leetcode-cn.com/problems/valid-parentheses)| [MinStack](./stack+queue/leetcode/easy/MinStack.h) | <font color=green>easy</font> | ✅ |
+|  32   | [最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/)| [longestValidParentheses](./stack+queue/leetcode/longestValidParentheses.h) | ✨✨✨ | ✅ |
 |  150   | [逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)| [evalRPN](./stack+queue/leetcode/evalRPN.h) | ✨✨ | ⭐️ | ❌ |
 |  641   | [设计循环双端队列](https://leetcode-cn.com/problems/design-circular-deque/)| [MyCircularDeque](./stack+queue/leetcode/MyCircularDeque.h) | ✨✨| ⭐️ | ❌ |
 |  239   | [滑动窗口最大值](https://leetcode-cn.com/problems/sliding-window-maximum/)| [maxSlidingWindow](./stack+queue/leetcode/maxSlidingWindow.h) | ✨✨✨| ⭐️ | ❌ |
        
 ## 剑指Offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  --   | [ 剑指Offer（五）：用两个栈实现队列](https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6?tpId=13&tqId=11158&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [queueByStack](./stack+queue/coding-interviews/queueByStack.h) | ✨ | ⭐️ | ✅  |     
        
 # 递归
 ## leetcode
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  22   | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)| -- | ✨✨|  | ❌ |
 
 
 ## 剑指Offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  --   | [剑指Offer（七）：裴波那契数列](https://www.nowcoder.com/practice/c6c7742f5ba7442aada113136ddea0c3?tpId=13&tqId=11160&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [Fibonacci](./recursion/coding-interviews/Fibonacci.h) | ✨ | ⭐️ | ✅  |
 |  --   | [剑指Offer（八）：跳台阶]( https://www.nowcoder.com/practice/8c82a5b80378478f9484d87d1c5f12a4?tpId=13&tqId=11161&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [jumpFloor](./recursion/coding-interviews/jumpFloor.h) | ✨ | ⭐️ | ✅  |
@@ -146,16 +146,16 @@
 
 <!--# 排序
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |-->
 
 #  二分查找
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/searchInRotatedSortedArray.h) | ✨✨ |  ⭐️| ✅|
-|  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | ✨ |  ⭐️| ✅ |
-|  367   | [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)| [isPerfectSquare](./bsearch/leetcode/isPerfectSquare.h) | ✨ |  ⭐️| ✅|
+|  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/searchInRotatedSortedArray.h) | ✨✨ | ✅|
+|  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | ✨ | ✅ |
+|  367   | [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)| [isPerfectSquare](./bsearch/leetcode/isPerfectSquare.h) | ✨ | ✅|
 
 
 # 树
@@ -175,27 +175,27 @@
 
 ## leetcode
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  94   | [二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)| [inorderTraversal](./tree/leetcode/inorderTraversal.h) | ✨✨| ⭐️ | ✅ |
-|  98  | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) | [isValidBST](./tree/leetcode/isValidBST.h) | ✨✨ |  ⭐️| ✅ |
-|  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  104  | [二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | [maxDepth](./tree/leetcode/maxDepth.h)  | ✨ |  ⭐️| ✅ |
+|  98  | [验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/) | [isValidBST](./tree/leetcode/isValidBST.h) | ✨✨ | ✅ |
+|  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> | ✅ |
+|  104  | [二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | [maxDepth](./tree/leetcode/maxDepth.h)  | ✨ | ✅ |
 |  105   | [从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)| [buildTree](./tree/leetcode/buildTree.h)   | ✨✨| ⭐️ | ✅ |
-|  111  | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [minDepth](./tree/leetcode/minDepth.h)   | ✨ |  ⭐️| ✅ |
-|  112  | [路径总和](https://leetcode-cn.com/problems/path-sum/) | [hasPathSum](./tree/leetcode/hasPathSum.h)  | ✨ |  ⭐️| ✅ |
-|  144  | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) | [preorderTraversal](./tree/leetcode/preorderTraversal.h)  | ✨✨ |  ⭐️| ✅ |
-|  226  | [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/) | [invertTree](./tree/leetcode/invertTree.h)  | ✨ |  ⭐️| ✅ |
-|  230  | [二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst) |[kthSmallestInTree](./tree/leetcode/kthSmallestInTree.h)  | ✨✨ |  ⭐️| ✅ |
-|  236  | [	二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | -- | ✨✨ |  ⭐️| ❌ |
-|  297  | [	二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/) | -- | ✨✨✨ |  ⭐️| ❌ |
-|  429  | [ N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/) | -- | ✨ |  ⭐️| ❌ |
-|  589  | [ N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/) | -- | ✨ |  ⭐️| ❌ |
-|  590  | [ N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/) | -- | ✨ |  ⭐️| ❌ |
+|  111  | [二叉树的最小深度](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) | [minDepth](./tree/leetcode/minDepth.h)   | ✨ | ✅ |
+|  112  | [路径总和](https://leetcode-cn.com/problems/path-sum/) | [hasPathSum](./tree/leetcode/hasPathSum.h)  | ✨ | ✅ |
+|  144  | [二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal) | [preorderTraversal](./tree/leetcode/preorderTraversal.h)  | ✨✨ | ✅ |
+|  226  | [翻转二叉树](https://leetcode-cn.com/problems/invert-binary-tree/) | [invertTree](./tree/leetcode/invertTree.h)  | ✨ | ✅ |
+|  230  | [二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst) |[kthSmallestInTree](./tree/leetcode/kthSmallestInTree.h)  | ✨✨ | ✅ |
+|  236  | [	二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) | -- | ✨✨ | ❌ |
+|  297  | [	二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/) | -- | ✨✨✨ | ❌ |
+|  429  | [ N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/) | -- | ✨ | ❌ |
+|  589  | [ N叉树的前序遍历](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/) | -- | ✨ | ❌ |
+|  590  | [ N叉树的后序遍历](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/) | -- | ✨ | ❌ |
 
 
 ## 剑指offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  --   | [ 剑指Offer（十七）：树的子结构]( https://www.nowcoder.com/practice/6e196c44c7004d15b1610b9afca8bd88?tpId=13&tqId=11170&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [HasSubtree](./tree/coding-interviews/HasSubtree.h) | ✨ | ⭐️ | ✅  |
 |  --   | [ 剑指Offer（十八）：二叉树的镜像]( https://www.nowcoder.com/practice/564f4c26aa584921bc75623e48ca3011?tpId=13&tqId=11171&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [Mirror](./tree/coding-interviews/Mirror.h) | ✨ | ⭐️ | ✅  |
@@ -210,16 +210,16 @@
 
 # 字符串
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  28| [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [strStr](./string/leetcode/easy/strStr.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> |  ⭐️| ✅ |
+|  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> | ✅ |
+|  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> | ✅ |
+|  28| [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [strStr](./string/leetcode/easy/strStr.h) | <font color=green>easy</font> | ✅ |
+|  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
+|  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> | ✅ |
+|  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> | ✅ |
 ## 剑指offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  --   | [剑指Offer(二)：替换空格](https://www.nowcoder.com/practice/4060ac7e3e404ad1a894ef3e17650423?tpId=13&tqId=11155&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [replaceSpace](./string/coding-interviews/replaceSpace.h) | ✨| ⭐️ | ✅ |
 |  --   | [剑指Offer（二十七）：字符串的排列](https://www.nowcoder.com/practice/fe6b651b66ae47d7acce78ffdd9a96c7?tpId=13&tqId=11180&tPage=2&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [Permutation](./string/coding-interviews/Permutation.h) | ✨| ⭐️ | ✅ |
@@ -266,23 +266,23 @@
 | 数据序列的最长递增子序列 |  --  | ❌|
 
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  64   | [最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)| [minPathSum](./dp/leetcode/minPathSum.h) | ✨✨ |  ⭐️| ❌ |
-|  10   | [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/) | -- | ✨✨✨ |  ⭐️| ❌ |
-|  121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | -- | ✨ |  ⭐️| ❌ |
-|  152  | [乘积最大子序列](https://leetcode-cn.com/problems/maximum-product-subarray/) | -- | ✨✨ |  ⭐️| ❌ |
-|  120  | [三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | -- | ✨✨ |  ⭐️| ❌ |
-|  70   | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| [climbStairs](./dp/leetcode/easy/climbStairs.h) | <font color=green>easy</font> |  ⭐️| ✅ |
+|  64   | [最小路径和](https://leetcode-cn.com/problems/minimum-path-sum/)| [minPathSum](./dp/leetcode/minPathSum.h) | ✨✨ | ❌ |
+|  10   | [正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/) | -- | ✨✨✨ | ❌ |
+|  121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | -- | ✨ | ❌ |
+|  152  | [乘积最大子序列](https://leetcode-cn.com/problems/maximum-product-subarray/) | -- | ✨✨ | ❌ |
+|  120  | [三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | -- | ✨✨ | ❌ |
+|  70   | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| [climbStairs](./dp/leetcode/easy/climbStairs.h) | <font color=green>easy</font> | ✅ |
 
 --------------
 # 贪心算法
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  455  | [分发饼干](https://leetcode-cn.com/problems/assign-cookies/description/) | -- | ✨ |  ⭐️| ❌ |
-|  860  | [柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/description/) | -- | ✨ |  ⭐️| ❌ |
-|  874  | [模拟行走机器人](https://leetcode-cn.com/problems/walking-robot-simulation/description/) | -- | ✨ |  ⭐️| ❌ |
+|  455  | [分发饼干](https://leetcode-cn.com/problems/assign-cookies/description/) | -- | ✨ | ❌ |
+|  860  | [柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/description/) | -- | ✨ | ❌ |
+|  874  | [模拟行走机器人](https://leetcode-cn.com/problems/walking-robot-simulation/description/) | -- | ✨ | ❌ |
 
 ---------------
 # 回溯算法
@@ -300,7 +300,7 @@
 
 
 ## 剑指Offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
 |  --   | [剑指Offer（六十五）：矩阵中的路径](https://www.nowcoder.com/practice/c61c6999eecb4b8f88a98f66b273a3cc?tpId=13&tqId=11218&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| -- | ✨ | ⭐️ | ❌  |
 |  --   | [剑指Offer（六十六）：机器人的运动范围](https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8?tpId=13&tqId=11219&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| -- | ✨ | ⭐️ | ❌  |
@@ -317,38 +317,38 @@
 |  二维平面上有n个点，如何快速求出最近的两个点之间的距离  | [closestPair](./divideConquer/closestPair.h)| ❌ |
 
 ## leetcode
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  17   | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)| --| ✨✨ |  ⭐️| ❌ |
-|  50   | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/description/)| --| ✨✨ |  ⭐️| ❌ |
-|  78   | [子集](https://leetcode-cn.com/problems/subsets/solution/hui-su-jie-fa-by-jawhiow/)| --| ✨✨ |  ⭐️| ❌ |
-|  169   | [求众数](https://leetcode-cn.com/problems/majority-element/description/)| --| ✨ |  ⭐️| ❌ |
+|  17   | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)| --| ✨✨ | ❌ |
+|  50   | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/description/)| --| ✨✨ | ❌ |
+|  78   | [子集](https://leetcode-cn.com/problems/subsets/solution/hui-su-jie-fa-by-jawhiow/)| --| ✨✨ | ❌ |
+|  169   | [求众数](https://leetcode-cn.com/problems/majority-element/description/)| --| ✨ | ❌ |
 
 # 其他
 ## 剑指offer
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  --   | [剑指Offer（十一）：二进制中1的个数](https://www.nowcoder.com/practice/8ee967e43c2c4ec193b040ea7fbb10b8?tpId=13&tqId=11164&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [NumberOf1](./other/coding-interviews/NumberOf1.h) | ✨ |  ⭐️| ✅ |
-|  --   | [ 剑指Offer（十二）：数值的整数次方](https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00?tpId=13&tqId=11165&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [Power](./other/coding-interviews/Power.h) | ✨ |  ⭐️| ✅ |
-|  --   | [ 剑指Offer（十九）：顺时针打印矩阵](https://www.nowcoder.com/practice/9b4c81a02cd34f76be2659fa0d54342a?tpId=13&tqId=11172&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [printMatrix](./other/coding-interviews/printMatrix.h) | ✨ |  ⭐️| ✅ |
-|  --   | [剑指Offer（二十九）：最小的K个数](https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=11182&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [GetLeastNumbers_Solution](./other/coding-interviews/GetLeastNumbers_Solution.h) | ✨ |  ⭐️| ✅ |
-|  --   | [剑指Offer（三十一）：整数中1出现的次数（从1到n整数中1出现的次数）](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&tPage=2&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（三十三）：丑数](https://www.nowcoder.com/practice/6aa9e04fc3794f68acf8778237ba065b?tpId=13&tqId=11186&tPage=2&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ✅ |
-|  --   | [剑指Offer（四十一）：和为S的连续正数序列](https://www.nowcoder.com/practice/c451a3fd84b64cb19485dad758a55ebe?tpId=13&tqId=11194&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ✅ |
-|  --   | [剑指Offer（四十二）：和为S的两个数字](https://www.nowcoder.com/practice/390da4f7a00f44bea7c2f3d19491311b?tpId=13&tqId=11195&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️|✅ |
-|  --   | [剑指Offer（四十五）：扑克牌顺子](https://www.nowcoder.com/practice/762836f4d43d43ca9deb273b3de8e1f4?tpId=13&tqId=11198&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️|✅ |
-|  --   | [剑指Offer（四十六）：孩子们的游戏（圆圈中最后剩下的数）](https://www.nowcoder.com/practice/f78a359491e64a50bce2d89cff857eb6?tpId=13&tqId=11199&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（四十七）：求1+2+3+…+n](https://www.nowcoder.com/practice/7a0da8fc483247ff8800059e12d7caf1?tpId=13&tqId=11200&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（四十八）：不用加减乘除的加法](https://www.nowcoder.com/practice/59ac416b4b944300b617d4f7f111b215?tpId=13&tqId=11201&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（五十四）：字符流中第一个不重复的字符](https://www.nowcoder.com/practice/00de97733b8e4f97a3fb5c680ee10720?tpId=13&tqId=11207&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（六十三）：数据流中的中位数](https://www.nowcoder.com/practice/9be0172896bd43948f8a32fb954e1be1?tpId=13&tqId=11216&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |  ⭐️| ❌ |
-|  --   | [剑指Offer（六十四）：滑动窗口的最大值](https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&tqId=11217&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)|  [maxInWindows](./other/coding-interviews/maxInWindows.h)| ✨ |  ⭐️| ✅ |
+|  --   | [剑指Offer（十一）：二进制中1的个数](https://www.nowcoder.com/practice/8ee967e43c2c4ec193b040ea7fbb10b8?tpId=13&tqId=11164&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [NumberOf1](./other/coding-interviews/NumberOf1.h) | ✨ | ✅ |
+|  --   | [ 剑指Offer（十二）：数值的整数次方](https://www.nowcoder.com/practice/1a834e5e3e1a4b7ba251417554e07c00?tpId=13&tqId=11165&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [Power](./other/coding-interviews/Power.h) | ✨ | ✅ |
+|  --   | [ 剑指Offer（十九）：顺时针打印矩阵](https://www.nowcoder.com/practice/9b4c81a02cd34f76be2659fa0d54342a?tpId=13&tqId=11172&tPage=1&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| [printMatrix](./other/coding-interviews/printMatrix.h) | ✨ | ✅ |
+|  --   | [剑指Offer（二十九）：最小的K个数](https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=11182&tPage=1&rp=1&ru=/ta/coding-interviews&qru=/ta/coding-interviews/question-ranking)| [GetLeastNumbers_Solution](./other/coding-interviews/GetLeastNumbers_Solution.h) | ✨ | ✅ |
+|  --   | [剑指Offer（三十一）：整数中1出现的次数（从1到n整数中1出现的次数）](https://www.nowcoder.com/practice/bd7f978302044eee894445e244c7eee6?tpId=13&tqId=11184&tPage=2&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（三十三）：丑数](https://www.nowcoder.com/practice/6aa9e04fc3794f68acf8778237ba065b?tpId=13&tqId=11186&tPage=2&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ✅ |
+|  --   | [剑指Offer（四十一）：和为S的连续正数序列](https://www.nowcoder.com/practice/c451a3fd84b64cb19485dad758a55ebe?tpId=13&tqId=11194&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ✅ |
+|  --   | [剑指Offer（四十二）：和为S的两个数字](https://www.nowcoder.com/practice/390da4f7a00f44bea7c2f3d19491311b?tpId=13&tqId=11195&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |✅ |
+|  --   | [剑指Offer（四十五）：扑克牌顺子](https://www.nowcoder.com/practice/762836f4d43d43ca9deb273b3de8e1f4?tpId=13&tqId=11198&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ |✅ |
+|  --   | [剑指Offer（四十六）：孩子们的游戏（圆圈中最后剩下的数）](https://www.nowcoder.com/practice/f78a359491e64a50bce2d89cff857eb6?tpId=13&tqId=11199&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（四十七）：求1+2+3+…+n](https://www.nowcoder.com/practice/7a0da8fc483247ff8800059e12d7caf1?tpId=13&tqId=11200&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（四十八）：不用加减乘除的加法](https://www.nowcoder.com/practice/59ac416b4b944300b617d4f7f111b215?tpId=13&tqId=11201&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（五十四）：字符流中第一个不重复的字符](https://www.nowcoder.com/practice/00de97733b8e4f97a3fb5c680ee10720?tpId=13&tqId=11207&tPage=3&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（六十三）：数据流中的中位数](https://www.nowcoder.com/practice/9be0172896bd43948f8a32fb954e1be1?tpId=13&tqId=11216&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| --| ✨ | ❌ |
+|  --   | [剑指Offer（六十四）：滑动窗口的最大值](https://www.nowcoder.com/practice/1624bc35a45c42c0bc17d17fa0cba788?tpId=13&tqId=11217&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)|  [maxInWindows](./other/coding-interviews/maxInWindows.h)| ✨ | ✅ |
 ## leetcode
 
-| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;重要度&emsp; | &emsp;完成度&emsp;  |
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: | :------: |
-|  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> |  ⭐️| ✅ |
-|  9| [回文数](https://leetcode-cn.com/problems/palindrome-number/) | [palindrome_number](./other/leetcode/easy/palindrome_number.h) | <font color=green>easy</font> |  ⭐️| ✅ |
+|  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> | ✅ |
+|  9| [回文数](https://leetcode-cn.com/problems/palindrome-number/) | [palindrome_number](./other/leetcode/easy/palindrome_number.h) | <font color=green>easy</font> | ✅ |
 
 
 
