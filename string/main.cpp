@@ -20,6 +20,9 @@
 #include "lengthOfLastWord.h"
 #include "lengthOfLongestSubstring.h"
 #include "longestPalindrome.h"
+#include "zigzag_conversion.h"
+#include "string_to_integer_atoi.h"
+#include "integer_to_roman.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     using namespace std;
@@ -36,5 +39,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_match();
     leetcode::test_addBinary();
     leetcode::test_longestPalindrome();
+    leetcode::test_convert();
+    leetcode::test_myAtoi();
     return 0;
 }

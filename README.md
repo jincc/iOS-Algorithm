@@ -5,11 +5,16 @@
 |  1| [两数之和](https://leetcode-cn.com/problems/two-sum/) | [twoSum](./array/leetcode/easy/twoSum.h) | <font color=green>easy</font> | ✅ |
 |  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedList/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> | ✅ |
 |  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> | ✅ |
-|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font> | ✅ |
+|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font>[需要回看其他解法] | ✅ |
+|  6| [Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag_conversion](./string/leetcode/medium/zigzag_conversion.h) | <font color=orange> medium </font>| ✅ |
 |  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> | ✅ |
+|  8| [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) | [string_to_integer_atoi](./string/leetcode/medium/string_to_integer_atoi.h) | <font color=orange> medium </font> | ✅ |
 |  9| [回文数](https://leetcode-cn.com/problems/palindrome-number/) | [palindrome_number](./other/leetcode/easy/palindrome_number.h) | <font color=green>easy</font> | ✅ |
+|  11  | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [maxArea](./array/leetcode/maxArea.h) | <font color=orange> medium </font> | ✅ |
+|  12  | [整数转罗马数字](https://leetcode-cn.com/problems/integer-to-roman/) | [integer_to_roman](./string/leetcode/medium/integer_to_roman.h) | <font color=orange> medium </font> | ✅ |
 |  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> | ✅ |
 |  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> | ✅ |
+|  15  | [三数之和](https://leetcode-cn.com/problems/3sum/) | [3sum](./array/leetcode/medium/3sum.h) | <font color=orange> medium </font> | ✅ |
 |  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> | ✅ |
 |  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font>  | ✅  |
 |  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> | ✅ |
@@ -218,6 +223,7 @@
 |  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
 |  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> | ✅ |
 |  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> | ✅ |
+|  6| [Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag_conversion](./string/leetcode/medium/zigzag_conversion.h) | <font color=orange> medium </font>| ✅ |
 ## 剑指offer
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |

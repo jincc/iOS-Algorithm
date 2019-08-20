@@ -32,6 +32,7 @@
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 
+#pragma mark - 方法一:双指针前后移动
 int maxArea(const std::vector<int>& height) {
     //1,2,4,3
     //0,1,2,3
@@ -59,4 +60,5 @@ int maxArea(const std::vector<int>& height) {
     }
     return maxarea;
 }
+
 #endif /* maxArea_hpp */

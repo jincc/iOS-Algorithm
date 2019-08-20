@@ -32,6 +32,7 @@
 #include "best_time_to_buy_and_sell_stock_ii.h"
 #include "twoSum_ii.h"
 #include "majorityElement.h"
+#include "3sum.h"
 #include <vector>
 using namespace std;
 int main(int argc, const char * argv[]) {
@@ -41,7 +42,7 @@ int main(int argc, const char * argv[]) {
     cout << "盛最多水的容器 starting......." << endl;
     vector<int> heights = {1,8,6,2,5,4,8,3,7};
     vector<int> heights2 = {1,3,2,5,25,24,5};
-    cout << maxArea(heights2) << endl;
+    cout << maxArea(heights) << endl;
     vector<int> a{0,0,1,1,1,2,2,3,3,4};
     cout << "删除数组中重复项: starting......." << endl;
     int len = removeDuplicates(a);
