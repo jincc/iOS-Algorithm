@@ -33,6 +33,7 @@
 #include "twoSum_ii.h"
 #include "majorityElement.h"
 #include "3sum.h"
+#include "3SumClosest.h"
 #include <vector>
 using namespace std;
 int main(int argc, const char * argv[]) {

@@ -166,6 +166,9 @@
 		093D6BFB22FBA0D000771DEC /* pascals_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle.h; sourceTree = "<group>"; };
 		093D6BFE22FBA5D200771DEC /* pascals_triangle_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle_ii.h; sourceTree = "<group>"; };
 		093D6C0122FC704700771DEC /* best_time_to_buy_and_sell_stock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = best_time_to_buy_and_sell_stock.h; sourceTree = "<group>"; };
+		09421FF2230EE57F00A7BA67 /* generateParenthesis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = generateParenthesis.h; sourceTree = "<group>"; };
+		09421FF6231420AB00A7BA67 /* next_permutation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = next_permutation.h; sourceTree = "<group>"; };
+		09421FFA23142AEB00A7BA67 /* searchRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchRange.h; sourceTree = "<group>"; };
 		0946B01522F68BA50043469D /* FirstNotRepeatingChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstNotRepeatingChar.h; sourceTree = "<group>"; };
 		0946B01822F695CE0043469D /* ReverseSentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseSentence.h; sourceTree = "<group>"; };
 		0946B01B22F6A5BF0043469D /* StrToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrToInt.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 		0969A71B22E607E800CA9347 /* string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = string; sourceTree = BUILT_PRODUCTS_DIR; };
 		0969A71D22E607E800CA9347 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0969A72222E6081500CA9347 /* matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matching.h; sourceTree = "<group>"; };
+		09771DA0230C44C5000F8AC3 /* 3SumClosest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3SumClosest.h; sourceTree = "<group>"; };
+		09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = letter_combinations_of_a_phone_number.h; sourceTree = "<group>"; };
 		0993E17022F3282B001E4308 /* minDepth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minDepth.h; sourceTree = "<group>"; };
 		0993E17322F32CC0001E4308 /* hasPathSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hasPathSum.h; sourceTree = "<group>"; };
 		0993E17622F33B78001E4308 /* preorderTraversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preorderTraversal.h; sourceTree = "<group>"; };
@@ -423,6 +428,7 @@
 			isa = PBXGroup;
 			children = (
 				09132D8C230AF7140017E435 /* 3sum.h */,
+				09771DA0230C44C5000F8AC3 /* 3SumClosest.h */,
 			);
 			path = medium;
 			sourceTree = "<group>";
@@ -468,6 +474,39 @@
 			path = easy;
 			sourceTree = "<group>";
 		};
+		09421FF0230EE56800A7BA67 /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				09421FF1230EE57100A7BA67 /* medium */,
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
+		09421FF1230EE57100A7BA67 /* medium */ = {
+			isa = PBXGroup;
+			children = (
+				09421FF2230EE57F00A7BA67 /* generateParenthesis.h */,
+			);
+			path = medium;
+			sourceTree = "<group>";
+		};
+		09421FF52314209B00A7BA67 /* medium */ = {
+			isa = PBXGroup;
+			children = (
+				09421FF6231420AB00A7BA67 /* next_permutation.h */,
+			);
+			path = medium;
+			sourceTree = "<group>";
+		};
+		09421FF92314275A00A7BA67 /* medium */ = {
+			isa = PBXGroup;
+			children = (
+				3A5C8BDD22E1CEC400354740 /* searchInRotatedSortedArray.h */,
+				09421FFA23142AEB00A7BA67 /* searchRange.h */,
+			);
+			path = medium;
+			sourceTree = "<group>";
+		};
 		0946B02122F6B49E0043469D /* coding-interviews */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +518,7 @@
 		0946B02A22F6B9370043469D /* recursion */ = {
 			isa = PBXGroup;
 			children = (
+				09421FF0230EE56800A7BA67 /* leetcode */,
 				0946B03022F6B9470043469D /* coding-interviews */,
 				0946B02B22F6B9370043469D /* main.cpp */,
 			);
@@ -550,6 +590,22 @@
 			path = string;
 			sourceTree = "<group>";
 		};
+		09771DA3230C4C8D000F8AC3 /* medium */ = {
+			isa = PBXGroup;
+			children = (
+				09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */,
+			);
+			path = medium;
+			sourceTree = "<group>";
+		};
+		09771DA7230C5788000F8AC3 /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				09771DA3230C4C8D000F8AC3 /* medium */,
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
 		0998EB8B22E75FB9005A01B5 /* dp */ = {
 			isa = PBXGroup;
 			children = (
@@ -563,6 +619,7 @@
 		099EAEF322FFBE3D006437BD /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				09421FF52314209B00A7BA67 /* medium */,
 				099EAEF422FFBE43006437BD /* easy */,
 			);
 			path = leetcode;
@@ -637,6 +694,7 @@
 		09FC39202305A3F200F0A2AE /* medium */ = {
 			isa = PBXGroup;
 			children = (
+				3A717DAA22DEFE28002DA2C2 /* swapPairs.h */,
 				09FC39212305A42B00F0A2AE /* addTwoNumbers.h */,
 			);
 			path = medium;
@@ -741,7 +799,7 @@
 		3A5C8BDC22E1CE3500354740 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				3A5C8BDD22E1CEC400354740 /* searchInRotatedSortedArray.h */,
+				09421FF92314275A00A7BA67 /* medium */,
 				3A5C8BE022E1CF9300354740 /* mySqrt.h */,
 				3A5C8BE322E1CFF800354740 /* isPerfectSquare.h */,
 			);
@@ -848,7 +906,6 @@
 			children = (
 				09FC39202305A3F200F0A2AE /* medium */,
 				0929C38022FE75F1006905B4 /* easy */,
-				3A717DAA22DEFE28002DA2C2 /* swapPairs.h */,
 				3A717DB022DF213F002DA2C2 /* detectCycle.h */,
 				3A717DB322DF391C002DA2C2 /* reverseList.h */,
 				3AAD2E6F22E00ADB006078A4 /* isPalindrome.h */,
@@ -861,6 +918,7 @@
 		3AD40CCD22E9B4C7002D60A6 /* backtracking */ = {
 			isa = PBXGroup;
 			children = (
+				09771DA7230C5788000F8AC3 /* leetcode */,
 				0946B03D22F6CF030043469D /* coding-interviews */,
 				3AD40CCE22E9B4C7002D60A6 /* main.cpp */,
 				3AD40CD322E9B517002D60A6 /* eightQueens.h */,

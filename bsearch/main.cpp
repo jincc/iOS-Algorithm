@@ -11,6 +11,7 @@
 #include "searchInRotatedSortedArray.h"
 #include "isPerfectSquare.h"
 #include "mySqrt.h"
+#include "searchRange.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "bsearch starting...............\n";

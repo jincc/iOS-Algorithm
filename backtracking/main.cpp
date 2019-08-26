@@ -10,6 +10,7 @@
 #include "eightQueens.h"
 #include "knapsack.h"
 #include "hasPath.h"
+#include "letter_combinations_of_a_phone_number.h"
 #include <mach/exception_types.h>
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -21,6 +22,8 @@ int main(int argc, const char * argv[]) {
     static const int KNAPSACK[5]={2,2,4,6,3};
     cout << "0-1背包问题" << endl;
     cout << knapsack(KNAPSACK, 5, 9) << endl;
+    
+    leetcode::test_letterCombinations();
     return 0;
 }
 

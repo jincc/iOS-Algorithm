@@ -15,11 +15,19 @@
 |  13| [罗马数字转整数](https://leetcode-cn.com/problems/roman-to-integer/) | [romanToInt](./string/leetcode/easy/romanToInt.h) | <font color=green>easy</font> | ✅ |
 |  14| [最长功能前缀](https://leetcode-cn.com/problems/longest-common-prefix/) | [longestCommonPrefix](./string/leetcode/easy/longestCommonPrefix.h) | <font color=green>easy</font> | ✅ |
 |  15  | [三数之和](https://leetcode-cn.com/problems/3sum/) | [3sum](./array/leetcode/medium/3sum.h) | <font color=orange> medium </font> | ✅ |
+|  16  | [最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest) | [3SumClosest](./array/leetcode/medium/3SumClosest.h) | <font color=orange> medium </font> | ✅ |
+|  17  | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [letter_combinations_of_a_phone_number](./backtracking/leetcode/medium/letter_combinations_of_a_phone_number.h) | <font color=orange> medium </font> | ✅ |
+|  19  | [		删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list)| [removeNthFromEnd](./linkedList/leetcode/removeNthFromEnd.h) | <font color=orange> medium </font>| ✅ |
 |  20   | [有限的括号](https://leetcode-cn.com/problems/valid-parentheses/)| [isValid](./stack+queue/leetcode/easy/isValid.h) | <font color=green>easy</font> | ✅ |
 |  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font>  | ✅  |
+|  22   | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)| [generateParenthesis](./recursion/leetcode/medium/generateParenthesis.h) | <font color=orange> medium </font> | ✅ |
+|  24   | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs)| [swapPairs](./linkedList/leetcode/medium/swapPairs.h) | <font color=orange> medium </font> | ✅ |
 |  26  | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [removeDuplicates](./array/leetcode/easy/removeDuplicates.h)  | <font color=green>easy</font> | ✅ |
 |  27  | [移除元素](https://leetcode-cn.com/problems/remove-element/submissions/) | [removeElement](./array/leetcode/easy/removeElement.h)  | <font color=green>easy</font> | ✅ |
 |  28| [实现 strStr()](https://leetcode-cn.com/problems/implement-strstr/) | [strStr](./string/leetcode/easy/strStr.h) | <font color=green>easy</font> | ✅ |
+|  31| [下一个排列](https://leetcode-cn.com/problems/next-permutation/) | [next_permutation](./other/leetcode/medium/next_permutation.h) | <font color=orange> medium </font>| ✅ |
+|  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/medium/searchInRotatedSortedArray.h) |  <font color=orange> medium </font> | ✅|
+|  34   | [在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)| [searchRange](./bsearch/leetcode/medium/searchRange.h) |  <font color=orange> medium </font> | ✅|
 |  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> | ✅ |
 |  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> | ✅ |
 |  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
@@ -74,7 +82,8 @@
 |  189  | [旋转数组](https://leetcode-cn.com/problems/rotate-array/) | [rotate](./array/leetcode/easy/rotate.h) | <font color=green>easy</font>  | ✅ |
 |  11  | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [maxArea](./array/leetcode/maxArea.h) | ✨✨ | ✅ |
 |  283  | [移动零](https://leetcode-cn.com/problems/move-zeroes/) | [moveZeroes](./array/leetcode/moveZeroes.h) | ✨ | ✅ |
-
+|  15  | [三数之和](https://leetcode-cn.com/problems/3sum/) | [3sum](./array/leetcode/medium/3sum.h) | <font color=orange> medium </font> | ✅ |
+|  16  | [最接近的三数之和](https://leetcode-cn.com/problems/3sum-closest) | [3SumClosest](./array/leetcode/medium/3SumClosest.h) | <font color=orange> medium </font> | ✅ |
 
 ## 剑指Offer
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
@@ -97,7 +106,7 @@
 |  21   | [合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists)| [mergeTwoLists](./linkedList/leetcode/easy/mergeTwoLists.h) | <font color=green>easy</font>  | ✅  |
 |  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font>  | ✅  |
 |  141  | [环形链表](https://leetcode-cn.com/problems/linked-list-cycle)| [hasCycle](./linkedList/leetcode/easy/hasCycle.h) | <font color=green>easy</font>	 | ✅  |
-|  24   | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs)| [swapPairs](./linkedList/leetcode/swapPairs.h) | ✨✨	 | ✅ |
+|  24   | [两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs)| [swapPairs](./linkedList/leetcode/medium/swapPairs.h) | ✨✨	 | ✅ |
 |  142  | [环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii)| [detectCycle](./linkedList/leetcode/detectCycle.h) | ✨✨|✅  |
 |  206  | [	反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)| [reverseList](./linkedList/leetcode/reverseList.h) | ✨ | ✅ |
 |  234  | [		回文链表](https://leetcode-cn.com/problems/palindrome-linked-list)| [isPalindrome](./linkedList/leetcode/isPalindrome.h) | ✨	| ✅   |
@@ -137,7 +146,7 @@
 
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
-|  22   | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)| -- | ✨✨ | ❌ |
+|  22   | [括号生成](https://leetcode-cn.com/problems/generate-parentheses/)| [generateParenthesis](./recursion/leetcode/medium/generateParenthesis.h) | ✨✨ | ✅ |
 
 
 ## 剑指Offer
@@ -158,7 +167,7 @@
 ## leetcode
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
-|  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/searchInRotatedSortedArray.h) | ✨✨ | ✅|
+|  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/medium/searchInRotatedSortedArray.h) | ✨✨ | ✅|
 |  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | ✨ | ✅ |
 |  367   | [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)| [isPerfectSquare](./bsearch/leetcode/isPerfectSquare.h) | ✨ | ✅|
 
@@ -304,12 +313,18 @@
 | 八皇后问题 | [eightQueens](./backtracking/eightQueens.h)|✅|
 | 0-1背包问题 | [knapsack](./backtracking/knapsack.h)|✅|
 
+## leetcode
+| &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;完成度&emsp;  |
+| :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
+|  17  | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [letter_combinations_of_a_phone_number](./backtracking/leetcode/medium/letter_combinations_of_a_phone_number.h) | <font color=orange> medium </font> | ✅ |
+
 
 ## 剑指Offer
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
 |  --   | [剑指Offer（六十五）：矩阵中的路径](https://www.nowcoder.com/practice/c61c6999eecb4b8f88a98f66b273a3cc?tpId=13&tqId=11218&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| -- | ✨  | ❌  |
 |  --   | [剑指Offer（六十六）：机器人的运动范围](https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8?tpId=13&tqId=11219&tPage=4&rp=1&ru=%2Fta%2Fcoding-interviews&qru=%2Fta%2Fcoding-interviews%2Fquestion-ranking)| -- | ✨  | ❌  |
+
 
 ---------------
 # 分治算法

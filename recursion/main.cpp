@@ -11,9 +11,11 @@
 #include "jumpFloor.h"
 #include "jumpFloorII.h"
 #include "rectCover.h"
+#include "generateParenthesis.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     codinginterviews::test_Fibonacci();
     codinginterviews::test_jumpFloor();
+    leetcode::test_generateParenthesis2();
     return 0;
 }
