@@ -12,6 +12,7 @@
 #include "isPerfectSquare.h"
 #include "mySqrt.h"
 #include "searchRange.h"
+#include <set>
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "bsearch starting...............\n";

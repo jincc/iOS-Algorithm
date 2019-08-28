@@ -21,6 +21,7 @@
 #include "palindrome_number.h"
 #include "romanToInt.h"
 #include "next_permutation.h"
+#include "isValidSudoku.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -35,5 +36,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_FindNumbersWithSum();
     codinginterviews::test_FindContinuousSequence();
     codinginterviews::test_GetUglyNumber_Solution();
+    
+    leetcode::test_isValidSudoku();
     return 0;
 }
