@@ -19,18 +19,20 @@
  
   非稳定排序
  */
+
 void selectSort(int nums[], int n){
     for (int i=0; i<n; i++) {
-        int minIndex = i;
-        for (int j=i+1; j < n; j++) {
-            if (nums[j] < nums[minIndex]) {
-                minIndex = j;
+        int min = i;
+        for (int j=i+1; j<n; j++) {
+            if (nums[j] < nums[min]) {
+                min = j;
             }
         }
-        if (minIndex == i)
-            continue;
-        std::swap(nums[i], nums[minIndex]); 
+        if (min != i) {
+            std::swap(nums[min], nums[i]);
+        }
     }
 }
+
 
 #endif /* selectSort_hpp */

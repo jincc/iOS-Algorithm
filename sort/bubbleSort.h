@@ -34,20 +34,17 @@ void bubbleSort(int nums[] ,int n ){
     if (n <= 1) {
         return;
     }
-
     for (int i=0;i<n;i++){
-        bool change = false;
+        bool isFinished = true;
         for (int j=0; j<n-i-1; j++) {
             if (nums[j] > nums[j+1]) {
-                int temp = nums[j];
-                nums[j] = nums[j+1];
-                nums[j+1] = temp;
-                change = true;
+                isFinished = false;
+                std::swap(nums[j], nums[j+1]);
             }
         }
-        if (!change) break;
+        if (isFinished) {
+            break;
+        }
     }
 }
-
-
 #endif /* bubbleSort_hpp */

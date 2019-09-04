@@ -15,6 +15,10 @@
 #include "kthSmallest.h"
 #include "countingSort.h"
 #include "heapSort.h"
+#include "bucketSort.h"
+#include "merge_intervals.h"
+#include "sort_colors.h"
+using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -23,7 +27,7 @@ int main(int argc, const char * argv[]) {
 #pragma mark - o(n^2)
 //    bubbleSort(num, 8);
 //    insertSort(num,8);
-//    selectSort(num, 8);
+    selectSort(num, 8);
     
 #pragma mark -
     
@@ -32,6 +36,8 @@ int main(int argc, const char * argv[]) {
 //    int n = kthSmallest(num, 8, 0, 7, 5);
     
 //    countingSort(num, 8);
-    heapSort(num, 8);
+//    heapSort(num, 8);
+    test_bucketsort();
+    leetcode::test_merge_intervals();
     return 0;
 }

@@ -13,6 +13,8 @@
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
 |  17  | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [letter_combinations_of_a_phone_number](./backtracking/leetcode/medium/letter_combinations_of_a_phone_number.h) | <font color=orange> medium </font> | ✅ |
+|  39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/)| [combinationSum](./backtracking/leetcode/medium/combinationSum.h) |  <font color=orange> medium </font> | ✅|
+|  46   | [全排列](https://leetcode-cn.com/problems/permutations/)| [permutations](./backtracking/leetcode/medium/permutations.h) |  <font color=orange> medium </font> | ✅|
 
 
 ### 剑指Offer

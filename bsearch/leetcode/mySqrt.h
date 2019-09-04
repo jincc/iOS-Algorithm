@@ -42,13 +42,14 @@ int mySqrt(int x) {
     //the sqt is not greater than x/2+1
     int end=x/2+1;
     while (start <= end) {
-        int mid = start + (end-start)/2;
-        long long sq = (long long)mid * (long long)mid;
-        if (sq == x) return mid;
-        if (sq < x) {
+        int mid = start + ((end-start)>>1);
+        
+        if (mid < x / mid) {//用除法不用乘法防止越界
             start = mid+1;
+        }else if (mid > x / mid){
+            end = mid-1;
         }else{
-            end = mid -1;
+            return mid;
         }
     }
     return end;

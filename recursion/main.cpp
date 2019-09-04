@@ -12,6 +12,8 @@
 #include "jumpFloorII.h"
 #include "rectCover.h"
 #include "generateParenthesis.h"
+#include "permutations.h"
+#include "longestUnivaluePath.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     codinginterviews::test_Fibonacci();

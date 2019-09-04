@@ -163,6 +163,8 @@
 /* Begin PBXFileReference section */
 		09132D88230AECBF0017E435 /* integer_to_roman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = integer_to_roman.h; sourceTree = "<group>"; };
 		09132D8C230AF7140017E435 /* 3sum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3sum.h; sourceTree = "<group>"; };
+		091A5E14231EB6FC000BEFAF /* merge_intervals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = merge_intervals.h; sourceTree = "<group>"; };
+		091A5E17231EC2AE000BEFAF /* sort_colors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sort_colors.h; sourceTree = "<group>"; };
 		091B8A7122F48FD50050FB4C /* IsBalanced_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsBalanced_Solution.h; sourceTree = "<group>"; };
 		0922310622FA445300F0F5AF /* removeElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = removeElement.h; sourceTree = "<group>"; };
 		0922310922FA497500F0F5AF /* searchInsert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInsert.h; sourceTree = "<group>"; };
@@ -215,6 +217,10 @@
 		0998EB8A22E75FB9005A01B5 /* dp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dp; sourceTree = BUILT_PRODUCTS_DIR; };
 		0998EB8C22E75FB9005A01B5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0998EB9122E75FEC005A01B5 /* knapsack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = knapsack.h; sourceTree = "<group>"; };
+		099E1B2923200FC2000C4FC3 /* bsearch_findFirstElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findFirstElement.h; sourceTree = "<group>"; };
+		099E1B2C2320142D000C4FC3 /* bsearch_findLastElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findLastElement.h; sourceTree = "<group>"; };
+		099E1B2F23201572000C4FC3 /* bsearch_findFirstElementGreaterOrEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findFirstElementGreaterOrEqual.h; sourceTree = "<group>"; };
+		099E1B322320175F000C4FC3 /* bsearch_findLastElementLessOrEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findLastElementLessOrEqual.h; sourceTree = "<group>"; };
 		099EAEF022FFB55A006437BD /* MinStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinStack.h; sourceTree = "<group>"; };
 		099EAEF522FFBED0006437BD /* reverse_integer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverse_integer.h; sourceTree = "<group>"; };
 		099EAEF822FFC4C5006437BD /* palindrome_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palindrome_number.h; sourceTree = "<group>"; };
@@ -222,7 +228,6 @@
 		09A208B32309990C00094088 /* string_to_integer_atoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string_to_integer_atoi.h; sourceTree = "<group>"; };
 		09ABED832300E22800113589 /* romanToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = romanToInt.h; sourceTree = "<group>"; };
 		09ABED872300EE0900113589 /* longestCommonPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longestCommonPrefix.h; sourceTree = "<group>"; };
-		09ACF0242316D03F004A4A61 /* combinationSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combinationSum.h; sourceTree = "<group>"; };
 		09ACF02B2316DB0B004A4A61 /* divideandconquer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = divideandconquer; sourceTree = BUILT_PRODUCTS_DIR; };
 		09ACF02D2316DB0B004A4A61 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		09ACF0322316DB2C004A4A61 /* reversedOrderPairs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reversedOrderPairs.h; sourceTree = "<group>"; };
@@ -231,6 +236,10 @@
 		09AE483F22EDED23003B4450 /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
 		09BEFF3622E141D300FF7CD3 /* kthSmallest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kthSmallest.h; sourceTree = "<group>"; };
 		09C5E0D82301C30300EDD63B /* strStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strStr.h; sourceTree = "<group>"; };
+		09C8705F231D5EBE00ABE173 /* bucketSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bucketSort.h; sourceTree = "<group>"; };
+		09CA9FAD2318A7A500BE2B39 /* combinationSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = combinationSum.h; sourceTree = "<group>"; };
+		09CA9FAE2318A7A500BE2B39 /* permutations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = permutations.h; sourceTree = "<group>"; };
+		09CA9FAF2319744400BE2B39 /* longestUnivaluePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longestUnivaluePath.h; sourceTree = "<group>"; };
 		09CB5B9C22E0B5E6007A1133 /* mergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mergeSort.h; sourceTree = "<group>"; };
 		09CB5B9F22E0C70D007A1133 /* quickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
 		09E18E4422F514A0002D0227 /* GetNext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNext.h; sourceTree = "<group>"; };
@@ -452,9 +461,17 @@
 			children = (
 				09132D8C230AF7140017E435 /* 3sum.h */,
 				09771DA0230C44C5000F8AC3 /* 3SumClosest.h */,
-				09ACF0242316D03F004A4A61 /* combinationSum.h */,
 			);
 			path = medium;
+			sourceTree = "<group>";
+		};
+		091A5E13231EB6E4000BEFAF /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				091A5E14231EB6FC000BEFAF /* merge_intervals.h */,
+				091A5E17231EC2AE000BEFAF /* sort_colors.h */,
+			);
+			path = leetcode;
 			sourceTree = "<group>";
 		};
 		0924B8E522F9D88E00435980 /* easy */ = {
@@ -510,6 +527,7 @@
 			isa = PBXGroup;
 			children = (
 				09421FF2230EE57F00A7BA67 /* generateParenthesis.h */,
+				09CA9FAF2319744400BE2B39 /* longestUnivaluePath.h */,
 			);
 			path = medium;
 			sourceTree = "<group>";
@@ -618,6 +636,8 @@
 		09771DA3230C4C8D000F8AC3 /* medium */ = {
 			isa = PBXGroup;
 			children = (
+				09CA9FAD2318A7A500BE2B39 /* combinationSum.h */,
+				09CA9FAE2318A7A500BE2B39 /* permutations.h */,
 				09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */,
 			);
 			path = medium;
@@ -808,6 +828,7 @@
 		3A5C8BB922E06F6900354740 /* sort */ = {
 			isa = PBXGroup;
 			children = (
+				091A5E13231EB6E4000BEFAF /* leetcode */,
 				3A5C8BBA22E06F6900354740 /* main.cpp */,
 				3A5C8BBF22E0795500354740 /* bubbleSort.h */,
 				3A5C8BC222E0879C00354740 /* insertSort.h */,
@@ -815,6 +836,7 @@
 				09CB5B9C22E0B5E6007A1133 /* mergeSort.h */,
 				09CB5B9F22E0C70D007A1133 /* quickSort.h */,
 				09BEFF3622E141D300FF7CD3 /* kthSmallest.h */,
+				09C8705F231D5EBE00ABE173 /* bucketSort.h */,
 				3A5C8BC822E16B8600354740 /* countingSort.h */,
 				3A6CF75D22E5BEE0004B8775 /* heapSort.h */,
 			);
@@ -827,6 +849,10 @@
 				3A5C8BDC22E1CE3500354740 /* leetcode */,
 				3A5C8BD122E1A7AE00354740 /* main.cpp */,
 				3A5C8BD622E1A7B900354740 /* bsearch.h */,
+				099E1B2923200FC2000C4FC3 /* bsearch_findFirstElement.h */,
+				099E1B2C2320142D000C4FC3 /* bsearch_findLastElement.h */,
+				099E1B2F23201572000C4FC3 /* bsearch_findFirstElementGreaterOrEqual.h */,
+				099E1B322320175F000C4FC3 /* bsearch_findLastElementLessOrEqual.h */,
 			);
 			path = bsearch;
 			sourceTree = "<group>";

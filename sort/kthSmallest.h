@@ -10,7 +10,10 @@
 #define kthSmallest_h
 
 /*
-如何在o(n)内查找一个无序数组中的第K大元素.利用快排的思想，将数组一分为3，然后再次分割，最终定位到kth.
+ 如何在o(n)内查找一个无序数组中的第K大元素.
+ 
+ 
+ 利用快排分区的思想，将数组一分为3，然后根据pivot和kth的位置关系，继续寻找，最终定位到kth.
  
  */
 
@@ -42,7 +45,5 @@ int kthSmallest(int nums[], int n,int start, int end, int kth){
         return kthSmallest(nums, n, start, pivot-1, kth);
     }
 }
-
-
 
 #endif /* kthSmallest_h */
