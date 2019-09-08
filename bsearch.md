@@ -35,5 +35,9 @@
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
 |  33   | [搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array)| [searchInRotatedSortedArray](./bsearch/leetcode/medium/searchInRotatedSortedArray.h) | ✨✨ | ✅|
+|  50 | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/solution/powx-n-by-leetcode/) | [powx](./bsearch/leetcode/medium/powx.h) | <font color=orange> medium </font> | ✅ |
 |  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | ✨ | ✅ |
+|  74 | [搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/) | [search_a_2d_matrix](./bsearch/leetcode/medium/search_a_2d_matrix.h) | <font color=orange> medium </font> | ✅ |
+|  81 | [搜索旋转排序数组II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/) | [searchInRotatedSortedArrayII](./bsearch/leetcode/medium/searchInRotatedSortedArrayII.h) | <font color=orange> medium </font> | ✅ |
+|  153 | [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | [find_minimum_in_rotated_sorted_array](./bsearch/leetcode/medium/find_minimum_in_rotated_sorted_array.h) | <font color=orange> medium </font> | ✅ |
 |  367   | [有效的完全平方数](https://leetcode-cn.com/problems/valid-perfect-square/)| [isPerfectSquare](./bsearch/leetcode/isPerfectSquare.h) | ✨ | ✅|

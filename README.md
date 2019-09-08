@@ -32,6 +32,7 @@
 |  36   | [有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)| [isValidSudoku](./other/leetcode/medium/isValidSudoku.h) |  <font color=orange> medium </font> | ✅|
 |  39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/)| [combinationSum](./backtracking/leetcode/medium/combinationSum.h) |  <font color=orange> medium </font> | ✅|
 |  46   | [全排列](https://leetcode-cn.com/problems/permutations/)| [permutations](./backtracking/leetcode/medium/permutations.h) |  <font color=orange> medium </font> | ✅|
+|  50 | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/solution/powx-n-by-leetcode/) | [powx](./bsearch/leetcode/medium/powx.h) | <font color=orange> medium </font> | ✅ |
 |  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> | ✅ |
 |  56  | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge_intervals](./sort/leetcode/merge_intervals.h) | <font color=orange> medium </font> | ✅ |
 |  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
@@ -39,10 +40,13 @@
 |  67  | [二进制求和](https://leetcode-cn.com/problems/add-binary/) | [addBinary](./array/leetcode/easy/addBinary.h) | <font color=green>easy</font> | ✅ |
 |  69   | [x 的平方根](https://leetcode-cn.com/problems/sqrtx/%E2%80%A8)| [mySqrt](./bsearch/leetcode/mySqrt.h) | <font color=green>easy</font> | ✅ |
 |  70   | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)| [climbStairs](./dp/leetcode/easy/climbStairs.h) | <font color=green>easy</font> | ✅ |
+|  74 | [搜索二维矩阵](https://leetcode-cn.com/problems/search-a-2d-matrix/) | [search_a_2d_matrix](./bsearch/leetcode/medium/search_a_2d_matrix.h) | <font color=orange> medium </font> | ✅ |
 |  75  | [颜色分类](https://leetcode-cn.com/problems/sort-colors/) | [sort_colors](./sort/leetcode/sort_colors.h) | <font color=orange> medium </font> | ✅ |
+|  81 | [搜索旋转排序数组II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/) | [searchInRotatedSortedArrayII](./bsearch/leetcode/medium/searchInRotatedSortedArrayII.h) | <font color=orange> medium </font> | ✅ |
 |  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font> | ✅  |
 |  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> | ✅ |
 |  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> | ✅ |
+|  153 | [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | [find_minimum_in_rotated_sorted_array](./bsearch/leetcode/medium/find_minimum_in_rotated_sorted_array.h) | <font color=orange> medium </font> | ✅ |
 |  687   | [最长同值路径](https://leetcode-cn.com/problems/longest-univalue-path/)| [longestUnivaluePath](./recursion/leetcode/medium/longestUnivaluePath.h) | <font color=green>easy</font> | ✅ |
 
 
@@ -61,47 +65,14 @@
 
 # **算法思想**
 
-## [递归](./recursion.md) 🚶🚶🚶🚶
-
-### 什么是递归？
-
-
-试想一下电影院自己在第几排的场景, 想要知道我在第几排，那么就要去问前面的人他处于第几排，那么前面的人又怎么知道他自己在第几排呢？那自然是他也要去问他前面的人咯.
-
-这就是递归的场景，去的过程叫做<font size=5 color=red>“递”</font>, 回来的过程叫做<font size=5 color=red>“归”</font>，有来有回。
-
-
-![](./res/recursion_example.png)
-
-<font size=5 color=red>递归其实就是利用栈的数据结构，再加上一些简单的逻辑算法从而完成了问题的求解。只不过这个栈是由系统来提供的，我们只是无感知罢了.</font>
-
-
-
-### 适合场景
-
-满足下面两点：
-
-* 一个问题的解可以分解为几个子问题(规模更小的问题)的解, 并且子问题和问题除了数据规模不一样，求解思路是完全一样的。
-* 存在终止条件
-
-
-那么如何编写递归代码呢？
-
-关键在于找到将大问题分解为小问题的规律，写出递归公式，然后在推敲出终止条件。
-
-递归代码简洁高效，但是容易出现堆栈溢出，重复计算，函数调用耗时多，空间复杂度高等问题。一般嵌套比较少的场景可以使用递归。
-
-
-### [递归题目](./recursion.md)
-
-
+## [递归](./recursion.md) 
 
 ## [排序](./sort.md)
 
-## [二分查找](./bsearch.md)
+## [二分查找](./bsearch.md) 🚶🚶🚶🚶
 
 
-# 解决多阶段决策最优解模型的算法
+<!--# 解决多阶段决策最优解模型的算法
 解决问题的过程中，需要经过多个决策阶段，每个决策都会对应一个状态。我们寻找一组决策序列，经过这组决策序列，能够产生最终期望的最优值。我们把这种问题模型称为<font size=5 color=red>多阶段决策最优解模型</font>. DP，回溯，贪心都可以解决这类问题.
 
 利用动态规划解决的问题，需要满足三个特征：
@@ -119,7 +90,7 @@
 所以贪心算法能否解决算法问题的关键在于: 局部最优能不能达到全局最优？ 
 
 
-回溯算法是”万金油“。基本上贪心和dp能解决的问题，回溯都能解决。回溯相当于穷举搜索，列举出所有的情况，然后对比得到最优解。不过回溯的复杂度一般都是指数级的，只能用来解决小规模数据的问题。
+回溯算法是”万金油“。基本上贪心和dp能解决的问题，回溯都能解决。回溯相当于穷举搜索，列举出所有的情况，然后对比得到最优解。不过回溯的复杂度一般都是指数级的，只能用来解决小规模数据的问题。-->
 
 
 ## [动态规划](./dp.md)

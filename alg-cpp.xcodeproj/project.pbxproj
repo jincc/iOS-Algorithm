@@ -201,6 +201,7 @@
 		0946B05322F6E6E10043469D /* printMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = printMatrix.h; sourceTree = "<group>"; };
 		0946B05622F706A00043469D /* GetLeastNumbers_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetLeastNumbers_Solution.h; sourceTree = "<group>"; };
 		0946B05922F711AC0043469D /* NumberOf1Between1AndN_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberOf1Between1AndN_Solution.h; sourceTree = "<group>"; };
+		095F60122322B3390072CF0C /* searchInRotatedSortedArrayII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInRotatedSortedArrayII.h; sourceTree = "<group>"; };
 		0965B3CB23045219009A153E /* lengthOfLastWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lengthOfLastWord.h; sourceTree = "<group>"; };
 		0965B3CE23045B1C009A153E /* addBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addBinary.h; sourceTree = "<group>"; };
 		0965B3D223046663009A153E /* climbStairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = climbStairs.h; sourceTree = "<group>"; };
@@ -208,8 +209,11 @@
 		0969A71B22E607E800CA9347 /* string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = string; sourceTree = BUILT_PRODUCTS_DIR; };
 		0969A71D22E607E800CA9347 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0969A72222E6081500CA9347 /* matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matching.h; sourceTree = "<group>"; };
+		096E161723215E7300444948 /* powx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = powx.h; sourceTree = "<group>"; };
+		096E161A2321681C00444948 /* search_a_2d_matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = search_a_2d_matrix.h; sourceTree = "<group>"; };
 		09771DA0230C44C5000F8AC3 /* 3SumClosest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3SumClosest.h; sourceTree = "<group>"; };
 		09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = letter_combinations_of_a_phone_number.h; sourceTree = "<group>"; };
+		098F84CC23234824001219CB /* find_minimum_in_rotated_sorted_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = find_minimum_in_rotated_sorted_array.h; sourceTree = "<group>"; };
 		0993E17022F3282B001E4308 /* minDepth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minDepth.h; sourceTree = "<group>"; };
 		0993E17322F32CC0001E4308 /* hasPathSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hasPathSum.h; sourceTree = "<group>"; };
 		0993E17622F33B78001E4308 /* preorderTraversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preorderTraversal.h; sourceTree = "<group>"; };
@@ -545,7 +549,11 @@
 			isa = PBXGroup;
 			children = (
 				3A5C8BDD22E1CEC400354740 /* searchInRotatedSortedArray.h */,
+				095F60122322B3390072CF0C /* searchInRotatedSortedArrayII.h */,
+				098F84CC23234824001219CB /* find_minimum_in_rotated_sorted_array.h */,
 				09421FFA23142AEB00A7BA67 /* searchRange.h */,
+				096E161723215E7300444948 /* powx.h */,
+				096E161A2321681C00444948 /* search_a_2d_matrix.h */,
 			);
 			path = medium;
 			sourceTree = "<group>";

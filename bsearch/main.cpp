@@ -16,6 +16,10 @@
 #include "isPerfectSquare.h"
 #include "mySqrt.h"
 #include "searchRange.h"
+#include "powx.h"
+#include "search_a_2d_matrix.h"
+#include "searchInRotatedSortedArrayII.h"
+#include "find_minimum_in_rotated_sorted_array.h"
 #include <set>
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -41,5 +45,7 @@ int main(int argc, const char * argv[]) {
     std::cout << "isPerfectSquare...............\n";
     std::cout << isPerfectSquare(16) << std::endl;
     std::cout << mySqrt(6) << std::endl;
+    
+    leetcode::test_pow();
     return 0;
 }
