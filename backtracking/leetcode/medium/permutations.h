@@ -34,6 +34,16 @@
  */
 namespace leetcode {
     using namespace std;
+    /*
+     思路:符合"在一组可能的解中，选出符合期望的结果"题型，首先联想到回溯算法。
+     
+     我们将求解全排列求解过程，划分为N个阶段.
+     每个阶段我们穷举出所有可能的情况,即在数组中选择一个数:
+        1. 如果是已经选择过的直接掉过
+        2. 如果未选中，进入下一轮阶段。
+     
+     直到N次排列完成.
+     */
     class Solution_46 {
     public:
         vector<vector<int>> permute(vector<int>& nums) {

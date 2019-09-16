@@ -1,21 +1,30 @@
 数独，八皇后，0-1背包，正则表达式, 图的着色，旅行商，全排列
 
 ---------------
-## 回溯算法
-### <font color=red>经典题型</font>
+# 回溯算法
 
-| &emsp;题型&emsp; |  答案链接 | 完成度 |
-| :--: | :----------------------------------------------------------- | :--------: |
-| 八皇后问题 | [eightQueens](./backtracking/eightQueens.h)|✅|
-| 0-1背包问题 | [knapsack](./backtracking/knapsack.h)|✅|
+回溯算法在很多时候都应用在"搜索"这类问题上,即<font size=5 color=red>在一组可能的解中，搜索满足期望的解.</font>
+
+
+我们把问题的求解过程分成多个阶段，每一个阶段都会面对一个分叉路口，我们先随意选择一个路，当发现这条路走不通的时候，在回退到上一个分叉路口，选另一种走法继续走。另外可以通过<font size=5 color=red>剪枝</font>提高搜索效率.
+
+
+
+
+# <font color=red>经典题型</font>
+
+## [八皇后问题](./backtracking/eightQueens.h)
+## [0-1背包问题](./backtracking/knapsack.h)
+## [字符串匹配](./backtracking/Pattern.h)
 
 ### leetcode
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp; | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
 |  17  | [电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | [letter_combinations_of_a_phone_number](./backtracking/leetcode/medium/letter_combinations_of_a_phone_number.h) | <font color=orange> medium </font> | ✅ |
 |  39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/)| [combinationSum](./backtracking/leetcode/medium/combinationSum.h) |  <font color=orange> medium </font> | ✅|
+|  40   | [组合总和II](https://leetcode-cn.com/problems/combination-sum-ii/)| [combinationSumII](./backtracking/leetcode/medium/combinationSumII.h) |  <font color=orange> medium </font> | ✅|
 |  46   | [全排列](https://leetcode-cn.com/problems/permutations/)| [permutations](./backtracking/leetcode/medium/permutations.h) |  <font color=orange> medium </font> | ✅|
-
+|  47   | [全排列II](https://leetcode-cn.com/problems/permutations-ii/)| [permutationsii](./backtracking/leetcode/medium/permutationsii.h) |  <font color=orange> medium </font> | ✅|
 
 ### 剑指Offer
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |

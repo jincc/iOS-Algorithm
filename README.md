@@ -31,9 +31,12 @@
 |  35  | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [searchInsert](./array/leetcode/easy/searchInsert.h)  | <font color=green>easy</font> | ✅ |
 |  36   | [有效的数独](https://leetcode-cn.com/problems/valid-sudoku/)| [isValidSudoku](./other/leetcode/medium/isValidSudoku.h) |  <font color=orange> medium </font> | ✅|
 |  39   | [组合总和](https://leetcode-cn.com/problems/combination-sum/)| [combinationSum](./backtracking/leetcode/medium/combinationSum.h) |  <font color=orange> medium </font> | ✅|
+|  40   | [组合总和II](https://leetcode-cn.com/problems/combination-sum-ii/)| [combinationSumII](./backtracking/leetcode/medium/combinationSumII.h) |  <font color=orange> medium </font> | ✅|
 |  46   | [全排列](https://leetcode-cn.com/problems/permutations/)| [permutations](./backtracking/leetcode/medium/permutations.h) |  <font color=orange> medium </font> | ✅|
+|  47   | [全排列II](https://leetcode-cn.com/problems/permutations-ii/)| [permutationsii](./backtracking/leetcode/medium/permutationsii.h) |  <font color=orange> medium </font> | ✅|
 |  50 | [Pow(x, n)](https://leetcode-cn.com/problems/powx-n/solution/powx-n-by-leetcode/) | [powx](./bsearch/leetcode/medium/powx.h) | <font color=orange> medium </font> | ✅ |
 |  53  | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [maxSubArray](./array/leetcode/easy/maxSubArray.h)  | <font color=green>easy</font> | ✅ |
+|  55  | [跳跃游戏](https://leetcode-cn.com/problems/jump-game/) | [jump_game](./greed/leetcode/medium/jump_game.h) | <font color=orange> medium </font>  | ✅ |
 |  56  | [合并区间](https://leetcode-cn.com/problems/merge-intervals/) | [merge_intervals](./sort/leetcode/merge_intervals.h) | <font color=orange> medium </font> | ✅ |
 |  58| [最后一个单词的长度](https://leetcode-cn.com/problems/length-of-last-word) | [lengthOfLastWord](./string/leetcode/easy/lengthOfLastWord.h) | <font color=green>easy</font> | ✅ |
 |  66  | [加一](https://leetcode-cn.com/problems/plus-one/) | [plusOne](./array/leetcode/easy/plusOne.h) | <font color=green>easy</font> | ✅ |
@@ -46,6 +49,7 @@
 |  83   | [删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)| [deleteDuplicates](./linkedList/leetcode/easy/deleteDuplicates.h) | <font color=green>easy</font> | ✅  |
 |  88  | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [merge](./array/leetcode/easy/merge.h) | <font color=green>easy</font> | ✅ |
 |  100  | [相同的树](https://leetcode-cn.com/problems/same-tree/) | [isSameTree](./tree/leetcode/easy/isSameTree.h) | <font color=green>easy</font> | ✅ |
+|  134  | [加油站](https://leetcode-cn.com/problems/gas-station/) | [gas_station](./greed/leetcode/medium/gas_station.h) | <font color=orange> medium </font>  | ✅ |
 |  153 | [寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/) | [find_minimum_in_rotated_sorted_array](./bsearch/leetcode/medium/find_minimum_in_rotated_sorted_array.h) | <font color=orange> medium </font> | ✅ |
 |  687   | [最长同值路径](https://leetcode-cn.com/problems/longest-univalue-path/)| [longestUnivaluePath](./recursion/leetcode/medium/longestUnivaluePath.h) | <font color=green>easy</font> | ✅ |
 
@@ -65,11 +69,13 @@
 
 # **算法思想**
 
-## [递归](./recursion.md) 
+## [递归](./recursion.md) ✅
 
-## [排序](./sort.md)
+## [排序](./sort.md) ✅
 
-## [二分查找](./bsearch.md) 🚶🚶🚶🚶
+## [二分查找](./bsearch.md) ✅
+
+## [哈希算法](./hash.md)❌
 
 
 <!--# 解决多阶段决策最优解模型的算法
@@ -93,13 +99,13 @@
 回溯算法是”万金油“。基本上贪心和dp能解决的问题，回溯都能解决。回溯相当于穷举搜索，列举出所有的情况，然后对比得到最优解。不过回溯的复杂度一般都是指数级的，只能用来解决小规模数据的问题。-->
 
 
+## [贪心](./greed.md)🚶🚶🚶🚶❌
+## [回溯算法](./backtracking.md)
+## [分治算法](./divideandconquer.md)
 ## [动态规划](./dp.md)
 
-## [贪心](./greed.md)
 
-## [回溯算法](./backtracking.md)
-
-## [分治算法](./divideandconquer.md)
+## [字符串匹配](./stringmatch.md)
 
 
 ## [其他](./other.md)

@@ -12,6 +12,7 @@
 		0969A71E22E607E800CA9347 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0969A71D22E607E800CA9347 /* main.cpp */; };
 		0998EB8D22E75FB9005A01B5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0998EB8C22E75FB9005A01B5 /* main.cpp */; };
 		09ACF02E2316DB0B004A4A61 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09ACF02D2316DB0B004A4A61 /* main.cpp */; };
+		09CE1EBD23269D4200001ECB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09CE1EBC23269D4200001ECB /* main.cpp */; };
 		3A5C8B8E22E0103B00354740 /* LRUV2.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5C8B8C22E0103B00354740 /* LRUV2.h */; };
 		3A5C8B8F22E0103B00354740 /* LRUV1.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A5C8B8D22E0103B00354740 /* LRUV1.h */; };
 		3A5C8B9722E0109200354740 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8B9622E0109200354740 /* main.cpp */; };
@@ -69,6 +70,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		09ACF0292316DB0B004A4A61 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		09CE1EB823269D4200001ECB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -182,6 +192,7 @@
 		09421FF6231420AB00A7BA67 /* next_permutation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = next_permutation.h; sourceTree = "<group>"; };
 		09421FFA23142AEB00A7BA67 /* searchRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchRange.h; sourceTree = "<group>"; };
 		09421FFD231583FC00A7BA67 /* isValidSudoku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidSudoku.h; sourceTree = "<group>"; };
+		0942542C232942D3006B83E9 /* gas_station.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gas_station.h; sourceTree = "<group>"; };
 		0946B01522F68BA50043469D /* FirstNotRepeatingChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstNotRepeatingChar.h; sourceTree = "<group>"; };
 		0946B01822F695CE0043469D /* ReverseSentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseSentence.h; sourceTree = "<group>"; };
 		0946B01B22F6A5BF0043469D /* StrToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrToInt.h; sourceTree = "<group>"; };
@@ -201,6 +212,8 @@
 		0946B05322F6E6E10043469D /* printMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = printMatrix.h; sourceTree = "<group>"; };
 		0946B05622F706A00043469D /* GetLeastNumbers_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetLeastNumbers_Solution.h; sourceTree = "<group>"; };
 		0946B05922F711AC0043469D /* NumberOf1Between1AndN_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberOf1Between1AndN_Solution.h; sourceTree = "<group>"; };
+		0947D1AB232A97DB001DABA0 /* combinationSumII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combinationSumII.h; sourceTree = "<group>"; };
+		0947D1AE232AA674001DABA0 /* permutationsii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = permutationsii.h; sourceTree = "<group>"; };
 		095F60122322B3390072CF0C /* searchInRotatedSortedArrayII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInRotatedSortedArrayII.h; sourceTree = "<group>"; };
 		0965B3CB23045219009A153E /* lengthOfLastWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lengthOfLastWord.h; sourceTree = "<group>"; };
 		0965B3CE23045B1C009A153E /* addBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addBinary.h; sourceTree = "<group>"; };
@@ -221,6 +234,7 @@
 		0998EB8A22E75FB9005A01B5 /* dp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dp; sourceTree = BUILT_PRODUCTS_DIR; };
 		0998EB8C22E75FB9005A01B5 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0998EB9122E75FEC005A01B5 /* knapsack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = knapsack.h; sourceTree = "<group>"; };
+		099B7AD02327F8BC00AE77F5 /* jump_game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jump_game.h; sourceTree = "<group>"; };
 		099E1B2923200FC2000C4FC3 /* bsearch_findFirstElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findFirstElement.h; sourceTree = "<group>"; };
 		099E1B2C2320142D000C4FC3 /* bsearch_findLastElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findLastElement.h; sourceTree = "<group>"; };
 		099E1B2F23201572000C4FC3 /* bsearch_findFirstElementGreaterOrEqual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bsearch_findFirstElementGreaterOrEqual.h; sourceTree = "<group>"; };
@@ -238,6 +252,7 @@
 		09ACF0332316DB2C004A4A61 /* closestPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = closestPair.h; sourceTree = "<group>"; };
 		09AE483C22EDE808003B4450 /* plusOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plusOne.h; sourceTree = "<group>"; };
 		09AE483F22EDED23003B4450 /* rotate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		09B8775D2327255F0099542C /* region_overlapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = region_overlapping.h; sourceTree = "<group>"; };
 		09BEFF3622E141D300FF7CD3 /* kthSmallest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kthSmallest.h; sourceTree = "<group>"; };
 		09C5E0D82301C30300EDD63B /* strStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = strStr.h; sourceTree = "<group>"; };
 		09C8705F231D5EBE00ABE173 /* bucketSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bucketSort.h; sourceTree = "<group>"; };
@@ -246,6 +261,10 @@
 		09CA9FAF2319744400BE2B39 /* longestUnivaluePath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longestUnivaluePath.h; sourceTree = "<group>"; };
 		09CB5B9C22E0B5E6007A1133 /* mergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mergeSort.h; sourceTree = "<group>"; };
 		09CB5B9F22E0C70D007A1133 /* quickSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quickSort.h; sourceTree = "<group>"; };
+		09CE1EBA23269D4200001ECB /* greed */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = greed; sourceTree = BUILT_PRODUCTS_DIR; };
+		09CE1EBC23269D4200001ECB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		09CE1EC123269FA800001ECB /* shared_the_sweets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shared_the_sweets.h; sourceTree = "<group>"; };
+		09CE1EC42326A87C00001ECB /* coin_dispenser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coin_dispenser.h; sourceTree = "<group>"; };
 		09E18E4422F514A0002D0227 /* GetNext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNext.h; sourceTree = "<group>"; };
 		09E18E4722F52438002D0227 /* isSymmetrical.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isSymmetrical.h; sourceTree = "<group>"; };
 		09E18E4A22F534EC002D0227 /* VerifySquenceOfBST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifySquenceOfBST.h; sourceTree = "<group>"; };
@@ -276,6 +295,7 @@
 		3A091A7122F41A1500EFA79C /* Clone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clone.h; sourceTree = "<group>"; };
 		3A091A7422F41C4200EFA79C /* FindFirstCommonNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindFirstCommonNode.h; sourceTree = "<group>"; };
 		3A091A7722F4201800EFA79C /* deleteDuplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleteDuplication.h; sourceTree = "<group>"; };
+		3A207EC1232A3133001FB923 /* Pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pattern.h; sourceTree = "<group>"; };
 		3A5C8B8C22E0103B00354740 /* LRUV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUV2.h; sourceTree = "<group>"; };
 		3A5C8B8D22E0103B00354740 /* LRUV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUV1.h; sourceTree = "<group>"; };
 		3A5C8B9422E0109200354740 /* stack+queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stack+queue"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -381,6 +401,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		09ACF0282316DB0B004A4A61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE1EB723269D4200001ECB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -645,7 +672,9 @@
 			isa = PBXGroup;
 			children = (
 				09CA9FAD2318A7A500BE2B39 /* combinationSum.h */,
+				0947D1AB232A97DB001DABA0 /* combinationSumII.h */,
 				09CA9FAE2318A7A500BE2B39 /* permutations.h */,
+				0947D1AE232AA674001DABA0 /* permutationsii.h */,
 				09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */,
 			);
 			path = medium;
@@ -667,6 +696,15 @@
 				0998EB9122E75FEC005A01B5 /* knapsack.h */,
 			);
 			path = dp;
+			sourceTree = "<group>";
+		};
+		099B7ACF2327F8AE00AE77F5 /* medium */ = {
+			isa = PBXGroup;
+			children = (
+				099B7AD02327F8BC00AE77F5 /* jump_game.h */,
+				0942542C232942D3006B83E9 /* gas_station.h */,
+			);
+			path = medium;
 			sourceTree = "<group>";
 		};
 		099EAEF322FFBE3D006437BD /* leetcode */ = {
@@ -707,6 +745,14 @@
 			path = divideandconquer;
 			sourceTree = "<group>";
 		};
+		09B877622327F88C0099542C /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				099B7ACF2327F8AE00AE77F5 /* medium */,
+			);
+			path = leetcode;
+			sourceTree = "<group>";
+		};
 		09C5E0DB2301C46200EDD63B /* easy */ = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +763,18 @@
 				0965B3CE23045B1C009A153E /* addBinary.h */,
 			);
 			path = easy;
+			sourceTree = "<group>";
+		};
+		09CE1EBB23269D4200001ECB /* greed */ = {
+			isa = PBXGroup;
+			children = (
+				09B877622327F88C0099542C /* leetcode */,
+				09CE1EBC23269D4200001ECB /* main.cpp */,
+				09CE1EC123269FA800001ECB /* shared_the_sweets.h */,
+				09CE1EC42326A87C00001ECB /* coin_dispenser.h */,
+				09B8775D2327255F0099542C /* region_overlapping.h */,
+			);
+			path = greed;
 			sourceTree = "<group>";
 		};
 		09E18E4D22F552F2002D0227 /* coding-interviews */ = {
@@ -893,6 +951,7 @@
 				0946B02A22F6B9370043469D /* recursion */,
 				0946B04622F6D3880043469D /* other */,
 				09ACF02C2316DB0B004A4A61 /* divideandconquer */,
+				09CE1EBB23269D4200001ECB /* greed */,
 				3A717D6922DEBC4E002DA2C2 /* Products */,
 				3A717D8F22DEBECF002DA2C2 /* Frameworks */,
 			);
@@ -916,6 +975,7 @@
 				0946B02922F6B9370043469D /* recursion */,
 				0946B04522F6D3880043469D /* other */,
 				09ACF02B2316DB0B004A4A61 /* divideandconquer */,
+				09CE1EBA23269D4200001ECB /* greed */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -994,6 +1054,7 @@
 				3AD40CCE22E9B4C7002D60A6 /* main.cpp */,
 				3AD40CD322E9B517002D60A6 /* eightQueens.h */,
 				3AD40CD622E9CFA4002D60A6 /* knapsack.h */,
+				3A207EC1232A3133001FB923 /* Pattern.h */,
 			);
 			path = backtracking;
 			sourceTree = "<group>";
@@ -1154,6 +1215,23 @@
 			name = divideandconquer;
 			productName = divideandconquer;
 			productReference = 09ACF02B2316DB0B004A4A61 /* divideandconquer */;
+			productType = "com.apple.product-type.tool";
+		};
+		09CE1EB923269D4200001ECB /* greed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09CE1EC023269D4200001ECB /* Build configuration list for PBXNativeTarget "greed" */;
+			buildPhases = (
+				09CE1EB623269D4200001ECB /* Sources */,
+				09CE1EB723269D4200001ECB /* Frameworks */,
+				09CE1EB823269D4200001ECB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = greed;
+			productName = greed;
+			productReference = 09CE1EBA23269D4200001ECB /* greed */;
 			productType = "com.apple.product-type.tool";
 		};
 		3A5C8B9322E0109200354740 /* stack+queue */ = {
@@ -1350,6 +1428,9 @@
 					09ACF02A2316DB0B004A4A61 = {
 						CreatedOnToolsVersion = 10.3;
 					};
+					09CE1EB923269D4200001ECB = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					3A5C8B9322E0109200354740 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
@@ -1409,6 +1490,7 @@
 				0946B02822F6B9370043469D /* recursion */,
 				0946B04422F6D3880043469D /* other */,
 				09ACF02A2316DB0B004A4A61 /* divideandconquer */,
+				09CE1EB923269D4200001ECB /* greed */,
 			);
 		};
 /* End PBXProject section */
@@ -1451,6 +1533,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				09ACF02E2316DB0B004A4A61 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09CE1EB623269D4200001ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09CE1EBD23269D4200001ECB /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1631,6 +1721,26 @@
 			name = Debug;
 		};
 		09ACF0312316DB0B004A4A61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K78T9LD5UA;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09CE1EBE23269D4200001ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K78T9LD5UA;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09CE1EBF23269D4200001ECB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1985,6 +2095,15 @@
 			buildConfigurations = (
 				09ACF0302316DB0B004A4A61 /* Debug */,
 				09ACF0312316DB0B004A4A61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09CE1EC023269D4200001ECB /* Build configuration list for PBXNativeTarget "greed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09CE1EBE23269D4200001ECB /* Debug */,
+				09CE1EBF23269D4200001ECB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

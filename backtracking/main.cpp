@@ -11,6 +11,9 @@
 #include "knapsack.h"
 #include "hasPath.h"
 #include "letter_combinations_of_a_phone_number.h"
+#include "Pattern.h"
+#include "combinationSumII.h"
+#include "permutationsii.h"
 #include <mach/exception_types.h>
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -24,6 +27,10 @@ int main(int argc, const char * argv[]) {
     cout << knapsack(KNAPSACK, 5, 9) << endl;
     
     leetcode::test_letterCombinations();
+    leetcode::test_combinationSumII();
+    //字符串匹配
+    Pattern pattern = Pattern("ac??f");
+    cout << "是否能匹配: " << pattern.match("acddf") << endl;
     return 0;
 }
 
