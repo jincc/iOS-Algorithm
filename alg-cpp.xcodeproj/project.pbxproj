@@ -214,6 +214,11 @@
 		0946B05922F711AC0043469D /* NumberOf1Between1AndN_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberOf1Between1AndN_Solution.h; sourceTree = "<group>"; };
 		0947D1AB232A97DB001DABA0 /* combinationSumII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combinationSumII.h; sourceTree = "<group>"; };
 		0947D1AE232AA674001DABA0 /* permutationsii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = permutationsii.h; sourceTree = "<group>"; };
+		094E2633233AF18200C08071 /* word_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = word_search.h; sourceTree = "<group>"; };
+		094E2636233BC31600C08071 /* gray_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gray_code.h; sourceTree = "<group>"; };
+		095A524923364FC800D29259 /* permutation_sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = permutation_sequence.h; sourceTree = "<group>"; };
+		095A524C23371ADA00D29259 /* combinations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combinations.h; sourceTree = "<group>"; };
+		095A524F2339193400D29259 /* subsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subsets.h; sourceTree = "<group>"; };
 		095F60122322B3390072CF0C /* searchInRotatedSortedArrayII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInRotatedSortedArrayII.h; sourceTree = "<group>"; };
 		0965B3CB23045219009A153E /* lengthOfLastWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lengthOfLastWord.h; sourceTree = "<group>"; };
 		0965B3CE23045B1C009A153E /* addBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addBinary.h; sourceTree = "<group>"; };
@@ -224,6 +229,8 @@
 		0969A72222E6081500CA9347 /* matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matching.h; sourceTree = "<group>"; };
 		096E161723215E7300444948 /* powx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = powx.h; sourceTree = "<group>"; };
 		096E161A2321681C00444948 /* search_a_2d_matrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = search_a_2d_matrix.h; sourceTree = "<group>"; };
+		097149B4233D10AA00379084 /* subsets_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subsets_ii.h; sourceTree = "<group>"; };
+		097149B7233D1B5F00379084 /* restore_ip_addresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = restore_ip_addresses.h; sourceTree = "<group>"; };
 		09771DA0230C44C5000F8AC3 /* 3SumClosest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 3SumClosest.h; sourceTree = "<group>"; };
 		09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = letter_combinations_of_a_phone_number.h; sourceTree = "<group>"; };
 		098F84CC23234824001219CB /* find_minimum_in_rotated_sorted_array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = find_minimum_in_rotated_sorted_array.h; sourceTree = "<group>"; };
@@ -673,9 +680,16 @@
 			children = (
 				09CA9FAD2318A7A500BE2B39 /* combinationSum.h */,
 				0947D1AB232A97DB001DABA0 /* combinationSumII.h */,
+				095A524C23371ADA00D29259 /* combinations.h */,
 				09CA9FAE2318A7A500BE2B39 /* permutations.h */,
 				0947D1AE232AA674001DABA0 /* permutationsii.h */,
+				095A524923364FC800D29259 /* permutation_sequence.h */,
+				095A524F2339193400D29259 /* subsets.h */,
+				097149B4233D10AA00379084 /* subsets_ii.h */,
 				09771DA4230C4CAA000F8AC3 /* letter_combinations_of_a_phone_number.h */,
+				094E2633233AF18200C08071 /* word_search.h */,
+				094E2636233BC31600C08071 /* gray_code.h */,
+				097149B7233D1B5F00379084 /* restore_ip_addresses.h */,
 			);
 			path = medium;
 			sourceTree = "<group>";

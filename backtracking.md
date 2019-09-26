@@ -25,7 +25,13 @@
 |  40   | [组合总和II](https://leetcode-cn.com/problems/combination-sum-ii/)| [combinationSumII](./backtracking/leetcode/medium/combinationSumII.h) |  <font color=orange> medium </font> | ✅|
 |  46   | [全排列](https://leetcode-cn.com/problems/permutations/)| [permutations](./backtracking/leetcode/medium/permutations.h) |  <font color=orange> medium </font> | ✅|
 |  47   | [全排列II](https://leetcode-cn.com/problems/permutations-ii/)| [permutationsii](./backtracking/leetcode/medium/permutationsii.h) |  <font color=orange> medium </font> | ✅|
-
+|  60   | [第k个排列](https://leetcode-cn.com/problems/permutation-sequence/)| [permutation_sequence](./backtracking/leetcode/medium/permutation_sequence.h) |  <font color=orange> medium </font> | ✅|
+|  77   | [组合](https://leetcode-cn.com/problems/combinations/)| [combinations](./backtracking/leetcode/medium/combinations.h) |  <font color=orange> medium </font> | ✅|
+|  78   | [子集](https://leetcode-cn.com/problems/subsets/)| [subsets](./backtracking/leetcode/medium/subsets.h) |  <font color=orange> medium </font> | ✅|
+|  79   | [单词搜索](https://leetcode-cn.com/problems/word-search/)| [word_search](./backtracking/leetcode/medium/word_search.h) |  <font color=orange> medium </font> | ✅|
+|  89   | [格雷编码](https://leetcode-cn.com/problems/gray-code/)| [gray_code](./backtracking/leetcode/medium/gray_code.h) |  <font color=orange> medium </font> | ✅|
+|  90   | [子集II](https://leetcode-cn.com/problems/subsets-ii)| [subsets_ii](./backtracking/leetcode/medium/subsets_ii.h) |  <font color=orange> medium </font> | ✅|
+|  93   | [复原IP地址](https://leetcode-cn.com/problems/restore-ip-addresses)| [restore_ip_addresses](./backtracking/leetcode/medium/restore_ip_addresses.h) |  <font color=orange> medium </font> | ✅|
 ### 剑指Offer
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
 | :--: | :--: | :----------------------------------------------------------- | :-----------------------------------------------------------  | :------: |
