@@ -5,7 +5,7 @@
 |  1| [两数之和](https://leetcode-cn.com/problems/two-sum/) | [twoSum](./array/leetcode/easy/twoSum.h) | <font color=green>easy</font> | ✅ |
 |  2| [两数相加](https://leetcode-cn.com/problems/add-two-numbers/) | [addTwoNumbers](./linkedList/leetcode/medium/addTwoNumbers.h) | <font color=orange> medium </font> | ✅ |
 |  3| [无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) | [lengthOfLongestSubstring](./string/leetcode/medium/lengthOfLongestSubstring.h) | <font color=orange> medium </font> | ✅ |
-|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font>[需要回看其他解法] | ✅ |
+|  5| [最长回文子串](https://leetcode-cn.com/problems/longest-palindromic-substring/) | [longestPalindrome](./string/leetcode/medium/longestPalindrome.h) | <font color=orange> medium </font>| ✅ |
 |  6| [Z字形变换](https://leetcode-cn.com/problems/zigzag-conversion/) | [zigzag_conversion](./string/leetcode/medium/zigzag_conversion.h) | <font color=orange> medium </font>| ✅ |
 |  7| [整数反转](https://leetcode-cn.com/problems/reverse-integer/) | [reverse_integer](./other/leetcode/easy/reverse_integer.h) | <font color=green>easy</font> | ✅ |
 |  8| [字符串转换整数 (atoi)](https://leetcode-cn.com/problems/string-to-integer-atoi/) | [string_to_integer_atoi](./string/leetcode/medium/string_to_integer_atoi.h) | <font color=orange> medium </font> | ✅ |
@@ -106,10 +106,10 @@
 回溯算法是”万金油“。基本上贪心和dp能解决的问题，回溯都能解决。回溯相当于穷举搜索，列举出所有的情况，然后对比得到最优解。不过回溯的复杂度一般都是指数级的，只能用来解决小规模数据的问题。-->
 
 
-## [贪心](./greed.md)🚶🚶🚶🚶❌
-## [回溯算法](./backtracking.md)
-## [分治算法](./divideandconquer.md)
-## [动态规划](./dp.md)
+## [贪心](./greed.md)✅
+## [回溯算法](./backtracking.md)✅
+## [分治算法](./divideandconquer.md)🚶🚶🚶🚶
+## [动态规划](./dp.md) ❌
 
 
 ## [字符串匹配](./stringmatch.md)
@@ -126,27 +126,6 @@
 # **数据结构**
 
 ## [数组](./array.md)
-
-数组有两个关键词：
-
-* 线性表结构， 就是说元素之间只有前后关系
-* 连续的内存空间，存储的是具有相同类型的数据
-
-第二个特征决定了数组<font size=5 color=red>“随机访问”</font>的能力，因为我们完全可以通过地址计算出下标对应的位置。比如:
-
-<font size=5>a[i]_add = base_add + i * type_size</font>
-
-有利就有弊，也正是由于内存连续，所以数组的插入和删除是非常低效的，因为为了保持内存的连续，就意味着每次插入/删除都要伴随着<font size=5 color=red>大量的移动操作</font>，平均负责度为o(n).
-
-
-<font size=5 color=red>容器类</font>在数组的基础上，封装了插入删除等操作，同时支持了动态扩容. 需要注意的是，如果实现知道数组的大小，最好提前指定容器大小，这样可以省掉多次的内存申请和数据搬移。
-
-大多情况下的<font size=5 color=red>解题思路</font>:
-
-* 双指针
-* DP
-* 二分查找
-
 
 ## [链表](./linkedList.md) 
 ## [栈&队列](./stack_queue.md)   

@@ -193,6 +193,8 @@
 		09421FFA23142AEB00A7BA67 /* searchRange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchRange.h; sourceTree = "<group>"; };
 		09421FFD231583FC00A7BA67 /* isValidSudoku.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidSudoku.h; sourceTree = "<group>"; };
 		0942542C232942D3006B83E9 /* gas_station.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gas_station.h; sourceTree = "<group>"; };
+		094524B7234790CD00CCBFB9 /* coinChange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = coinChange.h; sourceTree = "<group>"; };
+		094524BA234A32D000CCBFB9 /* levenshtein_distance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = levenshtein_distance.h; sourceTree = "<group>"; };
 		0946B01522F68BA50043469D /* FirstNotRepeatingChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstNotRepeatingChar.h; sourceTree = "<group>"; };
 		0946B01822F695CE0043469D /* ReverseSentence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseSentence.h; sourceTree = "<group>"; };
 		0946B01B22F6A5BF0043469D /* StrToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrToInt.h; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 		0965B3CE23045B1C009A153E /* addBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addBinary.h; sourceTree = "<group>"; };
 		0965B3D223046663009A153E /* climbStairs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = climbStairs.h; sourceTree = "<group>"; };
 		0965B3D523046775009A153E /* romanToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = romanToInt.h; sourceTree = "<group>"; };
+		09665E9C234CD7ED003D0FAE /* pascals_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle.h; sourceTree = "<group>"; };
 		0969A71B22E607E800CA9347 /* string */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = string; sourceTree = BUILT_PRODUCTS_DIR; };
 		0969A71D22E607E800CA9347 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		0969A72222E6081500CA9347 /* matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matching.h; sourceTree = "<group>"; };
@@ -290,6 +293,7 @@
 		09FC39212305A42B00F0A2AE /* addTwoNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addTwoNumbers.h; sourceTree = "<group>"; };
 		09FC39252305A9A500F0A2AE /* lengthOfLongestSubstring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lengthOfLongestSubstring.h; sourceTree = "<group>"; };
 		09FC39282305B35900F0A2AE /* longestPalindrome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longestPalindrome.h; sourceTree = "<group>"; };
+		3A04E7432341F1B7006770AF /* double11advance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = double11advance.h; sourceTree = "<group>"; };
 		3A091A2C22EFE34800EFA79C /* inorderTraversal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inorderTraversal.h; sourceTree = "<group>"; };
 		3A091A2F22EFE62E00EFA79C /* isValidBST.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isValidBST.h; sourceTree = "<group>"; };
 		3A091A3222F0450400EFA79C /* invertTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = invertTree.h; sourceTree = "<group>"; };
@@ -708,6 +712,10 @@
 				3AD40CDC22EAF129002D60A6 /* leetcode */,
 				0998EB8C22E75FB9005A01B5 /* main.cpp */,
 				0998EB9122E75FEC005A01B5 /* knapsack.h */,
+				094524B7234790CD00CCBFB9 /* coinChange.h */,
+				3A04E7432341F1B7006770AF /* double11advance.h */,
+				094524BA234A32D000CCBFB9 /* levenshtein_distance.h */,
+				09665E9C234CD7ED003D0FAE /* pascals_triangle.h */,
 			);
 			path = dp;
 			sourceTree = "<group>";
