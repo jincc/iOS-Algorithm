@@ -35,46 +35,107 @@
  链接：https://leetcode-cn.com/problems/min-stack
  著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
+class MinStack {
+public:
+    typedef int Value_t;
+    void push(Value_t x){
+        dataStack.push(x);
+        
+        if (minStack.empty()) {
+            minStack.push(x);
+        }else{
+            if (minStack.top() >= x) {
+                minStack.push(x);
+            }
+        }
+    }
+    void pop(){
+        if (dataStack.empty()) {
+            return;
+        }
+        Value_t t = dataStack.top();
+        dataStack.pop();
+        if (t == minStack.top()) {//minStack.top()即是minStack中的最小值也是dataStack中的最小值,所以t 不可能比它小
+            minStack.pop();
+        }else if (t > minStack.top()){}
+    }
+    Value_t top(){
+        if (dataStack.empty()) {
+            throw stackEmpty();
+        }
+        return dataStack.top();
+    }
+    Value_t getMin(){
+        if (minStack.empty()) {
+            throw stackEmpty();
+        }
+        return minStack.top();
+    }
+private:
+    std::stack<Value_t> dataStack;
+    std::stack<Value_t> minStack;
+};
 
-namespace leetcode {
-    class MinStack {
-    public:
-        /** initialize your data structure here. */
-        MinStack() {
-            
+/*
+ 思路:
+ 任然用两个栈来保存数据，dataStack用来存储数据，minStack用来存储最小值.
+ 存储最小值的逻辑如下:
+ 如果newValue比minValue大的话,那么存储最小值minValue.
+ 如果newValue比minValue小或者等的话，那么存储newValue.
+ */
+class MinStack2 {
+public:
+    typedef int Value_t;
+    void push(Value_t x){
+        dataStack.push(x);
+        if (minStack.empty()) {
+            minStack.push(x);
+        }else if (x > minStack.top()){
+            minStack.push(minStack.top());
+        }else{
+            minStack.push(x);
         }
-        
-        void push(int x) {
-            astk.push(x);
-            if(bstk.empty()){
-                bstk.push(x);
-            }else{
-                if (bstk.top() >= x){
-                    bstk.push(x);
-                }
-            }
+    }
+    void pop(){
+        dataStack.pop();
+        minStack.pop();
+    }
+    Value_t top(){
+        if (dataStack.empty()) {
+            throw stackEmpty();
         }
-        
-        void pop() {
-            if (astk.empty() || bstk.empty()) return;
-            int v = astk.top();
-            astk.pop();
-            if (v == bstk.top()){
-                bstk.pop();
-            }
+        return dataStack.top();
+    }
+    Value_t getMin(){
+        if (minStack.empty()) {
+            throw stackEmpty();
         }
-        
-        int top() {
-            if (astk.empty()) return 0;
-            return astk.top();
-        }
-        
-        int getMin() {
-            if (bstk.empty()) return 0;
-            return bstk.top();
-        }
-        std::stack<int> astk;
-        std::stack<int> bstk;
-    };
+        return minStack.top();
+    }
+private:
+    std::stack<Value_t> dataStack;
+    std::stack<Value_t> minStack;
+};
+
+void test_Minstack(){
+//    typedef MinStack Stack_t;
+    typedef MinStack2 Stack_t;
+    Stack_t stack;
+    stack.push(3);
+    stack.push(4);
+    stack.push(5);
+    stack.push(1);
+    stack.push(2);
+    stack.push(1);
+    
+    std::cout << "-----test_Minstack----------" << std::endl;
+    std::cout << stack.getMin() << std::endl;
+    
+    stack.pop();
+    stack.pop();
+    stack.pop();
+    std::cout << stack.top() << ",min: "<< stack.getMin() << std::endl; //5
+    
 }
+
 #endif /* MinStack_hpp */

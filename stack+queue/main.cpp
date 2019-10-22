@@ -15,6 +15,11 @@
 #include "queueByStack.h"
 #include "MinStack.h"
 #include <string>
+#include "TwoStacksQueue.h"
+#include "reverseStack.h"
+#include "sortStackByStack.h"
+#include "hanoiProblem.h"
+#include "getMaxWindow.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     stack<int> stk;
@@ -65,5 +70,12 @@ int main(int argc, const char * argv[]) {
     std::cout << "有效字符串：()[]{}, " << leetcode::isValid(s) << std::endl;
     s = ")()())";
     std::cout << "最长有效括号: )()())" << leetcode::longestValidParentheses(s) << std::endl;
+    
+    test_Minstack();
+    test_TwoStacksQueue();
+    test_reverseStack();
+    test_sortStackByStack();
+    test_hanoiProblem();
+    test_getMaxWindow();
     return 0;
 }

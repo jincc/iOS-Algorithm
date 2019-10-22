@@ -185,6 +185,7 @@
 		0925CDE722F67BB100DB3191 /* Permutation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Permutation.h; sourceTree = "<group>"; };
 		0929C38122FE7804006905B4 /* deleteDuplicates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleteDuplicates.h; sourceTree = "<group>"; };
 		0929C38422FE8DFE006905B4 /* getIntersectionNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getIntersectionNode.h; sourceTree = "<group>"; };
+		092A72A02358BA02005B0DC2 /* hanoiProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hanoiProblem.h; sourceTree = "<group>"; };
 		093D6BFB22FBA0D000771DEC /* pascals_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle.h; sourceTree = "<group>"; };
 		093D6BFE22FBA5D200771DEC /* pascals_triangle_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle_ii.h; sourceTree = "<group>"; };
 		093D6C0122FC704700771DEC /* best_time_to_buy_and_sell_stock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = best_time_to_buy_and_sell_stock.h; sourceTree = "<group>"; };
@@ -254,6 +255,7 @@
 		099EAEF822FFC4C5006437BD /* palindrome_number.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = palindrome_number.h; sourceTree = "<group>"; };
 		09A208B02308D96E00094088 /* zigzag_conversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zigzag_conversion.h; sourceTree = "<group>"; };
 		09A208B32309990C00094088 /* string_to_integer_atoi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = string_to_integer_atoi.h; sourceTree = "<group>"; };
+		09A7AC1D234E34EA00DFECF0 /* matrix_move.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrix_move.h; sourceTree = "<group>"; };
 		09ABED832300E22800113589 /* romanToInt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = romanToInt.h; sourceTree = "<group>"; };
 		09ABED872300EE0900113589 /* longestCommonPrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = longestCommonPrefix.h; sourceTree = "<group>"; };
 		09ACF02B2316DB0B004A4A61 /* divideandconquer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = divideandconquer; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +288,10 @@
 		09E18E5D22F58301002D0227 /* GetNumberOfK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetNumberOfK.h; sourceTree = "<group>"; };
 		09E18E6022F588E8002D0227 /* FindNumsAppearOnce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumsAppearOnce.h; sourceTree = "<group>"; };
 		09E18E6422F59065002D0227 /* replaceSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = replaceSpace.h; sourceTree = "<group>"; };
+		09EF0F4C235F43A4008E90DC /* getMaxWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getMaxWindow.h; sourceTree = "<group>"; };
+		09F082AF235768BD000F84C0 /* sortStackByStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sortStackByStack.h; sourceTree = "<group>"; };
+		09F2A5E52354CF320026F4A2 /* TwoStacksQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoStacksQueue.h; sourceTree = "<group>"; };
+		09F32137235614E5005E29E2 /* reverseStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverseStack.h; sourceTree = "<group>"; };
 		09F38FCD22FCE719001B4618 /* best_time_to_buy_and_sell_stock_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = best_time_to_buy_and_sell_stock_ii.h; sourceTree = "<group>"; };
 		09F38FD022FCEC64001B4618 /* twoSum_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoSum_ii.h; sourceTree = "<group>"; };
 		09F38FD322FCEF88001B4618 /* majorityElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = majorityElement.h; sourceTree = "<group>"; };
@@ -716,6 +722,7 @@
 				3A04E7432341F1B7006770AF /* double11advance.h */,
 				094524BA234A32D000CCBFB9 /* levenshtein_distance.h */,
 				09665E9C234CD7ED003D0FAE /* pascals_triangle.h */,
+				09A7AC1D234E34EA00DFECF0 /* matrix_move.h */,
 			);
 			path = dp;
 			sourceTree = "<group>";
@@ -826,6 +833,18 @@
 			path = "coding-interviews";
 			sourceTree = "<group>";
 		};
+		09F2A5E42354CF0D0026F4A2 /* itinterviews */ = {
+			isa = PBXGroup;
+			children = (
+				09F2A5E52354CF320026F4A2 /* TwoStacksQueue.h */,
+				09F32137235614E5005E29E2 /* reverseStack.h */,
+				09F082AF235768BD000F84C0 /* sortStackByStack.h */,
+				092A72A02358BA02005B0DC2 /* hanoiProblem.h */,
+				09EF0F4C235F43A4008E90DC /* getMaxWindow.h */,
+			);
+			path = itinterviews;
+			sourceTree = "<group>";
+		};
 		09FC391C2304D98D00F0A2AE /* easy */ = {
 			isa = PBXGroup;
 			children = (
@@ -889,6 +908,7 @@
 		3A5C8B9522E0109200354740 /* stack+queue */ = {
 			isa = PBXGroup;
 			children = (
+				09F2A5E42354CF0D0026F4A2 /* itinterviews */,
 				0946B02122F6B49E0043469D /* coding-interviews */,
 				3A5C8BA422E05ABF00354740 /* leetcode */,
 				3A5C8B9622E0109200354740 /* main.cpp */,

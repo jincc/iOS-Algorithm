@@ -14,6 +14,7 @@
 #include "coinChange.h"
 #include "levenshtein_distance.h"
 #include "pascals_triangle.h"
+#include "matrix_move.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     using namespace std;
@@ -22,5 +23,6 @@ int main(int argc, const char * argv[]) {
     test_coinChange();
     test_levenshtein_distance();
     test_pascals_triangle();
+    test_matrix_move();
     return 0;
 }
