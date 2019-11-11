@@ -24,6 +24,18 @@ namespace codinginterviews {
         }
         return root;
     }
+    DoubleNode *creatDoubleLists(const std::vector<int> &s){
+        DoubleNode *root = new DoubleNode(0);
+        DoubleNode *node = root;
+        auto it = s.begin();
+        while (it != s.end()) {
+            node->next = new DoubleNode(*it);
+            node->next->pre = node;
+            node = node->next;
+            it++;
+        }
+        return root;
+    }
 }
 
 #endif /* creatlist_hpp */

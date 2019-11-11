@@ -20,6 +20,7 @@
 #include "sortStackByStack.h"
 #include "hanoiProblem.h"
 #include "getMaxWindow.h"
+#include "getMaxRectSize.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     stack<int> stk;

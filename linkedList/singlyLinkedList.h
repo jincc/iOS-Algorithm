@@ -55,6 +55,23 @@ public:
 protected:
     Node *head;
 };
+class DoubleNode {
+public:
+    DoubleNode *pre;
+    DoubleNode *next;
+    typedef int  Value;
+    Value val;
+    DoubleNode(Value val1):val(val1),pre(nullptr),next(nullptr){}
+    void print(){
+        DoubleNode *ct = this;
+        while (ct) {
+            std::cout << ct->val << ", ";
+            ct = ct->next;
+        }
+        std::cout << std::endl;
+    }
+};
+
 typedef singlyLinkedList::Node ListNode;
 std::ostream& operator<<(std::ostream &cout,singlyLinkedList& chain);
 #endif /* singlyLinkedList_hpp */

@@ -8,11 +8,15 @@
 
 ### [用一个栈实现另一个栈的排序(⭐️⭐️)](./stack+queue/itinterviews/sortStackByStack.h)
 
-
 ### [<font color=red>用栈来求解汉诺塔问题(⭐️⭐️⭐️)</font>](./stack+queue/itinterviews/hanoiProblem.h)
 
 ### [<font color=red>生成窗口最大值数组(⭐️⭐️)</font>](./stack+queue/itinterviews/getMaxWindow.h)
 
+### [构建数组的MaxTree(❌❌)]()
+
+### [求最大子矩阵的大小(❌❌)]()
+
+### [最大值减去最小值小于或等于num的子数组数量(❌❌)]()
 
 
 

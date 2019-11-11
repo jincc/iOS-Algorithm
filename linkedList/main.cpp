@@ -26,6 +26,13 @@
 #include "deleteDuplicates.h"
 #include "addTwoNumbers.h"
 #include "getIntersectionNode.h"
+#include "printCommonPart.h"
+#include "removeLastKthNode.h"
+#include "removeMidNode.h"
+#include "ReverseLL.h"
+#include "ReversePartLL.h"
+#include "josephusKill.h"
+#include "isPalindrome2.h"
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -59,5 +66,15 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_FindKthToTail();
     codinginterviews::test_ReverseList();
     codinginterviews::test_deleteDuplication();
+    
+    
+#pragma mark - itinterviews
+    itinterviews::test_printCommonPart();
+    itinterviews::test_removeLastKthNode();
+    itinterviews::test_removeMidNode();
+    itinterviews::test_ReverseLL();
+    itinterviews::test_ReversePartLL();
+    itinterviews::test_josephusKill();
+    itinterviews::test_isPalindrome2();
     return 0;
 }

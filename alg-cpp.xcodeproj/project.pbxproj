@@ -182,10 +182,15 @@
 		0922310F22FAFEEE00F0F5AF /* merge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = merge.h; sourceTree = "<group>"; };
 		0924B8E622F9D8A400435980 /* twoSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = twoSum.h; sourceTree = "<group>"; };
 		0924B8E922F9E06000435980 /* removeDuplicates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = removeDuplicates.h; sourceTree = "<group>"; };
+		09255F962360A57300B38E3D /* getMaxRectSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getMaxRectSize.h; sourceTree = "<group>"; };
 		0925CDE722F67BB100DB3191 /* Permutation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Permutation.h; sourceTree = "<group>"; };
 		0929C38122FE7804006905B4 /* deleteDuplicates.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleteDuplicates.h; sourceTree = "<group>"; };
 		0929C38422FE8DFE006905B4 /* getIntersectionNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getIntersectionNode.h; sourceTree = "<group>"; };
 		092A72A02358BA02005B0DC2 /* hanoiProblem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hanoiProblem.h; sourceTree = "<group>"; };
+		092D77CF2371BF4C00CF2069 /* isPalindrome2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isPalindrome2.h; sourceTree = "<group>"; };
+		09377EDC236A583C00222B54 /* ReverseLL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseLL.h; sourceTree = "<group>"; };
+		09377EDF236A60E800222B54 /* ReversePartLL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReversePartLL.h; sourceTree = "<group>"; };
+		093841F823673DDE00322A8B /* removeMidNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = removeMidNode.h; sourceTree = "<group>"; };
 		093D6BFB22FBA0D000771DEC /* pascals_triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle.h; sourceTree = "<group>"; };
 		093D6BFE22FBA5D200771DEC /* pascals_triangle_ii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pascals_triangle_ii.h; sourceTree = "<group>"; };
 		093D6C0122FC704700771DEC /* best_time_to_buy_and_sell_stock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = best_time_to_buy_and_sell_stock.h; sourceTree = "<group>"; };
@@ -219,9 +224,12 @@
 		0947D1AE232AA674001DABA0 /* permutationsii.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = permutationsii.h; sourceTree = "<group>"; };
 		094E2633233AF18200C08071 /* word_search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = word_search.h; sourceTree = "<group>"; };
 		094E2636233BC31600C08071 /* gray_code.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gray_code.h; sourceTree = "<group>"; };
+		0953CF0D2365DE7500F5B471 /* printCommonPart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = printCommonPart.h; sourceTree = "<group>"; };
+		0953CF102365E29A00F5B471 /* removeLastKthNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = removeLastKthNode.h; sourceTree = "<group>"; };
 		095A524923364FC800D29259 /* permutation_sequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = permutation_sequence.h; sourceTree = "<group>"; };
 		095A524C23371ADA00D29259 /* combinations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = combinations.h; sourceTree = "<group>"; };
 		095A524F2339193400D29259 /* subsets.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = subsets.h; sourceTree = "<group>"; };
+		095E32C223706CCA00331B4A /* josephusKill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = josephusKill.h; sourceTree = "<group>"; };
 		095F60122322B3390072CF0C /* searchInRotatedSortedArrayII.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInRotatedSortedArrayII.h; sourceTree = "<group>"; };
 		0965B3CB23045219009A153E /* lengthOfLastWord.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lengthOfLastWord.h; sourceTree = "<group>"; };
 		0965B3CE23045B1C009A153E /* addBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = addBinary.h; sourceTree = "<group>"; };
@@ -666,6 +674,20 @@
 			path = "coding-interviews";
 			sourceTree = "<group>";
 		};
+		0953CF0C2365DDEF00F5B471 /* itinterviews */ = {
+			isa = PBXGroup;
+			children = (
+				0953CF0D2365DE7500F5B471 /* printCommonPart.h */,
+				0953CF102365E29A00F5B471 /* removeLastKthNode.h */,
+				093841F823673DDE00322A8B /* removeMidNode.h */,
+				09377EDC236A583C00222B54 /* ReverseLL.h */,
+				09377EDF236A60E800222B54 /* ReversePartLL.h */,
+				095E32C223706CCA00331B4A /* josephusKill.h */,
+				092D77CF2371BF4C00CF2069 /* isPalindrome2.h */,
+			);
+			path = itinterviews;
+			sourceTree = "<group>";
+		};
 		0965B3D12304665C009A153E /* easy */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +863,7 @@
 				09F082AF235768BD000F84C0 /* sortStackByStack.h */,
 				092A72A02358BA02005B0DC2 /* hanoiProblem.h */,
 				09EF0F4C235F43A4008E90DC /* getMaxWindow.h */,
+				09255F962360A57300B38E3D /* getMaxRectSize.h */,
 			);
 			path = itinterviews;
 			sourceTree = "<group>";
@@ -1063,6 +1086,7 @@
 		3A717D9D22DEC1A7002DA2C2 /* linkedList */ = {
 			isa = PBXGroup;
 			children = (
+				0953CF0C2365DDEF00F5B471 /* itinterviews */,
 				3A091A6422F3DDD800EFA79C /* coding-interviews */,
 				3A717DA622DEF32A002DA2C2 /* leetcode */,
 				3A717D9E22DEC1A7002DA2C2 /* main.cpp */,

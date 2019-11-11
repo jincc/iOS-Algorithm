@@ -1,4 +1,16 @@
-## 链表
+# 链表
+
+### [打印两个有序链表的公共部分](./linkedList/itinterviews/printCommonPart.h)
+
+### [<font color=red>在单链表和双链表中删除倒数第K个节点</font>](./linkedList/itinterviews/removeLastKthNode.h)
+### [删除链表的中间节点](./linkedList/itinterviews/removeMidNode.h)
+### [分别实现反转单向链表和反转双向链表](./linkedList/itinterviews/ReverseLL.h)
+### [<font color=red>反转部分单向链表</font>](./linkedList/itinterviews/ReversePartLL.h)
+
+### [环形单链表的约瑟夫问题](./linkedList/itinterviews/josephusKill.h)
+
+### [判断一个链表是否为回文结构](./linkedList/itinterviews/isPalindrome2.h)
+
 ### leetcode
 
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |
