@@ -11,6 +11,16 @@
 
 ### [判断一个链表是否为回文结构](./linkedList/itinterviews/isPalindrome2.h)
 
+### [将单向链表按某值划分成左边小，中间相等，右边大的形式](./linkedList/itinterviews/listPartition.h)
+
+### [复制含有随机指针节点的链表](./linkedList/itinterviews/copyListWithRand.h)
+
+### [ 两个单链表生成相加链表](./linkedList/itinterviews/addList.h)
+### [ <font color=red>两个单链表相交的一系列问题</font>](./linkedList/itinterviews/getIntersectNode.h)
+
+### [<font color=red>将单链表的每K个节点之间逆序</font>](./linkedList/itinterviews/reverseKNodes.h)
+
+
 ### leetcode
 
 | &emsp;题号&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| &emsp;难度&emsp;  | &emsp;完成度&emsp;  |

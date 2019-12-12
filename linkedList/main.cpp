@@ -33,6 +33,11 @@
 #include "ReversePartLL.h"
 #include "josephusKill.h"
 #include "isPalindrome2.h"
+#include "listPartition.h"
+#include "copyListWithRand.h"
+#include "addList.h"
+#include "getIntersectNode.h"
+#include "reverseKNodes.h"
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -76,5 +81,10 @@ int main(int argc, const char * argv[]) {
     itinterviews::test_ReversePartLL();
     itinterviews::test_josephusKill();
     itinterviews::test_isPalindrome2();
+    itinterviews::test_listPartition();
+    itinterviews::test_copyListWithRand();
+    itinterviews::test_addList();
+    itinterviews::test_getIntersectNode();
+    itinterviews::test_reverseKNodes();
     return 0;
 }
