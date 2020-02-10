@@ -35,6 +35,7 @@
 #include "3sum.h"
 #include "3SumClosest.h"
 #include "combinationSum.h"
+#include "ReOrder.h"
 #include <vector>
 using namespace std;
 int main(int argc, const char * argv[]) {
@@ -68,5 +69,6 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_MoreThanHalfNum_Solution();
     codinginterviews::test_PrintMinNumber();
     codinginterviews::test_GetNumberOfK();
+    codinginterviews::test_ReOrder();
     return 0;
 }

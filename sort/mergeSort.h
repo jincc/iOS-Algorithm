@@ -40,7 +40,7 @@ void mergeSort(int nums[], int start, int end){
     int mid = (end - start) / 2 + start;
     mergeSort(nums, start, mid);
     mergeSort(nums, mid+1, end);
-    mergeBySentry(nums, start, mid, end);
+    merge(nums, start, mid, end);
 }
 
 void merge(int nums[], int start, int mid ,int end){
@@ -57,6 +57,7 @@ void merge(int nums[], int start, int mid ,int end){
         if (nums[i] < nums[j]) {
             temp[k++] = nums[i++];
         }else{
+//            std::cout << nums[i] << ", " << nums[j] << std::endl;
             temp[k++] = nums[j++];
         }
     }

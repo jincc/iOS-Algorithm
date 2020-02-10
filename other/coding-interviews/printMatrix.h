@@ -18,13 +18,13 @@ https://www.nowcoder.com/practice/9b4c81a02cd34f76be2659fa0d54342a?tpId=13&tqId=
  */
 
 namespace codinginterviews {
+    using namespace std;
     std::vector<int> printMatrix(std::vector<std::vector<int> > matrix) {
         std::vector<int> values;
         int uprow=0;
         int bottomrow=matrix.size()-1;
         int leftcol =0;
         int rightcol = matrix[0].size()-1;
-        int count = matrix.size() * matrix[0].size();
         while (uprow <= bottomrow && leftcol <= rightcol) {
             //从左到右
             for (int i=leftcol; i<=rightcol; i++) {
@@ -85,9 +85,8 @@ namespace codinginterviews {
         }
         return result;
     }
-    
     void test_printMatrix(){
-        std::vector<std::vector<int> > matrix{{1,2,3,4},{5,6,7,8},{9,10,11,12}};
+        std::vector<std::vector<int> > matrix{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
         
         std::vector<int> values = printMatrix(matrix);
         values;

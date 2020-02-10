@@ -65,11 +65,43 @@ namespace codinginterviews {
         }
         return heap;
     }
+
     
+#pragma mark - v2
+    int partition(vector<int> &input,int start, int end){
+        int temp = input[end];
+        int i,j;
+        i=j=start;
+        for(;j<=end;j++){
+            if(input[j] < temp){
+                swap(input[j],input[i++]);
+            }
+        }
+        swap(input[i], input[end]);
+        return i;
+    }
+    vector<int> GetLeastNumbers_Solution2(vector<int> input, int k) {
+        if (input.empty() || k>input.size()||k<=0)
+            return {};
+        int start = 0;
+        int end = input.size()-1;
+        int index = partition(input , start , end);
+        while (index != k-1){
+            if (index < k-1){
+                start = index + 1;
+            }else{
+                end = index - 1;
+            }
+            index = partition(input , start , end);
+        }
+        
+        vector<int> results(input.begin(), input.begin()+k);
+        return results;
+    }
     void test_GetLeastNumbers_Solution(){
         std::vector<int> a{4,5,1,6,2,7,3,8};
         std::cout << "test_GetLeastNumbers_Solution starting,....." << std::endl;
-        std::vector<int> b = GetLeastNumbers_Solution(a, 4);
+        std::vector<int> b = GetLeastNumbers_Solution2(a, 4);
         b;
     }
 }

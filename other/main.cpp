@@ -22,6 +22,8 @@
 #include "romanToInt.h"
 #include "next_permutation.h"
 #include "isValidSudoku.h"
+#include "Print1ToMaxOfNDigits.h"
+#include "IsContinuous2.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -38,5 +40,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_GetUglyNumber_Solution();
     
     leetcode::test_isValidSudoku();
+    codinginterviews::Print1ToMaxOfNDigits(3);
+    codinginterviews::test_IsContinuous2();
     return 0;
 }

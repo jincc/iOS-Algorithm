@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
-
+#include <stack>
 
 /*
  剑指Offer（四十四）：翻转单词顺序序列
@@ -21,6 +21,36 @@ https://www.nowcoder.com/practice/3194a4f4cf814f63919d0790578d51f3?tpId=13&tqId=
  */
 
 namespace codinginterviews {
+    using namespace std;
+    void rotateString(string &str,int start, int end){
+        while(start < end){
+            char c = str[start];
+            str[start] = str[end];
+            str[end] = c;
+            start++;
+            end--;
+        }
+    }
+    string ReverseSentence2(string str){
+        if (str.empty())return str;
+        rotateString(str, 0 , str.size()-1);
+        int start = 0;
+        int end = 0;
+        while(str[start] != '\0'){
+            if (str[start] == ' '){
+                start++;
+                end++;
+            }else if (str[end] == ' ' || end == str.size()){
+                rotateString(str, start, --end);
+                start = ++end;
+                std::cout <<"haha: " << start << ", "<<end << std::endl;
+            }else{
+                end++;
+            }
+        }
+        return str;
+    }
+    
     std::string ReverseSentence(std::string str) {
         std::vector<std::string> stk;
         std::string s;
@@ -54,8 +84,8 @@ namespace codinginterviews {
     
     void test_ReverseSentence(){
         std::cout << "ReverseSentence starting......." << std::endl;
-        std::string s(" 1");
-        std::cout << ReverseSentence(s) << std::endl;
+        std::string s("student. a am I");
+        std::cout << ReverseSentence2(s) << std::endl;
     }
 }
 #endif /* ReverseSentence_hpp */

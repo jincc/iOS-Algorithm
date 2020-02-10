@@ -112,5 +112,8 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_FindPath();
     codinginterviews::test_IsBalanced_Solution2();
     codinginterviews::test_isSymmetrical2();
+    
+    std::vector<int> v{1,2,3,4,5};
+    bool isVaild =  codinginterviews::VerifySquenceOfBST2(v);
     return 0;
 }

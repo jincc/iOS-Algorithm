@@ -45,11 +45,37 @@ namespace codinginterviews {
         }
         return s;
     }
+#pragma mark - v2
+    using namespace std;
+    vector<string> results;
+    void permutation(vector<int> &numbers, string str, vector<bool> st, int level){
+        if (level == numbers.size()){
+            results.push_back(str);
+            return;
+        }
+        
+        for (int i=0;i<numbers.size();i++){
+            if (st[i]) continue;
+            st[i] = true;
+            permutation(numbers, str+to_string(numbers[i]), st, level + 1);
+            st[i] = false;
+        }
+    }
+    string PrintMinNumber2(vector<int> numbers) {
+        if (numbers.empty()) return "";
+        vector<bool> st;
+        st.resize(numbers.size());
+        fill(st.begin(), st.end(), false);
+        string str;
+        permutation(numbers, str, st, 0);
+        sort(results.begin(), results.end());
+        return results[0];
+    }
     
     void test_PrintMinNumber(){
         std::vector<int> a{3,32,321};
         std::cout << "test_PrintMinNumber starting........" << std::endl;
-        std::cout << PrintMinNumber(a) << std::endl;
+        std::cout << PrintMinNumber2(a) << std::endl;
     }
 }
 #endif /* PrintMinNumber_hpp */

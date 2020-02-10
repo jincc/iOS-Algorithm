@@ -68,6 +68,7 @@ namespace codinginterviews {
             }
             std::swap(str[i], str[begin]);
             Permutation2(str, begin+1);
+            std::swap(str[i], str[begin]);
         }
     }
     std::vector<std::string> Permutation2(std::string &str) {

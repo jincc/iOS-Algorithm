@@ -38,6 +38,9 @@
 #include "addList.h"
 #include "getIntersectNode.h"
 #include "reverseKNodes.h"
+#include "removeRepeatNode.h"
+#include "DeleteNodeO1.h"
+#include "LastRemaining_Solution.h"
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -71,7 +74,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_FindKthToTail();
     codinginterviews::test_ReverseList();
     codinginterviews::test_deleteDuplication();
-    
+    codinginterviews::test_Solution_LastRemaining();
     
 #pragma mark - itinterviews
     itinterviews::test_printCommonPart();
@@ -86,5 +89,7 @@ int main(int argc, const char * argv[]) {
     itinterviews::test_addList();
     itinterviews::test_getIntersectNode();
     itinterviews::test_reverseKNodes();
+    itinterviews::test_removeRepeatNode();
+    
     return 0;
 }
