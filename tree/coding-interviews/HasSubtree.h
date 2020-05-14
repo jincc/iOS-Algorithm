@@ -18,34 +18,24 @@ https://www.nowcoder.com/practice/6e196c44c7004d15b1610b9afca8bd88?tpId=13&tqId=
  */
 
 namespace codinginterviews {
-    /*
-     思路是递归查找
-     
-     如果pRoot1.val == pRoot2.val，则说明根节点匹配，继续判断pRoot1.left是否包含pRoot2.left 和 pRoot1.right是否包含pRoot2.right
-     如果pRoot1.val != pRoot2.val，则说明根节点不匹配，那么要么pRoot2存在于左子树，要么存在于右子树.
-     需要注意终止条件.
-     */
-    bool HasSubtree2(TreeNode* pRoot1, TreeNode* pRoot2)
-    {
-        if (pRoot2 == nullptr) {//如果pRoot2为空，说明肯定是包含关系
-            return true;
-        }
-        if (pRoot1 == nullptr && pRoot2 != nullptr) {//如果pRoot1已经没有节点了，但是pRoot2还存在值，那么肯定不是包含关系.
-            return false;
-        }
-        if (pRoot1->val == pRoot2->val &&
-            HasSubtree2(pRoot1->lchild, pRoot2->lchild) &&
-            HasSubtree2(pRoot1->rchild, pRoot2->rchild)) {
-            return true;
-        }
-        return HasSubtree2(pRoot1->lchild, pRoot2) || HasSubtree2(pRoot1->rchild, pRoot2);
+/*
+ 分析:三种情况:
+    1. 当前A和B val一样，需要dfs判断它们的左右子树是不是一样的.
+    2. 当前A和B val不一样,判断A的左子树是否包含B
+    3. 当前A和B val不一样,判断A的右子树是否包含B
+*/
+    bool dfs(TreeNode* A, TreeNode* B);
+    bool isSubStructure(TreeNode* A, TreeNode* B){
+        if (A == NULL || B == NULL) return false;
+
+        return dfs(A, B) || isSubStructure(A->lchild, B) || isSubStructure(A->rchild, B);
     }
-    bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2)
-    {
-        if (pRoot2 == nullptr) {
-            return false;
-        }
-        return HasSubtree2(pRoot1, pRoot2);
+
+    bool dfs(TreeNode* A, TreeNode* B){
+        if (B == NULL) return true;
+        if (A == NULL) return false;
+        if (A->val != B->val) return false;
+        return dfs(A->lchild, B->lchild) && dfs(A->rchild, B->rchild);
     }
     
     void test_HasSubtree(){
@@ -69,7 +59,7 @@ namespace codinginterviews {
         pRoot2->lchild = createnode(8);
         
         std::cout << "test_HasSubtree starting........." << std::endl;
-        std::cout << HasSubtree(node4, pRoot2) << std::endl;
+        std::cout << isSubStructure(node4, pRoot2) << std::endl;
     }
 }
 #endif /* HasSubtree_hpp */

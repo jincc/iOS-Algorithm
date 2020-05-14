@@ -24,6 +24,7 @@ namespace leetcode {
      链接：https://leetcode-cn.com/problems/merge-two-sorted-lists
      著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
      */
+#pragma mark - 迭代实现
     ListNode* mergeTwoLists(ListNode *l1, ListNode*l2){
         ListNode *head = new ListNode(0);
         ListNode *ct = head;
@@ -46,7 +47,7 @@ namespace leetcode {
     
     ListNode *mergeTwoLists01(ListNode* head1, ListNode* head2){
         ListNode *p1 = head1,  *p2=head2;
-        static ListNode dummy(0);
+        ListNode dummy(0);
         
         dummy.next = p1;
         ListNode *prev = &dummy;
@@ -68,7 +69,21 @@ namespace leetcode {
         
         return dummy.next;
     }
+#pragma mark - 递归实现
+     ListNode* mergeTwoListsRecursion( ListNode* l1,  ListNode* l2){
+        if (l1 == NULL) return l2;
+        if (l2 == NULL) return l1;
 
+        ListNode *pHead = NULL;
+        if (l1->val < l2->val){
+            pHead = l1;
+            pHead->next = mergeTwoLists(l1->next, l2);
+        }else{
+            pHead = l2;
+            pHead->next = mergeTwoLists(l1, l2->next);
+        }
+        return pHead;
+    }
     
     void test_mergeTwoLists(){
         singlyLinkedList ll,l2;

@@ -15,62 +15,71 @@
  */
 
 namespace codinginterviews {
-    
     /*
      这题最大的陷阱就在于没有限制n的值，即有可能超出了int/long/longlong的范围。
      所以我们采用字符串的方式来解决.
      */
-    bool IncrementNumber(char * number){
-        //每次把最后一位加一
-        int len = strlen(number);
-        int flag = 0;//是否产生了进位
-        for (int i=len-1; i>=0; i--) {
-            int sum = number[i] - '0' + flag;
-            if (i == len-1)
-                sum++;
-            if (sum >= 10){
-                //产生了进位
+    int increment1(char nums[], int len);
+    void printnumber(char nums[], int len);
+    void printToMaxOfNDigits(int n){
+        if (n <= 0) return;
+        
+        char nums[n+1];
+        memset(nums, '0', n+1);
+        nums[n] = '\0';
+        
+        while (increment1(nums, n)) {
+            printnumber(nums, n);
+        }
+    }
+    int increment1(char nums[], int len){
+        int overflow = 0, sign;
+        int i, num;
+        
+        sign = 1;
+        for(i = len -1; i>=0 ;i--){
+            num = nums[i] - '0';
+            num += sign;
+            if (num == 10){
                 if (i == 0){
-                    return false;//越界，退出
+                    overflow = 1;
+                    break;
                 }
-                flag = 1;
-                sum -= 10;
-                number[i] = '0' + sum;
+                sign = 1;
+                nums[i] = '0';
             }else{
-                //没有产生进位
-                number[i] = '0' + sum;
+                sign = 0;
+                nums[i] = num + '0';
                 break;
             }
         }
-        return true;
+        return !overflow;
     }
-    void PrintNumber(char *number){
-        //跳过前面的0打印
-        int len = strlen(number);
-        bool begin0 = true;
-        for (int i=0; i<len; i++) {
-            if (begin0 && number[i] != '0')
-                begin0 = false;
-            if (!begin0) {
-                printf("%c", number[i]);
-            }
-        }
-        printf("\n");
+    void printnumber(char nums[], int len){
+        char *p = nums;
+        while(*p == '0')
+            p++;
+        if (*p == '\0') return;
+        printf("%s\n", p);
     }
-    void Print1ToMaxOfNDigits(int n){
+
+    void recursivePrintToMaxOfNDigits(char nums[], int len, int level);
+    void printToMaxOfNDigits2(int n){
         if (n <= 0) return;
         
-        char *buf = (char *)malloc(n+1);
-        memset(buf, '0', n);
-        buf[n] = '\0';
-    
-        while (IncrementNumber(buf)) {
-            PrintNumber(buf);
-        }
-        delete [] buf;
+        char nums[n+1];
+        memset(nums, '0', n+1);
+        nums[n] = '\0';
+        recursivePrintToMaxOfNDigits(nums, n, 0);
     }
-    
-    
+    void recursivePrintToMaxOfNDigits(char nums[], int len, int level){
+        if (level == len) return;
+        for (int i=0; i<10; i++) {
+            nums[level] = '0' + i;
+            recursivePrintToMaxOfNDigits(nums, len, level+1);
+            printnumber(nums, len);
+        }
+    }
 }
 
 #endif /* Print1ToMaxOfNDigits_hpp */

@@ -28,6 +28,7 @@
 #include "VerifySquenceOfBST.h"
 #include "isSameTree.h"
 #include <string>
+#include "Tree.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -114,6 +115,6 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_isSymmetrical2();
     
     std::vector<int> v{1,2,3,4,5};
-    bool isVaild =  codinginterviews::VerifySquenceOfBST2(v);
+//    bool isVaild =  codinginterviews::VerifySquenceOfBST2(v);
     return 0;
 }

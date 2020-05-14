@@ -21,17 +21,18 @@
 #include "hanoiProblem.h"
 #include "getMaxWindow.h"
 #include "getMaxRectSize.h"
+#import "Expression.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
-    stack<int> stk;
-    printf("stack test starting..........\n");
-    stk.push(1);
-    stk.push(2);
-    stk.push(3);
-    stk.print();
-    stk.pop();
-    stk.pop();
-    stk.print();
+//    stack<int> stk;
+//    printf("stack test starting..........\n");
+//    stk.push(1);
+//    stk.push(2);
+//    stk.push(3);
+//    stk.print();
+//    stk.pop();
+//    stk.pop();
+//    stk.print();
     
     printf("sampleBrowser starting..........\n");
     sampleBrowser browser;
@@ -78,5 +79,10 @@ int main(int argc, const char * argv[]) {
     test_sortStackByStack();
     test_hanoiProblem();
     test_getMaxWindow();
+    
+    Expression expr;
+    vector<string> strs{"3", "+", "5", "-", "6", "*", "8" , "-" , "6"};
+    int i = expr.execut(strs);
+    printf("expr = [ %i]\n", i);
     return 0;
 }

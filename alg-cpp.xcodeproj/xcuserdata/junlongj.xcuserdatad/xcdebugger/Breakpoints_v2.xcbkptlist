@@ -57,29 +57,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "array/coding-interviews/PrintMinNumber.h"
-            timestampString = "599927151.914993"
+            filePath = "array/coding-interviews/reOrderArray.h"
+            timestampString = "611072803.998991"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
-            landmarkName = "test_PrintMinNumber()"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "array/coding-interviews/PrintMinNumber.h"
-            timestampString = "599927157.866888"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "PrintMinNumber2(vector&lt;int&gt; numbers)"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "test_reOrderArray()"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

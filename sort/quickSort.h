@@ -25,31 +25,37 @@
  最坏o(n^2)
  
  */
-
-int partition(int nums[], int start, int end){
-    int temp = nums[end];
-    int i = start;
-    for (int j=start; j<end; j++) {
-        if (nums[j] < temp) {
-            std::swap(nums[i++], nums[j]);
+#ifdef __cplusplus
+extern "C" {
+#endif
+void swap(int nums[], int idx1, int idx2){
+    int tmp = nums[idx1];
+    nums[idx1] = nums[idx2];
+    nums[idx2] = tmp;
+}
+int partition(int nums[], int len){
+    int target = nums[len-1];
+    int i, j;
+    
+    i = j = 0;
+    for(; j < len ; j++){
+        if (nums[j] < target){
+            swap(nums, i++, j);
         }
     }
-    std::swap(nums[i], nums[end]);
+    swap(nums, i, len-1);
     return i;
 }
-
-
-void quickSort(int nums[], int start, int end){
-    if (start >= end)
-        return;
-    int mid = partition(nums, start, end);
-    quickSort(nums, start, mid-1);
-    quickSort(nums, mid+1, end);
+void fqsort(int nums[], int size){
+    if (size <= 1) return;
+    int idx = partition(nums, size);
+    if (idx > 0)
+        fqsort(nums, idx);
+    if (size - idx - 1 > 0)
+        fqsort(nums+idx+1, size - idx - 1);
 }
-
-void quickSort(int nums[], int n){
-    quickSort(nums, 0, n-1);
+#ifdef __cplusplus
 }
-
+#endif
 
 #endif /* quickSort_h */

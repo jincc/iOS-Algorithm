@@ -19,6 +19,33 @@ https://www.nowcoder.com/practice/beb5aa231adc45b2a5dcc5b62c93f593?tpId=13&tqId=
  */
 
 namespace codinginterviews {
+    /**
+     * Note: The returned array must be malloced, assume caller calls free().
+     */
+    int* exchange(int* nums, int numsSize, int* returnSize){
+        if (nums == NULL || numsSize <= 0) return NULL;
+        
+        if (returnSize){
+            *returnSize = numsSize;
+        }
+        int i, j;
+        i = j = 0;
+        for(i = 0; i < numsSize; i++){
+            if ((nums[i] & 0x1) == 0)
+                break;
+        }
+        if (i == numsSize)
+            return nums;
+        j = i;
+        for(; j < numsSize; j++){
+            if(nums[j] & 0x1){
+                int tmp = nums[j];
+                nums[j] = nums[i];
+                nums[i++] = tmp;
+            }
+        }
+        return nums;
+    }
     void reOrderArray(std::vector<int> &array) {
         if (array.empty()) {
             return;
@@ -43,6 +70,12 @@ namespace codinginterviews {
         std::vector<int> a{0,1,2,3,4,5,6};
         reOrderArray(a);
         a;
+        
+        int nums[] = {};
+        int *nums2 = exchange(nums, 0, NULL);
+        for (int i=0; i<7; i++) {
+            printf("%d\t",nums2[i]);
+        }
     }
 }
 

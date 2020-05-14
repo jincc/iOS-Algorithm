@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_GetUglyNumber_Solution();
     
     leetcode::test_isValidSudoku();
-    codinginterviews::Print1ToMaxOfNDigits(3);
+    codinginterviews::printToMaxOfNDigits(3);
     codinginterviews::test_IsContinuous2();
     return 0;
 }

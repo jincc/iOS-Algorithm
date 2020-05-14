@@ -20,6 +20,7 @@
 		3A5C8BB022E05D0E00354740 /* MyCircularDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8BAF22E05D0E00354740 /* MyCircularDeque.cpp */; };
 		3A5C8BBB22E06F6900354740 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8BBA22E06F6900354740 /* main.cpp */; };
 		3A5C8BD222E1A7AE00354740 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8BD122E1A7AE00354740 /* main.cpp */; };
+		3A6C5209246C115D00594297 /* Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A6C5208246C115D00594297 /* Tree.cpp */; };
 		3A717D6C22DEBC4E002DA2C2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A717D6B22DEBC4E002DA2C2 /* main.cpp */; };
 		3A717D7922DEBC6E002DA2C2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A717D7822DEBC6E002DA2C2 /* main.cpp */; };
 		3A717D8722DEBE7B002DA2C2 /* base.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A717D8622DEBE7B002DA2C2 /* base.h */; };
@@ -362,6 +363,8 @@
 		3A65DBC822F813F10026166D /* FindNumbersWithSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumbersWithSum.h; sourceTree = "<group>"; };
 		3A65DBCB22F819060026166D /* FindContinuousSequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindContinuousSequence.h; sourceTree = "<group>"; };
 		3A65DBCE22F823AD0026166D /* GetUglyNumber_Solution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GetUglyNumber_Solution.h; sourceTree = "<group>"; };
+		3A6C5207246C115D00594297 /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		3A6C5208246C115D00594297 /* Tree.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tree.cpp; sourceTree = "<group>"; };
 		3A6CF75722E554EC004B8775 /* bSearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bSearchTree.h; sourceTree = "<group>"; };
 		3A6CF75A22E5A626004B8775 /* heap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = heap.h; sourceTree = "<group>"; };
 		3A6CF75D22E5BEE0004B8775 /* heapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = heapSort.h; sourceTree = "<group>"; };
@@ -385,6 +388,7 @@
 		3A717DAD22DF159B002DA2C2 /* hasCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hasCycle.h; sourceTree = "<group>"; };
 		3A717DB022DF213F002DA2C2 /* detectCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = detectCycle.h; sourceTree = "<group>"; };
 		3A717DB322DF391C002DA2C2 /* reverseList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reverseList.h; sourceTree = "<group>"; };
+		3AA8ED85241E717100179925 /* Expression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Expression.h; sourceTree = "<group>"; };
 		3AAD2E6D22E00ADB006078A4 /* middleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = middleNode.h; sourceTree = "<group>"; };
 		3AAD2E6E22E00ADB006078A4 /* removeNthFromEnd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = removeNthFromEnd.h; sourceTree = "<group>"; };
 		3AAD2E6F22E00ADB006078A4 /* isPalindrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = isPalindrome.h; sourceTree = "<group>"; };
@@ -958,6 +962,7 @@
 				3A5C8BA422E05ABF00354740 /* leetcode */,
 				3A5C8B9622E0109200354740 /* main.cpp */,
 				3A5C8B9B22E010A200354740 /* stack.h */,
+				3AA8ED85241E717100179925 /* Expression.h */,
 				3A5C8B9E22E0166900354740 /* sampleBrowser.h */,
 				3A5C8BA122E045E900354740 /* queue.h */,
 				3A5C8BA222E045E900354740 /* queue.cpp */,
@@ -1183,6 +1188,8 @@
 				3A091A2B22EFE31E00EFA79C /* leetcode */,
 				3AE1B00322E3174D00DF4545 /* main.cpp */,
 				3AE1B00822E326AE00DF4545 /* btree.h */,
+				3A6C5207246C115D00594297 /* Tree.h */,
+				3A6C5208246C115D00594297 /* Tree.cpp */,
 				3A6CF75722E554EC004B8775 /* bSearchTree.h */,
 				3A6CF75A22E5A626004B8775 /* heap.h */,
 			);
@@ -1712,6 +1719,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AE1B00422E3174D00DF4545 /* main.cpp in Sources */,
+				3A6C5209246C115D00594297 /* Tree.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
