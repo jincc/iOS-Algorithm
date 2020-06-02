@@ -22,6 +22,7 @@
 #include "getMaxWindow.h"
 #include "getMaxRectSize.h"
 #import "Expression.h"
+#import "validateStackSequences.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
 //    stack<int> stk;
@@ -79,6 +80,7 @@ int main(int argc, const char * argv[]) {
     test_sortStackByStack();
     test_hanoiProblem();
     test_getMaxWindow();
+    test_validateStackSequences();
     
     Expression expr;
     vector<string> strs{"3", "+", "5", "-", "6", "*", "8" , "-" , "6"};

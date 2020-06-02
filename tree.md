@@ -1,17 +1,55 @@
-## 树
+# 树
 
-### 二叉树
+关于树的算法题，重点要掌握以下这个:
 
-* 实现一个二叉查找树，并且支持插入，删除，查找
-* 实现二叉查找树中某个节点的后继，前驱节点
-* 实现二叉树前，中，后序，以及按层遍历
+- 前序，中序，后序的遍历
+- 递归与回溯
+- 二叉搜索树
 
-### 堆
 
-* 实现一个小顶堆，大顶堆，优先级队列
-* 实现堆排序
-* 利用优先级队列合并K个有序数组
-* 求一组动态数据集合的最大Top K
+## 遍历
+
+二叉树的很多算法题都和树的遍历算法息息相关，选中合适的遍历方法就已经成功了一大半了，所以这是重点.
+
+
+[树的变量-递归&迭代](./tree/Tree.h)
+
+
+## 递归和回溯
+
+二叉树的大部分题型都是利用递归来解决的，使用递归重点在于: 第一确定递推公式，第二递归终止条件，除此之外，使用剪枝能提高很大一部分性能.
+
+
+典型题型比如: 《路径总和》系列,leetcode 112, 113, 437
+
+
+题目437和537题目解题思路有点类似，都是把二叉树的每个节点都当成是根节点，然后递归求最优解.
+
+模板如下:
+
+[437. 路径总和 III](https://leetcode-cn.com/problems/path-sum-iii/)
+
+```
+int dfs(struct TreeNode * root, int sum);
+int pathSum(struct TreeNode* root, int sum){
+    if (root == NULL) 
+        return 0;
+    return dfs(root, sum) + pathSum(root->left, sum) + pathSum(root->right, sum);
+}
+int dfs(struct TreeNode * root, int sum){
+    if (root == NULL) 
+        return 0;
+    sum -= root->val;
+    int cnt = 0;
+    if (sum == 0)
+        cnt = 1;
+    return dfs(root->left, sum) + dfs(root->right, sum) + cnt;
+}
+```
+
+
+
+
 
 ### leetcode
 

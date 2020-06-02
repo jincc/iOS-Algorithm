@@ -67,6 +67,48 @@ private:
     }
 };
 
+int min3(int x, int y, int z) {return min(min(x, y),z);}
+int levenshtein_distance_dp(char *pStr1, char *pStr2){
+    /*
+     现在我们假设pStr1[i] != pStr2[j], 那么有以下几种情况可以使它们相等:
+        1. 删除pStr1[i], distance = st[i-1][j] + 1
+        2. 删除pStr2[j], distance = st[i][j-1] + 1
+        3. 在pStr1前面新增字符,  distance = st[i-1][j] + 1
+        4. 在pStr2前面新增字符, distance = st[i][j-1] + 1
+        5. 替换s1,s2的当前字符 distance = st[i-1][j-1] + 1
+     */
+    size_t s1, s2;
+    s1 = strlen(pStr1);
+    s2 = strlen(pStr2);
+    int st[s1][s2];//到达字符串pStr1的i位置和pStr2的j位置的最短距离.
+    memset(st, 0, sizeof(st));
+    
+    //初始化初始状态
+    st[0][0] = pStr1[0] == pStr2[0] ? 0 : 1;
+    for (int i=1; i < s1; i++) {
+        st[0][i] = st[0][i-1] + 1;
+    }
+    for (int i=1; i < s2; i++) {
+        st[i][0] = st[i-1][0] + 1;
+    }
+    
+    for (int i=1; i < s1; i++) {
+        for (int j=1; j < s2; j++) {
+            if (pStr1[i] != pStr2[i]){
+                st[i][j] = min3(st[i-1][j] + 1, st[i][j-1] + 1, st[i-1][j-1] + 1);
+            }else{
+                /*
+                 如果pStr1[i] ==  pStr2[j],那么有三种情况:
+                    1. 从(i-1, j-1)不需要做任何操作。
+                    2. 从(i-1, j) 删除pStr1[i]
+                    3. 从(i, j-1) 删除pStr2[j]
+                 */
+                st[i][j] = min3(st[i-1][j] + 1, st[i][j-1] + 1, st[i-1][j-1]);
+            }
+        }
+    }
+    return st[s1-1][s2-1];
+}
 
 void test_levenshtein_distance(){
     std::cout << "-----------莱文斯坦距离-------------\n" << std::endl;
@@ -74,6 +116,7 @@ void test_levenshtein_distance(){
     std::string s1 = "mitcmu";
     std::string s2 = "mtacnu";
     std::cout << so.solve(s1, s2) << std::endl;
+    std::cout << levenshtein_distance_dp("mitcmu", "mtacnu") << std::endl;
 }
 
 #endif /* levenshtein_distance_hpp */

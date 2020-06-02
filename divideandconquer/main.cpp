@@ -13,8 +13,17 @@ int main(int argc, const char * argv[]) {
     using namespace std;
     cout << "数组里面的逆序对 starting.........." << endl;
     
-    int nums[] = {3,1,2,7,4,3};
-//    reversedOrderPairs(nums, 6, 0, 5);
-    cout << reversedOrderPairs(nums, 6) << endl;
+    {
+        int nums[] = {7,5,6,4,3,2,1};
+        printf("%d\n", reversedOrderPairs(nums, 7));
+        for(int i=0; i < 7; i++)
+            printf(" %d",nums[i]);
+    };
+    {   
+        int nums[] = {7,5,6,4,3,2,1};
+        printf("\n%d\n", reversePairs(nums, 7));
+        for(int i=0; i < 7; i++)
+            printf(" %d",nums[i]);
+    };
     return 0;
 }

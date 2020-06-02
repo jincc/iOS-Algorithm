@@ -10,6 +10,7 @@
 #define Mirror_hpp
 
 #include <stdio.h>
+#include <queue>
 /*
  剑指Offer（十八）：二叉树的镜像
  操作给定的二叉树，将其变换为源二叉树的镜像。
@@ -18,17 +19,38 @@
  */
 
 namespace  codinginterviews {
-    void Mirror(TreeNode *pRoot) {
-        if (pRoot == nullptr) {
-            return;
-        }
-        TreeNode *left = pRoot->lchild;
-        TreeNode *right = pRoot->rchild;
-        pRoot->lchild = right;
-        pRoot->rchild = left;
-        Mirror(left);
-        Mirror(right);
+#pragma mark - 递归
+     TreeNode* mirrorTree( TreeNode* root){
+        if (root == NULL) return root;
+
+        TreeNode *pleft = root->lchild;
+        TreeNode *pright =  root->rchild;
+        root->lchild = mirrorTree(pright);
+        root->rchild = mirrorTree(pleft);
+        return root;
     }
+#pragma mark- 循环
+    TreeNode* mirrorTree2( TreeNode* root){
+        if (root == NULL) return root;
+        
+        std::queue<TreeNode *> stk;
+        TreeNode *node =  NULL, *tmp = NULL;
+        stk.push(root);
+        while(!stk.empty()){
+            node = stk.front();stk.pop();
+            if (node->lchild) {
+                stk.push(node->lchild);
+            }
+            if (node->rchild){
+                stk.push(node->rchild);
+            }
+            tmp = node->lchild;
+            node->lchild = node->rchild;
+            node->rchild = tmp;
+        }
+        return root;
+    }
+    
     void test_Mirror(){
         std::cout << "test_Mirror starting......." << std::endl;
         TreeNode *node4 = new TreeNode(4);
@@ -45,7 +67,16 @@ namespace  codinginterviews {
         node7->lchild = node6;
         node7->rchild = node9;
         
-        Mirror(node4);
+        mirrorTree2(node4);
+        /*
+         val: 4, isleaf: 0
+         val: 7, isleaf: 0
+         val: 2, isleaf: 0
+         val: 9, isleaf: 1
+         val: 6, isleaf: 1
+         val: 3, isleaf: 1
+         val: 1, isleaf: 1
+         */
         btree::levelOrder(node4);
     }
 }

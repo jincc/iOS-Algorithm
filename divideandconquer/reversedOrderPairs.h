@@ -60,4 +60,44 @@ int reversedOrderPairs(int nums[], int n){
 
 
 
+int invertPairCore(int *nums, int start, int end);
+int reversePairs(int* nums, int numsSize){
+    if (nums == NULL || numsSize <= 0)
+        return 0;
+    return invertPairCore(nums, 0 , numsSize - 1);
+}
+int invertPairCore(int *nums, int start, int end){
+    if (start >= end){
+        return 0;
+    }
+    int middle = start + (end - start) / 2;
+    int leftcnt = invertPairCore(nums, start, middle);
+    int rightcnt = invertPairCore(nums, middle+1, end);
+    int cnt = 0;
+    int temp[end - start +1];
+    int p1, p2, p3;
+    p1 = middle;
+    p2 = end;
+    p3 = end - start;
+    while(p1 >= start && p2 >= middle+1){
+        if (nums[p1] > nums[p2]){
+            cnt = p2 - middle;
+            temp[p3--] = nums[p1--];
+        }else{
+            temp[p3--] = nums[p2--];
+        }
+    }
+    while(p1 >= start){
+        temp[p3--] = nums[p1--];
+    }
+    while(p2 >= middle+1){
+        temp[p3--] = nums[p2--];
+    }
+    for(p1=start, p2 = 0;p1 <= end; p1++, p2++){
+        nums[p1] = temp[p2];
+    }
+    return leftcnt + rightcnt + cnt;
+}
+
+
 #endif /* reversedOrderPairs_hpp */

@@ -47,19 +47,16 @@ int main(int argc, const char * argv[]) {
 //    return 1;
     
     
-    int nums[8];
-    memset(nums, -1, 8*sizeof(int));
-    eightQueens(nums, 8, 0);
+    eightQueue(4);
     
-    static const int KNAPSACK[5]={2,2,4,6,3};
+    int KNAPSACK[5]={2,2,4,6,3};
     cout << "0-1背包问题" << endl;
-    cout << knapsack(KNAPSACK, 5, 9) << endl;
+    cout << backpack01(KNAPSACK, 5, 9) << endl;
     
     leetcode::test_letterCombinations();
     leetcode::test_combinationSumII();
     //字符串匹配
-    Pattern pattern = Pattern("ac??f");
-    cout << "是否能匹配: " << pattern.match("acddf") << endl;
+    cout << "字符串匹配 :"<< isMatch("acddf","ac*") << endl;
     
     leetcode::test_permutation_sequence();
     leetcode::test_combinations();

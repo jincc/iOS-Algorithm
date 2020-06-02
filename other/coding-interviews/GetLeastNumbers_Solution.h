@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <vector>
+#include <set>
 /*
  剑指Offer（二十九）：最小的K个数
  输入n个整数，找出其中最小的K个数。例如输入4,5,1,6,2,7,3,8这8个数字，则最小的4个数字是1,2,3,4,。
@@ -19,7 +20,32 @@ https://www.nowcoder.com/practice/6a296eb82cf844ca8539b57c23e6e9bf?tpId=13&tqId=
  */
 
 namespace codinginterviews {
+#pragma mark - v1
+std::vector<int> GetLeastNumbers_Solution_STL(std::vector<int> input, int k){
+    typedef std::multiset<int, greater<int>>  set;
+    typedef std::multiset<int, greater<int>>::iterator iterator;
     
+    set s;
+    int i;
+    for(i = 0; i < input.size(); i++){
+        if (s.size() < k){
+            s.insert(input[i]);
+        }else{
+            if (input[i] < *s.begin()){
+                s.erase(s.begin());
+                s.insert(input[i]);
+            }
+        }
+    }
+    
+    iterator begin = s.begin();
+    vector<int> result;
+    while(begin != s.end()){
+        result.push_back(*begin++);
+    }
+    return result;
+}
+#pragma mark - v2
     void swap_(int &a,int &b){
         int temp = a;
         a = b;
@@ -99,9 +125,9 @@ namespace codinginterviews {
         return results;
     }
     void test_GetLeastNumbers_Solution(){
-        std::vector<int> a{4,5,1,6,2,7,3,8};
+        std::vector<int> a{0,0,1,2,4,2,2,3,1,4};
         std::cout << "test_GetLeastNumbers_Solution starting,....." << std::endl;
-        std::vector<int> b = GetLeastNumbers_Solution2(a, 4);
+        std::vector<int> b = GetLeastNumbers_Solution(a, 8);
         b;
     }
 }

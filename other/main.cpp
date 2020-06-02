@@ -24,6 +24,37 @@
 #include "isValidSudoku.h"
 #include "Print1ToMaxOfNDigits.h"
 #include "IsContinuous2.h"
+#include <vector>
+#include <stdlib.h>
+#include <map>
+using namespace std;
+int compare(const void *num1,const  void *num2);
+bool isStraight(int* nums, int numsSize){
+    if (nums == NULL || numsSize != 5)
+        return false;
+    qsort(nums, numsSize, sizeof(int), compare);
+    int i, zerocnt, dif;
+    zerocnt = 0;
+    for(i=0; i < numsSize;i++){
+        if (nums[i] != 0){
+            break;
+        }
+        zerocnt++;
+    }
+    dif = 0;
+    for(; i < numsSize-1; i++){
+        if (nums[i+1] == nums[i])
+            return false;
+        dif += nums[i+1] - nums[i] - 1;
+    }
+    return zerocnt >= dif;
+}
+
+int compare(const void *num1,const  void *num2){
+    int n1 = *(int *)num1;
+    int n2 = *(int *)num2;
+    return n1 > n2;
+}
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -42,5 +73,14 @@ int main(int argc, const char * argv[]) {
     leetcode::test_isValidSudoku();
     codinginterviews::printToMaxOfNDigits(3);
     codinginterviews::test_IsContinuous2();
+    codinginterviews::test_countDigitOne();
+    
+//    int nums[] = {9,1,7,9,7,9,7};
+//    printf("singleNumber: %d\n",singleNumber(nums, 7));
+    int nums[] = {1, 2, 5, 0, 0};
+    isStraight(nums, 5);
+    
+    map<int, int> m;
+    cout << m[0] << endl;
     return 0;
 }

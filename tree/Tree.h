@@ -18,6 +18,7 @@ extern "C" {
         BTreeNode *left;
         BTreeNode *right;
     };
+    BTreeNode *creatTreeNode(int val);
     BTreeNode *creatTree(int vals[], int n);
     void preOrder(BTreeNode *pTree);
     void preOrderIterate(BTreeNode *pTree);

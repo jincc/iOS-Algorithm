@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
-
+#include <math.h>
 /*
  剑指Offer（三十二）：把数组排成最小的数
  输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323。
@@ -31,7 +31,45 @@ namespace codinginterviews {
      若ab = ba 则 a 等于 b；
      根据上述规则，我们需要先将数字转换成字符串再进行比较，因为需要串起来进行比较。比较完之后，按顺序输出即可。
      */
+
+#pragma mark - v1
+
+#define NUMBER_SIZE 10
+char p_strCombine1[NUMBER_SIZE * 2 + 1];
+char p_strCombine2[NUMBER_SIZE * 2 + 1];
+int compare(const void *num1, const void *num2){
+    strcpy(p_strCombine1, *(const char **)num1);
+    strcat(p_strCombine1, *(const char **)num2);
     
+    strcpy(p_strCombine2, *(const char **)num2);
+    strcat(p_strCombine2, *(const char **)num1);
+    return strcmp(p_strCombine1, p_strCombine2);
+}
+char* minNumber(int* nums, int numsSize){
+    if (nums == NULL || numsSize <= 0)
+        return NULL;
+    char **numstrs = (char **)malloc(sizeof(char *) * numsSize);
+    int i, len = 0;
+    for(i =0; i < numsSize; i++){
+        numstrs[i] = (char *)malloc(sizeof(char) * (NUMBER_SIZE * 2 + 1));
+        sprintf(numstrs[i], "%d", nums[i]);
+        len += strlen(numstrs[i]);
+    }
+
+    //排序
+    qsort(numstrs, numsSize, sizeof(char *), compare);
+    char *result = (char *)malloc(sizeof(char) * (len+1));
+    result[0] = '\0';
+    for(i=0; i < numsSize; i++){
+        strcat(result, numstrs[i]);
+        free(numstrs[i]);
+        numstrs[i] = NULL;
+    }
+    result[len] = '\0';
+    free(numstrs);
+    return result;
+}
+#pragma mark - v2 by STL
     static bool Compare(int a, int b){
         std::string A = std::to_string(a) + std::to_string(b);
         std::string B = std::to_string(b) + std::to_string(a);
@@ -45,7 +83,7 @@ namespace codinginterviews {
         }
         return s;
     }
-#pragma mark - v2
+#pragma mark - v3 全排列
     using namespace std;
     vector<string> results;
     void permutation(vector<int> &numbers, string str, vector<bool> st, int level){
@@ -76,6 +114,9 @@ namespace codinginterviews {
         std::vector<int> a{3,32,321};
         std::cout << "test_PrintMinNumber starting........" << std::endl;
         std::cout << PrintMinNumber2(a) << std::endl;
+        int nums[] = {10,2};
+        char *result = minNumber(nums, 2);
+        puts(result);
     }
 }
 #endif /* PrintMinNumber_hpp */

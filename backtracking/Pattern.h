@@ -10,7 +10,7 @@
 #define Pattern_hpp
 
 #include <stdio.h>
-#include <string>
+#include <string.h>
 /*
  正则表达式匹配，假设通配符只有两个，一个是*，一个是?
  * 代表可以匹配任意多个(>=0)任意字符.
@@ -21,44 +21,41 @@
     2.如果是通配字符，就有很多种选择了，就拿*来说，它可以匹配任意多个任意字符，这里我们利用回溯的思想穷举出所有的情况.
  
  */
-class Pattern {
-public:
-    Pattern(const std::string &p):pattern(p){}
-    //原文本 abcdefg  模式串ac*f
-    bool match(std::string txt){
-        isMatch = false;
-        match(txt, 0, 0);
-        return isMatch;
-    }
-private:
-    std::string pattern;
-    bool isMatch = false;
-    void match(std::string &txt,size_t pi, size_t tj){
-        //终止条件
-        if (isMatch) 
-            return;
-        
-        if (tj == txt.size()) {
-            if (pi == pattern.size()) {
-                isMatch = true;
-                return;
-            }
-        }
-        //处理流程
-        if (pi < pattern.size() && pattern[pi] == '*') {
-            //匹配任意多个任意字符
-            for (int i=0; i<txt.size()-tj; i++) {
-                match(txt, pi+1, tj+i);
-            }
-        }else if (pi < pattern.size()  && pattern[pi] == '?'){
-            //匹配0/1个任意字符
-            match(txt, pi+1, tj);
-            match(txt, pi+1, tj+1);
-        }else if (pi < pattern.size()  && tj<txt.size() && pattern[pi] == txt[tj]){
-            match(txt, pi+1, tj+1);
-        }
-    }
-};
 
+typedef struct {
+    const char *str;
+    size_t slen;
+    const char *pattern;
+    size_t plen;
+    bool match;
+}match_t;
 
+void match(match_t *context, int pidx, int sidx);
+bool isMatch(const char *str, const char *pattern){
+    match_t m  = (match_t){str, strlen(str), pattern, strlen(pattern), false};
+    match(&m, 0, 0);
+    return m.match;
+}
+
+void match(match_t *context, int pidx, int sidx){
+    if (context->match) return;
+    
+    if (pidx == context->plen){
+        if (sidx == context->slen)
+            context->match = true;
+    }
+    
+    char ch = context->pattern[pidx];
+    if (ch == '?'){
+        match(context, pidx+1, sidx);
+        match(context, pidx+1, sidx+1);
+    }else if (ch == '*'){
+        for (int i=0; i <= context->slen - sidx; i++) {
+            match(context, pidx+1, sidx+i);
+        }
+    }else if (sidx < context->slen && ch == context->str[sidx]){
+        match(context, pidx+1, sidx+1);
+    }
+    
+}
 #endif /* Pattern_hpp */

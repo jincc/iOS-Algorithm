@@ -22,36 +22,31 @@ namespace codinginterviews {
      后序遍历顺序：左右根.
      思路：先找到左子树和右子树的分界线，然后递归判断是否满足条件
      */
-    bool VerifySquenceOfBST(std::vector<int> sequence,int start,int end) {
-        if (sequence.empty() || start > end) {
-            return false;
-        }
-        int tail = sequence[end];
-        int i = start;
-        //找到左右子树分界线
-        for (; i < end; i++) {
-            if (sequence[i] > tail) {
+    bool verifyPostorder(int* postorder, int postorderSize){
+        if (postorder == NULL || postorderSize == 0) return true;
+
+        int rootvalue = postorder[postorderSize-1];
+        int i, j;
+        for(i=0;i < postorderSize-1; i++){
+            if (postorder[i] > rootvalue)
                 break;
-            }
         }
-        //判断i之后的元素是否都比tail大.
-        for (int j=i; j<end; j++) {
-            if (sequence[j] < tail) {
+        for(j = i; j < postorderSize-1; j++){
+            if (postorder[j] < rootvalue)
                 return false;
-            }
         }
-        bool leftbst = true;
-        if (start <= i-1){
-            leftbst =  VerifySquenceOfBST(sequence, start, i-1);
-        }
-        bool rightbst = true;
-        if (i <= end - 1) {
-            rightbst = VerifySquenceOfBST(sequence, i, end-1);
-        }
-        return leftbst && rightbst;
+        int result = 1;
+        if (i > 0)
+            result = verifyPostorder(postorder, i);
+        if (result && i < postorderSize-1) //如果左子树已经不满足，那么久没有必要监测右子树了.
+            result &= verifyPostorder(postorder+i, postorderSize-i-1);
+
+        return result;
     }
-    bool VerifySquenceOfBST(std::vector<int> sequence) {
-        return VerifySquenceOfBST(sequence, 0, sequence.size()-1);
+    void test_verifyPostorder(){
+        int post[] = {1,3,2,6,5};
+        int result = verifyPostorder(post, 5);
+        printf("test_verifyPostorder: %d\n",result);
     }
 }
 #endif /* VerifySquenceOfBST_hpp */

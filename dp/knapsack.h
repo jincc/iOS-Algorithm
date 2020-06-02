@@ -38,41 +38,55 @@ private:
     }
 };
 
-#pragma mark - 0-1动态规划
-class knapsack_dp{
-public:
-    int backtrack(const int weights[], int n, int limitweight){
-        bool st[n][limitweight+1];
-        memset(st, false, sizeof(st));
-        //第一个物品
-        st[0][0]=true;//不放
-        if (weights[0] <= limitweight) {
-            st[0][weights[0]] = true; //放
-        }
-        //对于后面的状态，动态的推导
-        for (int i=1; i<n; i++) {
-            //对于前面已经选择过的状态st[i-1][.......]，我们可以推算出st[i][.......]
-            for (int j=0; j<=limitweight; j++) { //不放
-                if (st[i-1][j]) {
-                    st[i][j]=st[i-1][j];
-                }
-            }
-            
-            for (int j=0; j<=limitweight-weights[i]; j++) {//放
-                if (st[i-1][j]) {
-                    st[i][j+weights[i]] = true;
-                }
+
+int backpack01_dp(const int weights[], int n, int limitweight){
+    if (weights == NULL || n <= 0) return 0;
+    
+    bool st[n][limitweight+1];
+    memset(st, 0, sizeof(st));
+    st[0][0] = 1;
+    if (weights[0] <= limitweight)
+        st[0][weights[0]] = 1;
+    for (int i=1; i<n; i++) {
+        for (int j=0; j<=limitweight; j++) {
+            if (st[i-1][j] == 1){
+                st[i][j] = 1;
+                if (j + weights[i] <= limitweight)
+                    st[i][j + weights[i]] = 1;
             }
         }
-        
-        for (int i=limitweight; i>=0; i--) {
-            if (st[n-1][i]) {
-                return i;
+    }
+    for (int i=limitweight; i>=0; i--) {
+        if (st[n-1][i]) {
+            return i;
+        }
+    }
+    return 0;
+}
+
+int backpack01_dp2(const int weights[], int n, int limitweight){
+    if (weights == NULL || n <= 0) return 0;
+    
+    bool st[limitweight+1];
+    memset(st, 0, sizeof(st));
+    st[0] = 1;
+    if (weights[0] <= limitweight)
+        st[weights[0]] = 1;
+    
+    for (int i=1; i<n; i++) {
+        for (int j=limitweight-weights[i]; j>=0; j--) {
+            if (st[j] == 1){
+                st[j+weights[i]] = 1;
             }
         }
-        return 0;
-    };
-};
+    }
+    for (int i=limitweight; i>=0; i--) {
+        if (st[i]) {
+            return i;
+        }
+    }
+    return 0;
+}
 
 #pragma mark - 0-1升级版
 /*
@@ -102,70 +116,50 @@ private:
     }
 };
 
-class knapsack_dp2 {
-public:
-    /*
-     动态规划：
-     问题的求解，分成N个阶段，每个阶段对应一次抉择，每次抉择之后，背包中物品的重量和价值都会发生变化，我们合并这些状态，在同等重量的物品组合中，我们使用高价值的物品组合。然后基于这些状态来推导出下一层的状态.
-     */
-    int knapsack(const int weights[], const int values[], int n, int limitweight){
-        
-        int states[n][limitweight+1];
-        memset(states, -1, sizeof(states));
-        //第一个物品
-        states[0][0] = 0;
-        if (weights[0] <= limitweight) {
-            states[0][weights[0]] = values[0];
-        }
-        
-        for (int i=1; i<n; i++) {
-            for (int j=0; j<=limitweight; j++) {
-                if (states[i-1][j] != -1) {
-                    states[i][j] = states[i-1][j];
-                }
-            }
-            
-            for (int j=limitweight-weights[i]; j>=0; j--) {
-                if (states[i-1][j] != -1) {
-                    states[i][j+weights[i]] = std::max(states[i][j+weights[i]], states[i-1][j]+values[i]);
+
+int backpace01_plus_dp(const int weights[], const int values[], int n, int limitweight){
+    int st[limitweight+1];
+    memset(st, -1, sizeof(st));
+    st[0] = 0;
+    if (weights[0] <= limitweight)
+        st[weights[0]] = values[0];
+    
+    for(int i=1; i < n; i++){
+        for (int j = limitweight; j >= 0; j--) {
+            if (st[j] != -1){
+                if (weights[i] + j  <= limitweight) {
+                    st[weights[i] + j] = std::max(st[j] + values[i], st[weights[i] + j]);
                 }
             }
         }
-        
-        int maxvalue = -1;
-        for (int i=0; i<=limitweight; i++) {
-            if (states[n-1][i] != -1) {
-                maxvalue = std::max(maxvalue, states[n-1][i]);
-            }
-        }
-        return maxvalue;
     }
-};
-
-
-
-
+    
+    int result = 0;
+    for(int i = limitweight; i>=0; i--){
+        if (st[i] != -1){
+            result = std::max(result, st[i]);
+        }
+    }
+    return result;
+}
 static const int KNAPSACK_[5]={2,2,4,6,3};
 static const int VALUE_[5]   ={3,4,8,9,6};
 void test_knapsack(){
     
     class knapsack so;
-    class knapsack_dp so_dp;
     int result = so.backtrack(KNAPSACK_, 5, 5);
     std::cout << "---------------\n" << "0-1背包问题,回溯:" << std::endl;
     std::cout << result << std::endl;
     
     std::cout << "0-1背包问题,动态规划:" << std::endl;
-    std::cout << so_dp.backtrack(KNAPSACK_, 5, 5) << std::endl;
-    
+    std::cout << backpack01_dp2(KNAPSACK_, 5, 5) << std::endl;
     
     class knapsack2 so2;
-    class knapsack_dp2 so_dp2;
     int maxvalue = so2.knapsack(KNAPSACK_, VALUE_, 5, 9);
     std::cout << "0-1背包升级问题, 回溯: " << std::endl;
     std::cout << maxvalue << std::endl;
     
-    maxvalue = so_dp2.knapsack(KNAPSACK_, VALUE_, 5, 9);
+    maxvalue = backpace01_plus_dp(KNAPSACK_, VALUE_, 5, 9);
     std::cout << "0-1背包升级问题, 动态规划: " << std::endl;
     std::cout << maxvalue << std::endl;
 }

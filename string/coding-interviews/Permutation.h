@@ -57,30 +57,37 @@ namespace codinginterviews {
     /*
      思路:将字符串看成两部分，第一个字符为固定的，后面剩余字符串又为待全排的字符串。所以我们首先要计算第一个位置可能出现的字符,即把第一个字符和后面的所有字符进行交换.
      */
-    void Permutation2(std::string str,int begin){
-        if (begin == str.length()) {
-            permutations.push_back(str);
-            return;
+    bool isskip(std::string &s, int start, int end);
+    void helper(std::string &s, std::vector<std::string> &result, int len,  int nStep);
+
+    std::vector<std::string> permutation(std::string s) {
+        std::vector<std::string> result;
+        helper(s, result, s.size(), 0);
+        return result;
+    }
+    void helper(std::string &s, std::vector<std::string> &result, int len,  int nStep){
+        if (nStep == len){
+            result.push_back(s);
         }
-        for (int i=begin; i<str.length(); i++) {
-            if (i!=begin && str[i] == str[begin]) {
-                continue;
-            }
-            std::swap(str[i], str[begin]);
-            Permutation2(str, begin+1);
-            std::swap(str[i], str[begin]);
+        for(int i = nStep; i < len; i++){
+            if (isskip(s, nStep, i)) continue;//跳过重复的值
+            std::swap(s[nStep], s[i]);
+            helper(s, result, len, nStep+1);
+            std::swap(s[nStep], s[i]);
         }
     }
-    std::vector<std::string> Permutation2(std::string &str) {
-        if (str.empty()) {
-            return {};
+    bool isskip(std::string &s, int start, int end){
+        /*
+         比如 0 1 2 3 4 5 6 4 7，现在pos在位置3，表示0 1 2是已经做过排列的子集， 如果3和第一个4交换递归到下一层就是0 1 2 4 3 5 6 4 7，此时pos为4；如果3和第二个4交换递归到下一层就是0 1 2 4 4 5 6 3 7，此时pos也为4， 这两种情况pos相等且排列好的前缀也相等， 继续递归会不会出现重复？
+        */
+        for (int i=start; i < end; i++){
+            if (s[i] == s[end]) return true;
         }
-        Permutation2(str, 0);
-        return permutations;
+        return false;
     }
     void test_Permutation(){
         std::string s = "abc";
-        std::vector<std::string> x = Permutation2(s);
+        std::vector<std::string> x = permutation(s);
         std::cout << "test_Permutation starting......" << std::endl;
         for (auto &str: x){
             std::cout << str <<"," ;

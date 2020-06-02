@@ -29,6 +29,25 @@
 #include "isSameTree.h"
 #include <string>
 #include "Tree.h"
+#include "treeToDoublyList.h"
+
+BTreeNode *pre = NULL;
+void flatten(BTreeNode* root){
+    if (root == NULL)
+        return;
+    BTreeNode *left = root->left;
+    BTreeNode *right = root->right;
+    if (pre){
+        pre->left = NULL;
+        pre->right = root;
+    }
+    pre = root;
+    flatten(left);
+    flatten(right);
+    
+}
+
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
@@ -113,8 +132,43 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_FindPath();
     codinginterviews::test_IsBalanced_Solution2();
     codinginterviews::test_isSymmetrical2();
+    codinginterviews::test_verifyPostorder();
     
-    std::vector<int> v{1,2,3,4,5};
-//    bool isVaild =  codinginterviews::VerifySquenceOfBST2(v);
+    
+    {
+        typedef codinginterviews::TreeToDoublyList::Node Node;
+        Node *head = new Node(4);
+        Node *left = new Node(2);
+        Node *right = new Node(5);
+        Node *x = new Node(1);
+        Node *y = new Node(3);
+        head->left = left;
+        head->right = right;
+        left->left = x;
+        left->right = y;
+        
+        codinginterviews::TreeToDoublyList so;
+        head = so.treeToDoublyList(head);
+        cout << "treeToDoublyList.." << endl;
+        Node *pNode = head;
+        int i=0;
+        while (i++ < 5) {
+            cout << pNode->val << ",";
+            pNode = pNode->right;
+        }
+        cout << endl;
+        pNode = head;
+        while (i-- > 0 ) {
+            cout << pNode->val << ",";
+            pNode = pNode->left;
+        }
+        cout << endl;
+    }
+    {
+        int nums[] = {1,2,5,3,4};
+        BTreeNode *root = creatTree(nums, 5);
+        flatten(root);
+        printf("%d", root->val);
+    }
     return 0;
 }

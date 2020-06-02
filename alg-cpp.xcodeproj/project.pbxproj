@@ -333,6 +333,8 @@
 		3A091A7422F41C4200EFA79C /* FindFirstCommonNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindFirstCommonNode.h; sourceTree = "<group>"; };
 		3A091A7722F4201800EFA79C /* deleteDuplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = deleteDuplication.h; sourceTree = "<group>"; };
 		3A207EC1232A3133001FB923 /* Pattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pattern.h; sourceTree = "<group>"; };
+		3A5650752470248B002FBAED /* treeToDoublyList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = treeToDoublyList.h; sourceTree = "<group>"; };
+		3A5650762472A5DE002FBAED /* removeRepeatChar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = removeRepeatChar.h; sourceTree = "<group>"; };
 		3A5C8B8C22E0103B00354740 /* LRUV2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUV2.h; sourceTree = "<group>"; };
 		3A5C8B8D22E0103B00354740 /* LRUV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUV1.h; sourceTree = "<group>"; };
 		3A5C8B9422E0109200354740 /* stack+queue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "stack+queue"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +361,7 @@
 		3A5C8BDD22E1CEC400354740 /* searchInRotatedSortedArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = searchInRotatedSortedArray.h; sourceTree = "<group>"; };
 		3A5C8BE022E1CF9300354740 /* mySqrt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mySqrt.h; sourceTree = "<group>"; };
 		3A5C8BE322E1CFF800354740 /* isPerfectSquare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = isPerfectSquare.h; sourceTree = "<group>"; };
+		3A60E5C7246E4D5F00A8FAC6 /* validateStackSequences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = validateStackSequences.h; sourceTree = "<group>"; };
 		3A65DBC522F80F8A0026166D /* IsContinuous.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IsContinuous.h; sourceTree = "<group>"; };
 		3A65DBC822F813F10026166D /* FindNumbersWithSum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindNumbersWithSum.h; sourceTree = "<group>"; };
 		3A65DBCB22F819060026166D /* FindContinuousSequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindContinuousSequence.h; sourceTree = "<group>"; };
@@ -629,6 +632,7 @@
 			isa = PBXGroup;
 			children = (
 				0946B02222F6B4B80043469D /* queueByStack.h */,
+				3A60E5C7246E4D5F00A8FAC6 /* validateStackSequences.h */,
 			);
 			path = "coding-interviews";
 			sourceTree = "<group>";
@@ -875,6 +879,7 @@
 				0946B01822F695CE0043469D /* ReverseSentence.h */,
 				0946B01B22F6A5BF0043469D /* StrToInt.h */,
 				0946B01E22F6AA4F0043469D /* match.h */,
+				3A5650762472A5DE002FBAED /* removeRepeatChar.h */,
 			);
 			path = "coding-interviews";
 			sourceTree = "<group>";
@@ -1206,6 +1211,7 @@
 				09E18E4422F514A0002D0227 /* GetNext.h */,
 				09E18E4722F52438002D0227 /* isSymmetrical.h */,
 				09E18E4A22F534EC002D0227 /* VerifySquenceOfBST.h */,
+				3A5650752470248B002FBAED /* treeToDoublyList.h */,
 			);
 			path = "coding-interviews";
 			sourceTree = "<group>";

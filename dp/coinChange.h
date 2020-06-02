@@ -38,53 +38,34 @@ private:
     int result = INT_MAX;
 };
 
-class coinChange_dp {
-public:
-    int solve(const int coins[], int n, int money){
-      //这个找零问题，每次决策后有几个状态变量，第一个是当前的money，第二个是当前使用的硬币数量.所以状态里面至少要包含这两个变量
-        
-        int  max_coin_count = money; //n个1元
-        bool st[max_coin_count][money+1];
-        memset(st, false, sizeof(st));
-        
-        //选择第一个硬币的初始状态
-        for (int i=0; i<n; i++) {
-            if (coins[i] <= money) {
-                st[0][coins[i]] = true;
+int min(int x, int y){ return x < y ? x : y;}
+int coinChange(int* coins, int coinsSize, int amount){
+    if (coins == NULL || coinsSize <= 0) return 0;
+    int st[amount+1];
+    memset(st, 0, sizeof(st));
+    
+    for(int i = 1; i <= amount; i++){
+        int m_coin = INT_MAX;
+        for(int j=0; j < coinsSize; j++){
+            if (i >= coins[j] && st[i-coins[j]]!= -1){
+                m_coin = min(m_coin, st[i-coins[j]] + 1);
             }
         }
-        
-        for (int index=1; index <= max_coin_count; index++) { //使用第index个硬币的状态
-            for (int last_money = 1; last_money <= money; last_money++) {//计算出使用index个硬币所有可达的状态
-                if (st[index-1][last_money]) { //如果last_money是可达状态，即可以通过硬币筹出来，那么计算下一个阶段的状态
-                    for (int k=n-1; k>=0; k--) {
-                        if (last_money + coins[k] <= money) {
-                            st[index][last_money + coins[k]] = true;
-                        }
-                    }
-                }
-                
-                if (st[index][money]) {
-                    return index+1;
-                }
-            }
-        }
-        return -1;
-        
-    };
-};
+        st[i] = m_coin == INT_MAX ? -1 : m_coin;
+    }
+    return st[amount];
+}
 
 
 
 
 
 void test_coinChange(){
-    std::cout << "------------硬币找零问题----------\n" << std::endl;
+    std::cout << "------------硬币找零问题----------" << std::endl;
     class coinChange so;
-    class coinChange_dp so_dp;
     int coins[] = {1,3,5};
     std::cout << so.solve(coins, 3, 9) << std::endl;
-    std::cout << so_dp.solve(coins, 3, 9) << std::endl;
+    std::cout << coinChange(coins, 3, 9) << std::endl;
 }
 
 

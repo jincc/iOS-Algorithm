@@ -14,21 +14,23 @@
  0-1背包问题. 对于一组不同质量，不可分割的物品，我们需要选择一些放入背包中，在满足最大重量限制的条件下，背包中所能放入的最大值是多少?
  */
 
-int maxweight = INT_MIN;
-void knapsack(const int weights[], int n, int limitweight, int ct,int ctweight){
-    if (ctweight == limitweight || ct == n) {
-        maxweight = std::max(maxweight, ctweight);
+void backpack01_bt(int weights[], int n, int level, int ctweight,int limitweight, int *result);
+int backpack01(int weights[], int n, int limitweight){
+    int result = 0;
+    backpack01_bt(weights, n, 0, 0, limitweight, &result);
+    return result;
+}
+void backpack01_bt(int weights[], int n,int level, int ctweight,int limitweight, int *result){
+    if (level == n || *result == limitweight){
+        if (*result < ctweight){
+            *result = ctweight;
+        }
         return;
     }
-    if (ctweight+weights[ct] <= limitweight) {
-        knapsack(weights, n, limitweight, ct+1, ctweight+weights[ct]);
-    }
-    knapsack(weights, n, limitweight, ct+1, ctweight);
+    
+    backpack01_bt(weights, n, level+1, ctweight, limitweight, result);
+    if (ctweight + weights[level] <= limitweight)
+        backpack01_bt(weights, n, level+1, ctweight + weights[level], limitweight, result);
+    
 }
-
-int knapsack(const int weights[], int n, int limit){
-    knapsack(weights, n, limit, 0, 0);
-    return maxweight;
-}
-
 #endif /* knapsack_hpp */

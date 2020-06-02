@@ -27,29 +27,29 @@ namespace codinginterviews {
      * 如果当前权值和与期待的和一致，那么说明我们找到了一个路径，保存或者输出
      * 否则的话就递归其左右孩子节点
      */
-    void FindPath(TreeNode* root,int expectNumber, std::vector<int> r) {
-        if (!root) {
-            return;
+    void dfs(TreeNode *root, int sum, int &ctsum, vector<vector<int>> &result, vector<int> &path){
+        if (!root) return;
+        ctsum += root->val;
+        path.push_back(root->val);
+        if (root->lchild == NULL && root->rchild == NULL && ctsum == sum){
+            result.push_back(path);//这里不能直接return，因为后面需要执行回滚节点逻辑.
         }
-        std::cout << root->val << std::endl;
-        r.push_back(root->val);
-        //如果叶子节点满足条件，则r满足
-        if (root->lchild == nullptr && root->rchild == nullptr && root->val == expectNumber) {
-            Findpaths.push_back(r);
-            return;
+        if (root->lchild){
+            dfs(root->lchild, sum, ctsum, result, path);
         }
-        //否则在左子树或右子树上查找,这里需要注意的是，权重值和r路径数组是作为参数存在的，所以它们会自动恢复，所以不需要清空r
-        if (root->lchild) {
-            FindPath(root->lchild, expectNumber-root->val, r);
+        if (root->rchild){
+            dfs(root->rchild, sum, ctsum, result, path);
         }
-        if (root->rchild) {
-            FindPath(root->rchild, expectNumber-root->val, r);
-        }
+        ctsum -= root->val;
+        path.pop_back();
     }
-    std::vector<std::vector<int> > FindPath(TreeNode* root,int expectNumber) {
-        std::vector<int> r;
-        FindPath(root, expectNumber, r);
-        return Findpaths;
+    vector<vector<int>> pathSum(TreeNode* root, int sum) {
+        vector<vector<int>> result;
+        if (root == NULL) return result;
+        vector<int> path;
+        int ctsum = 0;
+        dfs(root, sum, ctsum, result, path);
+        return result;
     }
     
     void test_FindPath(){
@@ -68,7 +68,7 @@ namespace codinginterviews {
         node7->lchild = node6;
         node7->rchild = node9;
         
-        FindPath(node4, 7);
+        pathSum(node4, 7);
     }
 }
 #endif /* FindPath_hpp */

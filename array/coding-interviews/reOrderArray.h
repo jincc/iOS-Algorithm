@@ -71,11 +71,11 @@ namespace codinginterviews {
         reOrderArray(a);
         a;
         
-        int nums[] = {};
-        int *nums2 = exchange(nums, 0, NULL);
-        for (int i=0; i<7; i++) {
-            printf("%d\t",nums2[i]);
-        }
+//        int nums[] = {};
+//        int *nums2 = exchange(nums, 0, NULL);
+//        for (int i=0; i<7; i++) {
+//            printf("%d\t",nums2[i]);
+//        }
     }
 }
 

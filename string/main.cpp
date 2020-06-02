@@ -23,6 +23,7 @@
 #include "zigzag_conversion.h"
 #include "string_to_integer_atoi.h"
 #include "integer_to_roman.h"
+#include "removeRepeatChar.h"
 int main(int argc, const char * argv[]) {
     // insert code here...
     using namespace std;
@@ -41,5 +42,6 @@ int main(int argc, const char * argv[]) {
     leetcode::test_longestPalindrome();
     leetcode::test_convert();
     leetcode::test_myAtoi();
+    codinginterviews::test_removeRepeatChar();
     return 0;
 }
