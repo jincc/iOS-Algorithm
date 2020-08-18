@@ -40,58 +40,30 @@
 #include "removeRepeatNode.h"
 #include "DeleteNodeO1.h"
 #include "LastRemaining_Solution.h"
+#include <queue>
 using namespace std;
-class Node {
+class Solution {
 public:
-    int val;
-    Node* next;
-    Node* random;
-    
-    Node(int _val) {
-        val = _val;
-        next = NULL;
-        random = NULL;
-    }
-};
-class Solution2 {
-public:
-    Node* copyRandomList(Node* head) {
-        if(!head) return head;
-
-        createCopyList(head);
-        setRandomChild(head);
-        return separateList(head);
-    }
-    void createCopyList(Node *head){
-        Node *pNode = head;
-        Node *cNode = NULL;
-        while(pNode != NULL){
-            cNode = new Node(pNode->val);
-            cNode->next = pNode->next;
-            pNode->next = cNode;
-            pNode = pNode->next->next;
-        }
-    }
-    void setRandomChild(Node *head){
-        Node *pNode = head;
-        while(pNode != NULL){
-            if (pNode->random != NULL){
-                pNode->next->random = pNode->random->next;
+    /*
+     */
+    vector<int> maxSlidingWindow(vector<int>& nums, int k) {
+        if (nums.empty() || k <= 0)
+            return {};
+        vector<int> results;
+        std::deque<int> dq;
+        for(int i=0; i < nums.size(); i++){
+            while(!dq.empty() && nums[i] >= nums[dq.back()]){
+                dq.pop_back();
             }
-            pNode = pNode->next->next;
+            dq.push_back(i);
+            if (!dq.empty() && dq.front() == i - k)
+                dq.pop_front();
+            
+            if ( i>= k-1){
+                results.push_back(nums[dq.front()]);
+            }
         }
-    }
-    Node *separateList(Node *head){
-        Node *node, *copyNode, *newHead;
-        node = head;
-        newHead = copyNode = head->next;
-        while(copyNode->next != NULL){
-            node->next = node->next->next;
-            copyNode->next = copyNode->next->next;
-            node = node->next;
-            copyNode = copyNode->next;
-        }
-        return newHead;
+        return results;
     }
 };
 int main(int argc, const char * argv[]) {

@@ -37,6 +37,43 @@
 #include "combinationSum.h"
 #include "ReOrder.h"
 #include <vector>
+
+#define max(x, y) ((x) > (y) ? (x) : (y))
+int largestRectangleArea(int* heights, int heightsSize){
+    /*
+     矩形在位置i的面积:
+     宽度：位置i左边第一个比heights[i]小的位置，位置i右边第一个比heights[i]小的位置之间的宽度
+     高度: height[i]
+     */
+    if (heights == NULL || heightsSize <= 0)
+        return 0;
+    int l_minheights[heightsSize], r_minheights[heightsSize];
+    l_minheights[0] = -1;
+    r_minheights[heightsSize-1] = heightsSize;
+    
+    for(int i=1; i < heightsSize; i++){
+        //选择左边第一个比heights[i]小的位置
+        int val = i-1;
+        while(val >= 0 && heights[val] >= heights[i]){
+            val = l_minheights[val];
+        }
+        l_minheights[i] = val;
+    }
+    
+    for(int i=heightsSize-2; i >= 0; i--){
+        int val = i + 1;
+        while(val < heightsSize && heights[val] >= heights[i]){
+            val = r_minheights[val];
+        }
+        r_minheights[i] = val;
+    }
+    int result = 0;
+    for(int i=0; i < heightsSize; i++){
+        result = max(result, heights[i] * (r_minheights[i] - l_minheights[i] - 1));
+    }
+    return result;
+}
+
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -70,5 +107,7 @@ int main(int argc, const char * argv[]) {
     codinginterviews::test_PrintMinNumber();
     codinginterviews::test_GetNumberOfK();
     codinginterviews::test_ReOrder();
+    int heights22[] = {2,1,5,6,2,3};
+    int v = largestRectangleArea(heights22, 6);
     return 0;
 }

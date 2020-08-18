@@ -170,5 +170,7 @@ int main(int argc, const char * argv[]) {
         flatten(root);
         printf("%d", root->val);
     }
+    
+    
     return 0;
 }

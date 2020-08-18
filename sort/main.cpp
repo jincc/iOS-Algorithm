@@ -22,47 +22,45 @@ using namespace std;
 class Solution {
 public:
     int InversePairs(vector<int> data) {
-        mergeSort(data, 0, data.size()-1);
-        return count;
+        if (data.empty())
+            return 0;
+        return InversePairs(data, 0 , data.size()-1);
     }
-    
-    void mergeSort(vector<int> &data,int start, int end){
+    int InversePairs(vector<int> &data, int start, int end){
         if (start >= end)
-            return;
-        int mid = start + (end - start)/2;
-        mergeSort(data, start, mid);
-        mergeSort(data, mid+1, end);
-        merge(data,start,mid,end);
-    }
-    void merge(vector<int> &data,int start,int mid, int end){
-        vector<int> temp;
-        temp.resize(end-start+1);
-        int i=start;
-        int j=mid+1;
-        int index=0;
-        while(i<=mid && j<=end){
+            return 0;
+        int mid = (start + end)/2;
+        int leftcnt = InversePairs(data, start, mid);
+        int rightcnt = InversePairs(data, mid+1, end);
+        
+        int cnt = 0;
+        int temp[end-start+1];
+        int top, i, j;
+        top = 0;
+        i = start;
+        j = mid+1;
+        for(;i <= mid && j <= end;){
             if (data[i] > data[j]){
-//                std::cout << data[i] << ", " << data[j] << std::endl;
-                temp[index++] = data[i++];
-                count++;
+                //存在逆序对
+                temp[top++] = data[j++];
+                cnt += mid-i+1;
             }else{
-                temp[index++] = data[j++];
+                temp[top++] = data[i++];
             }
         }
-        while(i<=mid){
-            temp[index++] = data[i++];
+        for(; i <= mid; i++){
+            temp[top++] = data[i];
         }
-        while(j<=end){
-            temp[index++] = data[j++];
+        for(; j <= end; j++){
+            temp[top++] = data[j];
         }
-        index=0;
-        for(i=start;i<=end;i++){
-            data[i] = temp[index++];
+        
+        for(i=start,top=0; i <= end;i++,top++){
+            data[i] = temp[top];
         }
+        return cnt + leftcnt + rightcnt;
     }
-    int count = 0;
 };
-
 
 using namespace std;
 int main(int argc, const char * argv[]) {

@@ -12,6 +12,7 @@
 #include "region_overlapping.h"
 #include "jump_game.h"
 #include "gas_station.h"
+#include <queue>
 using namespace std;
 int main(int argc, const char * argv[]) {
     // insert code here...
@@ -36,5 +37,9 @@ int main(int argc, const char * argv[]) {
     areas.push_back({5,9});
     areas.push_back({8,10});
     cout << "区域覆盖：" << region_overlapping(areas) << endl;
+    
+    queue<int> q;
+    q.push(1);
+    q.front();
     return 0;
 }
