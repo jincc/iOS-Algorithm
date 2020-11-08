@@ -48,13 +48,80 @@ namespace codinginterviews {
         return newHead;
     }
     
+    /**
+     * Definition for singly-linked list.
+     * struct ListNode {
+     *     int val;
+     *     struct ListNode *next;
+     * };
+     */
+
+     ListNode* reverseBetween( ListNode* head, int m, int n){
+        int pos = 1;
+        ListNode *link1 = NULL, *link2=NULL, *ct = head;
+        
+        for(; ct != NULL && pos < m - 1; pos++, ct = ct->next)
+             ;
+        if (m != 1) {
+             link1 = ct;
+             ct = ct->next;pos++;
+        }
+        link2 = ct;
+        ListNode *pre, *next;
+        pre = NULL;
+        while(ct && pos != n+1){
+            next = ct->next;
+            ct->next = pre;
+            pre = ct;
+            ct = next;
+            pos++;
+        }
+        link2->next = ct;
+         if (m != 1){
+             link1->next = pre;
+             return head;
+         }
+        return pre;
+    }
+
+    
+    ListNode* partition(ListNode* head, int x){
+        ListNode *lHead = NULL, *gHead = NULL, *node = head, *pToDeDelete = NULL, *pre = NULL, *next = NULL;
+        while (node) {
+            next = node->next;
+            if (node->val >= x){
+                //删除
+                pre->next = node->next;
+                if (!gHead) {
+                    gHead = pToDeDelete = node;
+                }else{
+                    pToDeDelete->next = node;
+                    pToDeDelete = node;
+                }
+            }else{
+                pre = node;
+                if (!lHead) lHead = node;
+            }
+            node = next;
+        }
+        if (pToDeDelete)
+            pToDeDelete->next = NULL;
+        if (pre)
+            pre->next = gHead;
+        if (lHead)
+            return lHead;
+        return gHead;
+    }
     void test_ReverseList(){
         std::cout << "test_ReverseList staring.......... " << std::endl;
-        ListNode *root = creatLists({1,2,3,4,5})->next;
-        root = ReverseList(root);
+        ListNode *root = creatLists({1,4,3,2,5,2})->next;
+        
+        root = partition(root, 3);
         root->print();
-        root = ReverseListRecursion(root);
-        root->print();
+//        root = ReverseList(root);
+//        root->print();
+//        root = ReverseListRecursion(root);
+//        root->print();
         std::cout << "*******************" << std::endl;
     }
 }
