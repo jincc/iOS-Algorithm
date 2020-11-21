@@ -80,21 +80,33 @@ C++的模板帮助我们在编写程序时不知道类型的情况，利用模�
 
 Function objects are objects specifically designed to be used with a syntax similar to that of functions. In C++, this is achieved by defining member function operator() in their class, like for example:
 
-# [`vector`](https://www.cplusplus.com/reference/vector/vector/?kw=vector)
+# [`vector`](https://www.cplusplus.com/reference/vector/vector/?kw=vector) DONE
 
 文档阅读:
 
 - Only if T is guaranteed to not throw while moving, implementations can optimize to move elements instead of copying them during reallocations
 
 
-# [`list`](http://www.cplusplus.com/reference/list/list/?kw=list)
+# [`list`](http://www.cplusplus.com/reference/list/list/?kw=list) DONE
 
 - 底层双向列表实现，因此可以在任意位置常量时间插入/删除元素
 - 缺点在于：每个元素都要存储一些额外数据用来定位，并且不能支持随机访问
 
 
-- splice出了很多bug
+# [`deque`](http://www.cplusplus.com/reference/deque/deque/?kw=deque)
 
+- dynamic sizes ，random access
+- they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end。
+- unlike vectors, deques are not guaranteed to store all its elements in contiguous storage locations: accessing elements in a deque by offsetting a pointer to another element causes undefined behavior.
+- Both vectors and deques provide a very similar interface and can be used for similar purposes, but internally both work in quite different ways: While vectors use a single array that needs to be occasionally reallocated for growth, the elements of a deque can be scattered in different chunks of storage, with the container keeping the necessary information internally to provide direct access to any of its elements in constant time and with a uniform sequential interface (through iterators). Therefore, deques are a little more complex internally than vectors, but this allows them to grow more efficiently under certain circumstances, especially with very long sequences, where reallocations become more expensive.
+
+
+
+内部数据结构:
+
+![](http://c.biancheng.net/uploads/allimg/191213/2-19121316430U40.gif)
+
+形参右值版本有问题, 调用的还是拷贝构造
 
 
 # 暴露问题

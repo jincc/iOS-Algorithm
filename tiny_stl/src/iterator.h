@@ -10,11 +10,18 @@
 #define iterator_h
 
 #include <stdio.h>
+#include <iterator>
 #include "type_traits.h"
 namespace tiny{
     //五种迭代器类型
+#define BASE_ON_SYSTEM_VERSION
+#ifdef BASE_ON_SYSTEM_VERSION //主要是利用标准库中定义的算法
+    struct input_iterator_tag : std::input_iterator_tag{};
+    struct output_iterator_tag : std::output_iterator_tag{};
+#else
     struct input_iterator_tag {};
     struct output_iterator_tag {};
+#endif
     struct forward_iterator_tag : public input_iterator_tag {};
     struct bidirectional_iterator_tag : public forward_iterator_tag {};
     struct random_access_iterator_tag : public bidirectional_iterator_tag {};

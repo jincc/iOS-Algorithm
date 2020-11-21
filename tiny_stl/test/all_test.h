@@ -15,4 +15,5 @@
 #include "iterator_test.h"
 #include "vector_test.h"
 #include "list_test.h"
+#include "deque_test.h"
 #endif /* all_test_h */

@@ -41,17 +41,6 @@ namespace tiny{
             return ( first.length() < second.length() );
         }
         
-       std::string printlist(tiny::list<int> &ilist){
-            std::stringstream cout;
-            auto beg = ilist.begin();
-            while (beg != ilist.end()) {
-                cout << *beg++ << " ";
-            }
-            return cout.str();
-        }
-    
-#define STREQ(_expect, _list) EXPECT_STREQ(_expect, printlist(_list).c_str());
-    
         TEST(list){
         #if 0
             typedef std::list<int> ilist;
@@ -256,6 +245,17 @@ namespace tiny{
                     cout << ' ' << *it;
                 cout << '\n';
                 STREQ("1 10 20 30 30 20 2 3 4 5 ", ilist)
+            }
+            {
+                ilist ilist;
+                ilist.insert(ilist.cbegin(), 1);
+                auto it = ilist.cbegin();
+                ilist.push_back(2);
+                it++;
+                ilist.insert(it, 3); //1, 3, 2
+                STREQ("1 3 2 ", ilist)
+                ilist.insert(ilist.cend(), 4);
+                STREQ("1 3 2 4 ", ilist)
             }
             {
                 ilist ilist;

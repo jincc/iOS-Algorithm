@@ -78,6 +78,7 @@ namespace tiny{
     void destroy(ForwardInterator beg, ForwardInterator end){
         _destroy_cat(beg, end, std::is_trivially_destructible<typename ForwardInterator::value_type>{});
     }
+
     template<typename T>
     class allocator{
     public:

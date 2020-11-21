@@ -11,6 +11,7 @@
 #include "allocator.h"
 #include "iterator.h"
 #include "util.h"
+#include "alg.h"
 #include <stdio.h>
 #include <cassert>
 namespace tiny{
@@ -61,55 +62,6 @@ public:
     T element;
 };
 
-//template<class T>
-//class list_base_iterator : public tiny::iterator<tiny::bidirectional_iterator_tag, T>{
-//public:
-//    typedef typename list_traits<T>::base_ptr base_ptr;
-//    typedef typename list_traits<T>::node_ptr node_ptr;
-//    typedef list_base_iterator<T> self_type;
-//    typedef ptrdiff_t            difference_type;
-//    typedef T value_type;
-//    typedef T* pointer;
-//    typedef T& reference;
-//    list_base_iterator(const base_ptr &ptr):cur(ptr){}
-//    bool operator==(const list_base_iterator &rhs){
-//        return cur == rhs.cur;
-//    }
-//    bool operator!=(const list_base_iterator &rhs){
-//        return !operator==(rhs);
-//    }
-//    reference operator*() {
-//        return cur->as_node()->element;
-//    }
-//    pointer operator->(){
-//        return &(operator*());
-//    }
-//    self_type& operator++() {
-//        assert(cur != nullptr);
-//        cur = cur->next;
-//        return *this;
-//    }
-//    self_type operator++(int) {
-//        self_type tmp(*this);
-//        operator++();
-//        return tmp;
-//    }
-//    self_type& operator--(){
-//        assert(cur != nullptr);
-//        cur = cur->pre;
-//        return *this;
-//    }
-//    self_type operator--(int){
-//        self_type tmp(*this);
-//        operator--();
-//        return tmp;
-//    }
-//    base_ptr getPtr() {
-//        return cur;
-//    }
-//private:
-//    base_ptr cur;
-//};
 
 template<class T>
 class list_iterator : public tiny::iterator<tiny::bidirectional_iterator_tag, T>{
@@ -462,10 +414,7 @@ private:
     //[first, last)
     void _link_to_tail(base_ptr first, base_ptr last);
     //[first, last]
-    void _link_nodes(base_ptr pos, base_ptr first, base_ptr last);
-    iterator _link_to_middle(const_iterator position, base_ptr first);
-    //包含last
-    iterator _link_to_middle(const_iterator position, base_ptr first, base_ptr last);
+    iterator _link_nodes(base_ptr pos, base_ptr first, base_ptr last);
     //[first ,last]
     void _unlink(base_ptr first, base_ptr last);
     iterator _erase_nofree(const_iterator first, const_iterator last);
@@ -530,49 +479,16 @@ void list<T>::_link_to_head(base_ptr node){
     _tail->next = node;
     node->pre = _tail;
 }
-template<class T>
-typename list<T>::iterator
-list<T>::_link_to_middle(const_iterator position, base_ptr node){
-    if (position == cend()) {
-        _link_to_tail(node);
-    }else if (position == cbegin()){
-        _link_to_head(node);
-    }else{
-        auto plocation = position.getPtr();
-        plocation->pre->next = node;
-        node->pre = plocation->pre;
-        node->next = plocation;
-        plocation->pre = node;
-    }
-    return iterator(node);
-}
-
-template<class T>
-typename list<T>::iterator
-list<T>::_link_to_middle(const_iterator position, base_ptr first, base_ptr last){
-    auto plocation = position.getPtr();
-    if (position == cbegin()){
-        last->next = plocation;
-        plocation->pre = last;
-        first->pre = _tail;
-        _tail->next = first;
-    }else {
-        plocation->pre->next = first;
-        first->pre = plocation->pre;
-        
-        last->next = plocation;
-        plocation->pre = last;
-    }
-    return iterator(first);
-}
-
+    
 template <class T>
-void list<T>::_link_nodes(base_ptr pos, base_ptr first, base_ptr last)
+typename list<T>::iterator
+list<T>::_link_nodes(base_ptr pos, base_ptr first, base_ptr last)
 {
   pos->pre->next = first;
   first->pre = pos->pre;
   pos->pre = last;
   last->next = pos;
+  return iterator(pos);
 }
 
 template<class T>
@@ -704,7 +620,6 @@ list<T>& list<T>::operator=(list &&x) {
         _free_elements();
         basenode_allocator.destroy(_tail);
         basenode_allocator.deallocate(_tail, 1);
-        _tail = nullptr;
         _tail = x._tail;
         _size = x._size;
         x._tail = nullptr;
@@ -818,14 +733,14 @@ typename list<T>::iterator
 list<T>::emplace(const_iterator position, Args&&... args){
     ++_size;
     auto node = _createNode(tiny::forward<Args>(args)...);
-    return _link_to_middle(position, node);
+    return _link_nodes(position.getPtr(), node, node);
 }
 template<class T>
 typename list<T>::iterator
 list<T>::insert (const_iterator position, const value_type& val){
     ++_size;
     auto node = _createNode(val);
-    return _link_to_middle(position, node);
+    return _link_nodes(position.getPtr(), node, node);
 }
 template<class T>
 typename list<T>::iterator
@@ -839,7 +754,7 @@ list<T>::insert(const_iterator position, size_type n, const value_type& val){
         it = it->next;
         ++_size;
     }
-    return _link_to_middle(position, tmp.next, it);
+    return _link_nodes(position.getPtr(), tmp.next, it);
 }
 
 template<class T>
@@ -857,14 +772,14 @@ list<T>::insert (const_iterator position, InputIterator first, InputIterator las
         it = it->next;
         ++_size;
     }
-    return _link_to_middle(position, tmp.next, it);
+    return _link_nodes(position.getPtr(), tmp.next, it);
 }
 template<class T>
 typename list<T>::iterator
 list<T>::insert (const_iterator position, value_type&& val){
     _size++;
     auto node = _createNode(tiny::move(val));
-    return _link_to_middle(position, node);
+    return _link_nodes(position.getPtr(), node, node);
 }
 template<class T>
 typename list<T>::iterator
@@ -973,7 +888,7 @@ void list<T>::splice (const_iterator position, list&& x,
     //erase from x
     x._erase_nofree(copy_first, copy_last);
     //link to origin
-    _link_to_middle(position.getPtr(), first.getPtr(), last.getPtr());
+    _link_nodes(position.getPtr(), first.getPtr(), last.getPtr());
     _size += diff;
 }
 template<class T>
@@ -1050,7 +965,7 @@ void list<T>::merge (list&& x, Compare comp){
             x._erase_nofree(pToDeletedPtr, pToDeleteAfterPtr);
             beg2 = const_iterator(pToDeleteAfterPtr);
             
-            _link_to_middle(beg1, pToDeletedPtr);
+            _link_nodes(beg1.getPtr(), pToDeletedPtr, pToDeletedPtr);
             _size++;
         }else{
             ++beg1;
@@ -1062,7 +977,7 @@ void list<T>::merge (list&& x, Compare comp){
         difference_type sz = tiny::distance(beg2, end2);
         _size += sz;
         base_ptr s = beg2.getPtr(), e = end2.getPtr();
-        _link_to_middle(cend(), s, e->pre);
+        _link_nodes(cend().getPtr(), s, e->pre);
         x._tail->unlink();
         x._size = 0;
     }

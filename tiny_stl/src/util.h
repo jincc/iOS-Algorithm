@@ -11,7 +11,48 @@
 
 #include <stdio.h>
 #include <type_traits>
+#include "iterator.h"
+#include <sstream>
+#include <string>
 namespace tiny{
+    //log
+    //用来终止可变参数模板的非递归版本，打印最后一个元素
+    //此函数必须在可变参数模板之前定义，否则会无限递归
+    template<typename T>
+    std::ostream &print(std::ostream &os, const T &t){
+        return os << t;
+    }
+    
+    //可变参数版本, 每次调用，包中的第一个实参被移除，称为t的实参，然后用剩余实参继续递归
+    template<typename T, typename... Args>
+    std::ostream &print(std::ostream &os, const T &t, const Args&...rst){
+        os << t << " ";//打印第一个实参
+        return print(os, rst...);//递归调用, 打印其他实参
+    }
+    
+    template<class T>
+    std::string debug_rep(const T &t){
+        std::ostringstream ret;
+        ret << t;
+        return ret.str();
+    }
+    template<class T>
+    std::string debug_rep(T *t){
+        std::ostringstream ret;
+        if (t) {
+            ret << "pointer: " << t << " " << debug_rep(*t);
+        }else{
+            ret << "pointer: " << t << " " << "null pointer";
+        }
+        return ret.str();
+    }
+    std::string debug_rep(const char *t){
+        return t;
+    }
+    template<typename...Args>
+    std::ostream& errorMsg(std::ostream &os, const Args&... args){
+        return print(os, debug_rep(args)...);
+    }
     //forward
     template<typename T>
     T&&
@@ -29,7 +70,7 @@ namespace tiny{
     //该函数的目的是无条件的将参数转换为右值引用，继而用于移动语义
     template<typename T>
     typename std::remove_reference<T>::type&&
-    move(T&& arg){ //必须是T&&，可以保留实参的左右值和const属性
+    move(T&& arg) noexcept{ //必须是T&&，可以保留实参的左右值和const属性
         using ReturnType = typename std::remove_reference<T>::type &&;
         return static_cast<ReturnType>(arg);
     }
@@ -55,32 +96,6 @@ namespace tiny{
     void
     swap(T(&lhs)[N], T(&rhs)[N]){
         swap(lhs, lhs+N, rhs);
-    }
-
-    template <class _Compare, class _InputIterator1, class _InputIterator2>
-    bool
-    lexicographical_compare(_InputIterator1 __first1, _InputIterator1 __last1,
-                              _InputIterator2 __first2, _InputIterator2 __last2, _Compare __comp)
-    {
-        for (; __first2 != __last2; ++__first1, (void) ++__first2)
-        {
-            if (__first1 == __last1 || __comp(*__first1, *__first2))
-                return true;
-            if (__comp(*__first2, *__first1))
-                return false;
-        }
-        return false;
-    }
-
-    template <class _InputIterator1, class _InputIterator2, class _BinaryPredicate>
-    inline 
-    bool
-    equal(_InputIterator1 __first1, _InputIterator1 __last1, _InputIterator2 __first2, _BinaryPredicate __pred)
-    {
-        for (; __first1 != __last1; ++__first1, (void) ++__first2)
-            if (!__pred(*__first1, *__first2))
-                return false;
-        return true;
     }
 }
 

@@ -4,20 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ADT.xcscheme_^#shared#^_</key>
+		<key>ADT.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>16</integer>
+			<integer>5</integer>
 		</dict>
 		<key>alg-cpp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>alg4.xcscheme_^#shared#^_</key>
+		<key>alg4.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>17</integer>
+			<integer>6</integer>
 		</dict>
 		<key>array.xcscheme_^#shared#^_</key>
 		<dict>
@@ -34,32 +38,32 @@
 		<key>base.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>8</integer>
 		</dict>
 		<key>bsearch.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>11</integer>
 		</dict>
 		<key>divideandconquer.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>13</integer>
+			<integer>17</integer>
 		</dict>
 		<key>dp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>12</integer>
+			<integer>13</integer>
 		</dict>
 		<key>greed.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>18</integer>
 		</dict>
 		<key>hasTable.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>14</integer>
 		</dict>
 		<key>linkedList.xcscheme_^#shared#^_</key>
 		<dict>
@@ -74,17 +78,17 @@
 		<key>recursion.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>16</integer>
 		</dict>
 		<key>sort.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>12</integer>
 		</dict>
 		<key>stack+queue.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>10</integer>
 		</dict>
 		<key>string.xcscheme_^#shared#^_</key>
 		<dict>
@@ -94,12 +98,12 @@
 		<key>tiny_stl.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>18</integer>
+			<integer>7</integer>
 		</dict>
 		<key>tree.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>15</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -110,6 +114,21 @@
 			<true/>
 		</dict>
 		<key>0969A71A22E607E800CA9347</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>09A05C7724BE09EF0010C78B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A3E27E324EBC7B9005AF69A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A81921E25592C7A00E63778</key>
 		<dict>
 			<key>primary</key>
 			<true/>

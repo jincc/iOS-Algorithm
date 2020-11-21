@@ -630,6 +630,17 @@ extern void test_len(size_t len1, size_t len2, size_t len3, size_t wide);
 #ifndef LARGER_TEST_DATA_ON
 #define LARGER_TEST_DATA_ON 0
 #endif // !LARGER_TEST_DATA_ON
+    
+template<class Container>
+std::string printlist(Container &ilist){
+        std::stringstream cout;
+        auto beg = ilist.begin();
+        while (beg != ilist.end()) {
+            cout << *beg++ << " ";
+        }
+        return cout.str();
+};
+#define STREQ(_expect, _list) EXPECT_STREQ(_expect, printlist(_list).c_str());
 }/* namespace test */
 }/* namespace tiny */
 
