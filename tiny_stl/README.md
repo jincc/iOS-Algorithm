@@ -93,7 +93,7 @@ Function objects are objects specifically designed to be used with a syntax simi
 - 缺点在于：每个元素都要存储一些额外数据用来定位，并且不能支持随机访问
 
 
-# [`deque`](http://www.cplusplus.com/reference/deque/deque/?kw=deque)
+# [`deque`](http://www.cplusplus.com/reference/deque/deque/?kw=deque) DONE
 
 - dynamic sizes ，random access
 - they provide a functionality similar to vectors, but with efficient insertion and deletion of elements also at the beginning of the sequence, and not only at its end。
@@ -106,9 +106,79 @@ Function objects are objects specifically designed to be used with a syntax simi
 
 ![](http://c.biancheng.net/uploads/allimg/191213/2-19121316430U40.gif)
 
-形参右值版本有问题, 调用的还是拷贝构造
+<!--形参右值版本有问题, 调用的还是拷贝构造-->
+
+# [`unordered_map`](http://www.cplusplus.com/reference/unordered_map/unordered_map/) 【DONE】
 
 
-# 暴露问题
+- Internally, the elements in the unordered_map are not sorted in any particular order with respect to either their key or mapped values, but organized into buckets depending on their hash values to allow for fast access to individual elements directly by their key values
+- unordered_map containers are faster than map containers to access individual elements by their key, although they are generally less efficient for range iteration through a subset of their elements.
 
+`unordered_map `和`map`都属于关联容器，除此之外还有`multi`版本 。 
+
+`unordered`版本正如其名是“无序”的，这个“无序”意思是它不会按照key或者value的顺序来排列，而是以散列式的存储方式。
+
+```
+    template <class Key, class T, class Hash = std::hash<Key>, class Pred = std::equal_to<Key>>
+    class unordered_map {}
+```
+
+正如它的模板声明一样，`unordered_map `底层使用散列表来实现，散列值相当于定位下标，可以很快定位到元素的存储位置。散列值相同的会被存储在同一个桶里，当散列容器中右大量数据时，同一个桶里的数据也会增多，出现访问冲突。所以`unordered_map `在插入元素的时候会自动增加桶的数量来避免散列冲突。
+
+
+
+
+![](https://img-blog.csdn.net/20180320095159440?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMjY1OTE1MTc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+
+## 散列表设计原则
+散列表是数组的一种扩展结构，它来源于数组，利用的是数组支持下标随机访问元素的特性。一个工业级的散列表应该满足下面这些要求：
+ 
+- 支持快速查找，删除，添加
+- 内存占用合理，不能浪费过多的内存空间
+- 性能稳定，极端情况下，散列表的性能不会退化到无法接受的情况
+ 
+ 
+想要解决这些问题:
+ 
+ 
+ - 设计一个合理的散列函数，劲量让这些数据均匀的分布在每个桶里面,减少散列冲突
+ - 定义装载因子，并且设计动态扩容的策略。涉及到大数据量的搬运时，我们可以这样做。 装载因子触发阈值之后，我们只申请空间，但并不将老数据搬移到新散列表中。当新数据要插入的时候，我们再将新数据插入到散列表中，并将老的散列表中拿出一个放入到新散列表中。
+ 这样均摊的思想可以让插入做到o(1)
+ - 选择合适的散列冲突解决方法。
+ 
+常见的散列冲突解决办法有两种:
+ 
+ 1. 开放式寻址法
+ 2. 链表法
+ 
+ 开放式寻址法的思想是：先通过hash函数计算出下标，然后判断下标位置是否已经被其他占用了，如果已经被占用，就往后寻找空的位置，然后插入.
+ 
+开放式寻址法适用于数据量规模小，装载因子小的时候，这种情况下是很少会冲突的。如果装载因子过大，那么就意味着越容易产生冲突，我们就需要扩容，这就导致这种方法比链表更浪费空间。
+ 
+链表法，因为数据是存储在链表结点里面的，所以这部分开销也是有的。所以，链表的散列冲突比较适合存储大数据对象，大数据量的散列表，同时为了提供效率，我们可以把链表改造为跳表，红黑树等结构，这样极端情况下，查询速度可以达到o(logn)
+
+
+# [map](https://www.cplusplus.com/reference/map/map/?kw=map) [TODO]
+
+
+```
+template <class _Key, class _Tp, class _Compare = less<_Key>,
+          class _Allocator = allocator<pair<const _Key, _Tp> > >
+class map{}
+```
+
+`map`是有序版本，它采用红黑树来存储，默认通过std::less来判断key的大小, 就这一点来说它的查找时O(logn)级别的，比`unordered_map `要慢.
+
+
+[漫画：什么是红黑树？](https://zhuanlan.zhihu.com/p/31805309)<br><br>
+[教你透彻了解红黑树](https://github.com/julycoding/The-Art-Of-Programming-By-July/blob/master/ebook/zh/03.01.md)<br><br>
+[红黑树详细分析，看了都说好](https://segmentfault.com/a/1190000012728513#comment-area)<br><br>
+[为什么STL和linux都使用红黑树作为平衡树的实现？](https://www.zhihu.com/question/20545708)
+
+
+
+# TIP
+
+- 不同指针类型不能进行比较，比如`int *` 和 `const int *`
+- 指针变量要设置初始值，否则可能会因为垃圾值出现一些奇奇怪怪的问题
 - 模板编程

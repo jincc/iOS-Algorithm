@@ -641,6 +641,30 @@ std::string printlist(Container &ilist){
         return cout.str();
 };
 #define STREQ(_expect, _list) EXPECT_STREQ(_expect, printlist(_list).c_str());
+extern std::string separate(const std::string &s);
+template<class Map>
+std::string printmap(Map &ilist){
+    std::stringstream cout;
+    auto beg = ilist.begin();
+    while (beg != ilist.end()) {
+        cout << beg->first << ":" << beg->second << ",";
+        beg++;
+    }
+    return separate(cout.str());
+}
+
+template<class Map>
+std::string printmap2(Map &ilist){
+    std::stringstream cout;
+    auto it = ilist.begin();
+    while (it != ilist.end()) {
+        cout << it->first << " => " << it->second << '\n';
+        it++;
+    }
+    return cout.str();
+}
+#define MAPSTREQ(_expect, _list) EXPECT_STREQ(separate(_expect).c_str(), printmap(_list).c_str());
+#define MAP2STREQ(_expect, _list) EXPECT_STREQ(_expect, printmap2(_list).c_str());
 }/* namespace test */
 }/* namespace tiny */
 

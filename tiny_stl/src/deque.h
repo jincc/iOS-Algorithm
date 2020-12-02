@@ -729,7 +729,6 @@ void deque<T>::pop_front(){
         _free_trunkpage_memory(_begin.node - 1, _begin.node - 1);
     }
 }
-
 template<class T>
 typename deque<T>::iterator
 deque<T>::insert(const_iterator position, value_type &&val){

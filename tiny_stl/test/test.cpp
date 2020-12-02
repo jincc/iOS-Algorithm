@@ -7,6 +7,7 @@
 //
 
 #include "test.h"
+#include <algorithm>
 namespace tiny {
 namespace test{
 UnitTest* UnitTest::GetInstance()
@@ -66,6 +67,20 @@ void test_len(size_t len1, size_t len2, size_t len3, size_t wide)
   std::cout << std::setw(wide) << str2;
   str3 += "   |";
   std::cout << std::setw(wide) << str3 << "\n";
+}
+std::string separate(const std::string &s){
+    std::vector<std::string> rets;
+    std::istringstream iss(s);
+    std:: string temp;
+    while (std::getline(iss, temp, ',')) {
+        rets.emplace_back(std::move(temp));
+    }
+    std::sort(rets.begin(), rets.end());
+    std::string val;
+    for (auto it = rets.begin(); it != rets.end(); it++) {
+        val += *it + ",";
+    }
+    return val;
 }
 }
 }

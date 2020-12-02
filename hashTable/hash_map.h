@@ -42,7 +42,7 @@
  
  ![IMAGE](quiver-image-url/B2CA7EF001C71A15ABDFBE2B8456FB74.jpg =1142x640)
  链表法，因为数据是存储在链表结点里面的，所以这部分开销也是有的。所以，链表的散列冲突比较适合存储大数据对象，大数据量的散列表，同时为了提供效率，我们可以把链表改造为跳表，红黑树等结构，这样极端情况下，查询速度可以达到o(logn)
- 
+
  */
 
 template <typename key_t, typename value_t,typename hash=std::hash<key_t>>

@@ -79,9 +79,9 @@ namespace tiny{
     template<typename T>
     void
     swap(T &a, T &b){
-        auto temp = move(a);
-        a =  move(b);
-        b = move(temp);
+        auto temp = tiny::move(a);
+        a = tiny::move(b);
+        b = tiny::move(temp);
     }
     template<typename ForwardInteractor1, typename ForwardInteractor2>
     ForwardInteractor2

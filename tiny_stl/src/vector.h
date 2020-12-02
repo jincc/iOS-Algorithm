@@ -553,10 +553,9 @@ vector<T>:: erase (const_iterator first){
     
 template<class T>
 void vector<T>::swap (vector& x){
-    using std::swap;
-    swap(elements, x.elements);
-    swap(first_free,x.first_free);
-    swap(cap, x.cap);
+    tiny::swap(elements, x.elements);
+    tiny::swap(first_free,x.first_free);
+    tiny::swap(cap, x.cap);
 }
 template<class T>
 void swap(vector<T> &lhs, vector<T> &rhs){

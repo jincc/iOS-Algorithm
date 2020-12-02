@@ -16,4 +16,6 @@
 #include "vector_test.h"
 #include "list_test.h"
 #include "deque_test.h"
+#include "unordered_map_test.h"
+#include "map_test.h"
 #endif /* all_test_h */
